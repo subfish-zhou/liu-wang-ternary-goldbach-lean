@@ -70,6 +70,7 @@ import LiuWang.Proof.Campaign20260915.Parent.ZetaHankelAudit
 import LiuWang.Proof.Campaign20260915.Parent.ZetaTuringIntegralAudit
 import LiuWang.Proof.Campaign20260915.Parent.ZetaWindingAudit
 import LiuWang.Proof.Campaign20260915.Parent.AnnularHankelAudit
+import LiuWang.Proof.Campaign20260915.Parent.TotientFullSmoothingAudit
 /-!
 Checked component entry point. This does not prove LiuWang.TheoremStatement.
 See docs/gaps/ACCEPTED-20260915.md for retained mathematical inputs.

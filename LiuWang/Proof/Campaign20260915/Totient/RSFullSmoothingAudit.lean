@@ -1,0 +1,55 @@
+import LiuWang.Proof.Campaign20260915.Totient.RSEpsilonTerminal
+
+set_option autoImplicit false
+set_option Elab.async false
+
+namespace LiuWang.Proof.Campaign20260915.Totient
+
+#print axioms rsPolyIntegral_derivative
+#print axioms rsPolyIntegral_degree
+#print axioms rsPolyIntegral_interval
+#print axioms rsPolynomial_difference_vanish
+#print axioms rsGammaCorrection_continuousOn
+#print axioms rs_positive_primitive_integrable
+#print axioms rsGammaPrimitive_integrable
+#print axioms rsGammaPrimitive_integral
+#print axioms rsPolePrimitive_deriv
+#print axioms rsPolePrimitive_integral
+#print axioms rsPsiPrimitive_spectral_polynomial
+#print axioms rsPsiPrimitive_spectral_difference
+#print axioms rsTrivialTerm_hasSum
+#print axioms rsTrivialTerm_nonneg
+#print axioms rsTrivialTerm_antitone
+#print axioms rsTrivialPrimitive_deriv
+#print axioms rs_scaled_gamma_term
+#print axioms rsTrivialPrimitive_summable
+#print axioms rsGammaCorrection_eq_trivial_sum
+#print axioms rsGammaCorrection_deriv
+#print axioms rsTrivialKernel_nonneg
+#print axioms rsTrivialKernel_antitone
+#print axioms rs_difference_congr_positive
+#print axioms rs_local_difference_integrable
+#print axioms rs_local_difference_integral
+#print axioms rs_difference_re
+#print axioms rs_difference_ofReal
+#print axioms rsTrivialKernel_integrable
+#print axioms rsGammaPrimitive_real_integrable
+#print axioms rsGammaCorrection_difference
+#print axioms rsGammaPrimitive_real_difference
+#print axioms rsGammaPrimitive_difference_bounds
+#print axioms rsGammaPrimitive_normalized_bounds
+#print axioms rs_difference_sub
+#print axioms rs_factorial_power_difference
+#print axioms rsPolePrimitive_finite_difference
+#print axioms rsPsiPrimitive_real_spectrum
+#print axioms rsPsiPrimitive_normalized_spectral_bounds
+#print axioms rsPsi_original_moment_bounds
+#print axioms rsZeroMoment_sum_antitone
+#print axioms rsZeroMoment_low_high
+#print axioms rsPsi_delta_epsilon_of_actual_moment
+#print axioms rsPsi_delta_epsilon_of_low_window_and_high_sum
+#print axioms rs_delta_root_budget
+#print axioms rs_low_weight_sqrt
+#print axioms rsPsi_original_root_epsilon
+
+end LiuWang.Proof.Campaign20260915.Totient
