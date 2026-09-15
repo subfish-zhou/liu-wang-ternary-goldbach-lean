@@ -63,6 +63,10 @@ M07已整体父验并由`Parent.SmallConductorPaidRoot.threeOddPrimes_of_two_sha
 
 `Parent.MertensTransportAudit.actual_product_theta_error` 核收实际Euler乘积与θ误差积分的恒等式；精确floor修正、真实素数对数幂级数尾及Abel端点均已证明。原尖尾和乘积抵消消费者保留全尾Theorem9及原Lemma13输入，不能由有限窗θ上界支付；M06.PR01不整体核销。
 
+## 本次追加：Gram块及严格窗口认证组件
+
+`Parent.GramWindowAudit` 核收真实异号窗口、保解析重数的计数/双侧面积、Rosser块运输及原非严格阈值到严格Lehman判据的标量推进。窗口完整性消费者仍保留实际计数上界和符号数据输入；未宣称Brent Theorem3.2完成。严格/闭端点及边界重数分开处理。`GramSequence`及其未交接Γ依赖继续隔离，不在本次发布清单。
+
 ## 断联后的恢复原则
 
 以本仓库主根、最新验证摘要和明确的任务分解文档恢复，不以聊天中的计划或CLI退出消息认定闭合。保留一个main主工作树；活跃工作者只写独占新模块，父级核收后冻结、构建并发布。未验草稿、运行日志、扫描文献、凭据和私有会话不在公开包内。
