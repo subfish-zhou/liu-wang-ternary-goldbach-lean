@@ -1,0 +1,19 @@
+import LiuWang.Proof.Campaign20260915.SmallConductors.MajorConsumers
+import LiuWang.Proof.Campaign20260915.SmallConductors.ThirdConsumer
+
+set_option autoImplicit false
+
+namespace LiuWang.Proof.Campaign20260915.SmallConductors
+
+#print axioms primitive_le_986_original_region
+#print axioms original_source_conductor_ge_987
+#print axioms actual_exceptional_conductor_ge_987
+#print axioms paper_source_conductor_ge_987
+#print axioms actual_exceptional_gap_paid
+#print axioms actual_pure_integrals_conductor_paid
+#print axioms actual_mixed_totals_conductor_paid
+#print axioms caseII_conductor_paid
+#print axioms localC1Data_exists
+#print axioms equation_5_27_local_region_paid
+
+end LiuWang.Proof.Campaign20260915.SmallConductors
