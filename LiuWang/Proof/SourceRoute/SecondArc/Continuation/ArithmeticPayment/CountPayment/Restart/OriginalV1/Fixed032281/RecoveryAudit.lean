@@ -1,0 +1,18 @@
+import LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281.RecoveryActual
+import LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281.RecoveryPrefixAudit
+
+set_option autoImplicit false
+
+namespace LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281
+
+#print originalDensityScalar
+#check original_fixed_032281
+#print axioms original_fixed_032281
+#check original_all_L_032281
+#print axioms original_all_L_032281
+#check actual_high_alpha_height_032281
+#print axioms actual_high_alpha_height_032281
+#check actual_high_branch_032281
+#print axioms actual_high_branch_032281
+
+end LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281

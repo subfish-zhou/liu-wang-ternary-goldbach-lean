@@ -1,0 +1,37 @@
+[
+  {
+    "repository": "kimihiro64/bombieri-vinogradov",
+    "pin": "7a1748306e026825ed6a5555516cc2f28989b2ac",
+    "url": "https://raw.githubusercontent.com/kimihiro64/bombieri-vinogradov/7a1748306e026825ed6a5555516cc2f28989b2ac/LICENSE",
+    "file": "LICENSES/kimihiro64__bombieri-vinogradov.txt",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "repository": "kimihiro64/PrimeNumberTheoremAnd",
+    "pin": "47fa48680663df41146704d02a5b092d792bd5b9",
+    "url": "https://raw.githubusercontent.com/kimihiro64/PrimeNumberTheoremAnd/47fa48680663df41146704d02a5b092d792bd5b9/LICENSE",
+    "file": "LICENSES/kimihiro64__PrimeNumberTheoremAnd.txt",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "repository": "kimihiro64/Robin1984",
+    "pin": "2a74ac5c912cebf839bd3bf908249201eb62eb2d",
+    "url": "https://raw.githubusercontent.com/kimihiro64/Robin1984/2a74ac5c912cebf839bd3bf908249201eb62eb2d/LICENSE",
+    "file": "LICENSES/kimihiro64__Robin1984.txt",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "repository": "gersh/ternary-goldbach-lean",
+    "pin": "27df23af6a712895f22204d0d81102baa74f0ebe",
+    "url": "https://raw.githubusercontent.com/gersh/ternary-goldbach-lean/27df23af6a712895f22204d0d81102baa74f0ebe/LICENSE",
+    "file": "LICENSES/gersh__ternary-goldbach-lean.txt",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "repository": "kimihiro64/PrimeNumberTheoremAnd",
+    "pin": "0f15a38c619298b5cd786d39a84dd4bb8997324c",
+    "url": "https://raw.githubusercontent.com/kimihiro64/PrimeNumberTheoremAnd/0f15a38c619298b5cd786d39a84dd4bb8997324c/LICENSE",
+    "file": "LICENSES/kimihiro64__PrimeNumberTheoremAnd-0f15a38.txt",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  }
+]

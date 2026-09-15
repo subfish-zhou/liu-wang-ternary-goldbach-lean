@@ -1,0 +1,743 @@
+import LiuWang.Proof.SourceRoute.HighSum.Continuation.Payment.Checked.Sums
+import LiuWang.Proof.SourceRoute.HighSum.Continuation.Payment.Checked.Pilot
+
+set_option autoImplicit false
+noncomputable section
+namespace LiuWang.Proof.SourceRoute.HighSum.Continuation.Payment.Checked
+
+theorem exp_0_96_0 : expNegUpper (1763576143046649535677 / 26047892829811216000 : ℝ) ≤ (3948815486308078322504368354157 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1697143 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_96_1 : expNegUpper (11293723930698935244707 / 166706514110791782400 : ℝ) ≤ (3790150661540553872363146514607 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1697687 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_96 : rowCell 0 96 ≤ (282166182239260358702613380257 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (3948815486308078322504368354157 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (3790150661540553872363146514607 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_96_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_96_1
+  · norm_num [gridPoint]
+
+theorem exp_0_97_0 : expNegUpper (1264164661716276249763 / 18660318163661721600 : ℝ) ≤ (3790147959933676205045858988291 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1697687 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_97_1 : expNegUpper (3162360800572057688927 / 46650795409154304000 : ℝ) ≤ (1817526020838709553361433649291 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1698241 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_97 : rowCell 0 97 ≤ (270726127597803758801309844027 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (3790147959933676205045858988291 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (1817526020838709553361433649291 / 500000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_97_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_97_1
+  · norm_num [gridPoint]
+
+theorem exp_0_98_0 : expNegUpper (28671545489469887242567 / 422959451240675584000 : ℝ) ≤ (3635049488563698139850713545793 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1698241 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_98_1 : expNegUpper (57379080499846646635653 / 845918902481351168000 : ℝ) ≤ (3483640411080979481312324141603 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (339761 / 200000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_98 : rowCell 0 98 ≤ (64887657897505825518782371479 / 125000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (3635049488563698139850713545793 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (3483640411080979481312324141603 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_98_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_98_1
+  · norm_num [gridPoint]
+
+theorem exp_0_99_0 : expNegUpper (92482384279925538573 / 1363434121445888000 : ℝ) ≤ (1741819000004346869666203437737 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (339761 / 200000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_99_1 : expNegUpper (23135355165792859063 / 340858530361472000 : ℝ) ≤ (33360163330813322158517563897 / 10000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (84969 / 50000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_99 : rowCell 0 99 ≤ (497295321002114578222223296069 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (1741819000004346869666203437737 / 500000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (33360163330813322158517563897 / 10000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_99_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_99_1
+  · norm_num [gridPoint]
+
+theorem exp_0_100_0 : expNegUpper (1618406037711448314927 / 23844349656437888000 : ℝ) ≤ (52125219652247032229294611927 / 15625000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (84969 / 50000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_100_1 : expNegUpper (6477825182949132021699 / 95377398625751552000 : ℝ) ≤ (3192263695042815209801655325961 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (339993 / 200000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_100 : rowCell 0 100 ≤ (238023939491372117051315192747 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (52125219652247032229294611927 / 15625000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (3192263695042815209801655325961 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_100_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_100_1
+  · norm_num [gridPoint]
+
+theorem exp_0_101_0 : expNegUpper (58726482519254454401939 / 864669687665603072000 : ℝ) ≤ (3192261549286680312276160011623 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (339993 / 200000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_101_1 : expNegUpper (5876520668836541497809 / 86466968766560307200 : ℝ) ≤ (76311260764937447421512860791 / 25000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (21257 / 12500 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_101 : rowCell 0 101 ≤ (227685004028286851100803035817 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (3192261549286680312276160011623 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (76311260764937447421512860791 / 25000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_101_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_101_1
+  · norm_num [gridPoint]
+
+theorem exp_0_102_0 : expNegUpper (5919309565221905353089 / 87096562600519731200 : ℝ) ≤ (610489681685936862428073733811 / 200000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (21257 / 12500 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_102_1 : expNegUpper (59232738032290474734961 / 870965626005197312000 : ℝ) ≤ (291662926911676842492520510587 / 100000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (340233 / 200000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_102 : rowCell 0 102 ≤ (435270507089913254227952597019 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (610489681685936862428073733811 / 200000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (291662926911676842492520510587 / 100000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_102_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_102_1
+  · norm_num [gridPoint]
+
+theorem exp_0_103_0 : expNegUpper (6629162972093842605921 / 97476044738949632000 : ℝ) ≤ (1458313682355185777986641496983 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (340233 / 200000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_103_1 : expNegUpper (829208759314666863819 / 12184505592368704000 : ℝ) ≤ (1392419253068738221991554635749 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1701779 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_103 : rowCell 0 103 ≤ (415756013712968416020257584819 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (1458313682355185777986641496983 / 500000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (1392419253068738221991554635749 / 500000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_103_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_103_1
+  · norm_num [gridPoint]
+
+theorem exp_0_104_0 : expNegUpper (300673029007348454491 / 4418130088008256000 : ℝ) ≤ (87026147307390848678888242699 / 31250000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1701779 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_104_1 : expNegUpper (2407043783832027203487 / 35345040704066048000 : ℝ) ≤ (2657102788812133001204837766409 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (425601 / 250000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_104 : rowCell 0 104 ≤ (396831117775660751276764538979 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (87026147307390848678888242699 / 31250000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (2657102788812133001204837766409 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_104_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_104_1
+  · norm_num [gridPoint]
+
+theorem exp_0_105_0 : expNegUpper (60609522802433022594687 / 889990470858510848000 : ℝ) ≤ (2657101103135242699332281218133 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (425601 / 250000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_105_1 : expNegUpper (30325969900031559570323 / 444995235429255424000 : ℝ) ≤ (2533433910821257547832696854139 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (851519 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_105 : rowCell 0 105 ≤ (94624619147252399891615253329 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (2657101103135242699332281218133 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (2533433910821257547832696854139 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_105_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_105_1
+  · norm_num [gridPoint]
+
+theorem exp_0_106_0 : expNegUpper (3393734874670734737323 / 49798764578951424000 : ℝ) ≤ (2533432326464501971056502875649 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (851519 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_106_1 : expNegUpper (1358457250572932846321 / 19919505831580569600 : ℝ) ≤ (603457902891393478817617032499 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1703681 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_106 : rowCell 0 106 ≤ (18037946558429872876363342381 / 50000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (2533432326464501971056502875649 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (603457902891393478817617032499 / 250000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_106_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_106_1
+  · norm_num [gridPoint]
+
+theorem exp_0_107_0 : expNegUpper (12313546123745789131729 / 180557578457899110400 : ℝ) ≤ (37716095678191921832043946369 / 15625000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1703681 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_107_1 : expNegUpper (15403003503823975911909 / 225696973072373888000 : ℝ) ≤ (1149142187421094798039625958193 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (852167 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_107 : rowCell 0 107 ≤ (171805811376251149910424436077 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (37716095678191921832043946369 / 15625000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (1149142187421094798039625958193 / 500000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_107_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_107_1
+  · norm_num [gridPoint]
+
+theorem exp_0_108_0 : expNegUpper (15512760354684707621061 / 227305215115905152000 : ℝ) ≤ (45965659558640196232489365979 / 20000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (852167 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_108_1 : expNegUpper (62096263010943542559283 / 909220860463620608000 : ℝ) ≤ (218677022259827521063426313523 / 100000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1704997 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_108 : rowCell 0 108 ≤ (1022044090383291360159551193 / 3125000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (45965659558640196232489365979 / 20000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (218677022259827521063426313523 / 100000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_108_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_108_1
+  · norm_num [gridPoint]
+
+theorem exp_0_109_0 : expNegUpper (277942978384184562123 / 4069674075304448000 : ℝ) ≤ (2186768912175449630753291221283 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1704997 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_109_1 : expNegUpper (139074073900141203441 / 2034837037652224000 : ℝ) ≤ (2079257499744562206538341182493 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (426417 / 250000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_109 : rowCell 0 109 ≤ (62216495743062344512188180317 / 200000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (2186768912175449630753291221283 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (2079257499744562206538341182493 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_109_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_109_1
+  · norm_num [gridPoint]
+
+theorem exp_0_110_0 : expNegUpper (31513063382087840184001 / 461077655864568064000 : ℝ) ≤ (415851254245102385123677924909 / 200000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (426417 / 250000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_110_1 : expNegUpper (63073234739994547344201 / 922155311729136128000 : ℝ) ≤ (1975705646396006708280652045823 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1706349 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_110 : rowCell 0 110 ≤ (147845733081404500933532881137 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (415851254245102385123677924909 / 200000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (1975705646396006708280652045823 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_110_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_110_1
+  · norm_num [gridPoint]
+
+theorem exp_0_111_0 : expNegUpper (63517921294279938884289 / 928656794820526592000 : ℝ) ≤ (1975704495376275489040382266781 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1706349 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_111_1 : expNegUpper (158914943645188016689 / 2321641987051316480 : ℝ) ≤ (938032977142687983142892776339 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1707039 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_111 : rowCell 0 111 ≤ (280874561764340992012363551999 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (1975704495376275489040382266781 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (938032977142687983142892776339 / 500000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_111_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_111_1
+  · norm_num [gridPoint]
+
+theorem exp_0_112_0 : expNegUpper (573589280637033591 / 8379759105893120 : ℝ) ≤ (375212975307599579413882950169 / 200000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1707039 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_112_1 : expNegUpper (229611367030982674809 / 3351903642357248000 : ℝ) ≤ (222535288058098202850247105843 / 125000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (853869 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_112 : rowCell 0 112 ≤ (1066496485752573625829362039 / 4000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (375212975307599579413882950169 / 200000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (222535288058098202850247105843 / 125000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_112_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_112_1
+  · norm_num [gridPoint]
+
+theorem exp_0_113_0 : expNegUpper (64510064030953356710999 / 941728275920572928000 : ℝ) ≤ (445070323984533334435518291509 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (853869 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_113_1 : expNegUpper (32280013281520036430799 / 470864137960286464000 : ℝ) ≤ (844145941884080905673365707269 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (854223 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_113 : rowCell 0 113 ≤ (252931472560399184646103639489 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (445070323984533334435518291509 / 250000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (844145941884080905673365707269 / 500000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_113_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_113_1
+  · norm_num [gridPoint]
+
+theorem exp_0_114_0 : expNegUpper (1300208644443996189591 / 18965965478584576000 : ℝ) ≤ (844145470291665211506321333581 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (854223 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_114_1 : expNegUpper (2602454117384062926973 / 37931930957169152000 : ℝ) ≤ (50000808682885870470456079903 / 31250000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1709163 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_114 : rowCell 0 114 ≤ (59946754186867805835341472353 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (844145470291665211506321333581 / 500000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (50000808682885870470456079903 / 31250000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_114_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_114_1
+  · norm_num [gridPoint]
+
+theorem exp_0_115_0 : expNegUpper (7279297587241217087813 / 106099012249293312000 : ℝ) ≤ (400006249075031806249783470287 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1709163 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_115_1 : expNegUpper (1821265569685203164971 / 26524753062323328000 : ℝ) ≤ (1515410138964548709601753700593 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1709889 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_115 : rowCell 0 115 ≤ (113590164543627254254190857723 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (400006249075031806249783470287 / 250000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (1515410138964548709601753700593 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_115_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_115_1
+  · norm_num [gridPoint]
+
+theorem exp_0_116_0 : expNegUpper (16504953053051359093091 / 240376696215951488000 : ℝ) ≤ (1515409315502034065766412823859 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1709889 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_116_1 : expNegUpper (13214531855515188376911 / 192301356972761190400 : ℝ) ≤ (717182913448860769455646074557 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1710623 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_116 : rowCell 0 116 ≤ (43020050714478935694704864851 / 200000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (1515409315502034065766412823859 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (717182913448860769455646074557 / 500000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_116_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_116_1
+  · norm_num [gridPoint]
+
+theorem exp_0_117_0 : expNegUpper (13305768799128380790951 / 193629059557945446400 : ℝ) ≤ (1434365058144609768656263559931 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1710623 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_117_1 : expNegUpper (33291329616833051870093 / 484072648894863616000 : ℝ) ≤ (6784050109461810046870420079 / 5000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (855683 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_117 : rowCell 0 117 ≤ (203534994532656952770804769363 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (1434365058144609768656263559931 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (6784050109461810046870420079 / 5000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_117_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_117_1
+  · norm_num [gridPoint]
+
+theorem exp_0_118_0 : expNegUpper (3724487979323277959253 / 54155924945633536000 : ℝ) ≤ (339202326156744559738122922827 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (855683 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_118_1 : expNegUpper (7455063374364049581657 / 108311849891267072000 : ℝ) ≤ (128265630852213919948308847313 / 100000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (856059 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_118 : rowCell 0 118 ≤ (96236101952860228635460550029 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (339202326156744559738122922827 / 250000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (128265630852213919948308847313 / 100000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_118_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_118_1
+  · norm_num [gridPoint]
+
+theorem exp_0_119_0 : expNegUpper (2702225644043015241473 / 39259633542353408000 : ℝ) ≤ (1282655639677235538594342498953 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (856059 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_119_1 : expNegUpper (338057013383728080489 / 4907454192794176000 : ℝ) ≤ (1211815329861467095371004930183 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (856439 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_119 : rowCell 0 119 ≤ (7275962569000955639876033511 / 40000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (1282655639677235538594342498953 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (1211815329861467095371004930183 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_119_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_119_1
+  · norm_num [gridPoint]
+
+theorem exp_0_120_0 : expNegUpper (8509178300968710499329 / 123524733300252736000 : ℝ) ≤ (605907353259916350055854019351 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (856439 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_120_1 : expNegUpper (68130166148412260057911 / 988197866402021888000 : ℝ) ≤ (1144195311475051565351537172881 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (856823 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_120 : rowCell 0 120 ≤ (42950591809984375729103023241 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (605907353259916350055854019351 / 500000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (1144195311475051565351537172881 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_120_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_120_1
+  · norm_num [gridPoint]
+
+theorem exp_0_121_0 : expNegUpper (7621572171131173207671 / 110547525838995968000 : ℝ) ≤ (1144194730864970473210061669151 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (856823 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_121_1 : expNegUpper (762798564184611387159 / 11054752583899596800 : ℝ) ≤ (269925638748149436604211518229 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1714423 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_121 : rowCell 0 121 ≤ (81084294058725818617070716801 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (1144194730864970473210061669151 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (269925638748149436604211518229 / 250000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_121_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_121_1
+  · norm_num [gridPoint]
+
+theorem exp_0_122_0 : expNegUpper (6911782049070665238911 / 100168043700566067200 : ℝ) ≤ (1079702014483188279470237914089 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1714423 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_122_1 : expNegUpper (69176526553692557186061 / 1001680437005660672000 : ℝ) ≤ (1018241901236259166056040640283 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1715209 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_122 : rowCell 0 122 ≤ (152983955205748886918840572201 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (1079702014483188279470237914089 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (1018241901236259166056040640283 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_122_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_122_1
+  · norm_num [gridPoint]
+
+theorem exp_0_123_0 : expNegUpper (69644449251666611283909 / 1008455979766112768000 : ℝ) ≤ (254560349583181524408832715847 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1715209 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_123_1 : expNegUpper (17426035867995875953057 / 252113994941528192000 : ℝ) ≤ (119964645381783612431335739579 / 125000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (858001 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_123 : rowCell 0 123 ≤ (36058628842121167828957509517 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (254560349583181524408832715847 / 250000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (119964645381783612431335739579 / 125000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_123_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_123_1
+  · norm_num [gridPoint]
+
+theorem exp_0_124_0 : expNegUpper (3118846480684403657 / 45122416036992000 : ℝ) ≤ (959716695393097047635791430827 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (858001 / 500000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_124_1 : expNegUpper (12486174493124713147 / 180489664147968000 : ℝ) ≤ (180806305636373068035490176413 / 200000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1716803 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_124 : rowCell 0 124 ≤ (8494137182773804715600745651 / 62500000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (959716695393097047635791430827 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (180806305636373068035490176413 / 200000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_124_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_124_1
+  · norm_num [gridPoint]
+
+theorem exp_0_125_0 : expNegUpper (70706620174242712113947 / 1022075580204282368000 : ℝ) ≤ (904031093525980799060829560181 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1716803 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_125_1 : expNegUpper (35384150350780113417033 / 511037790102141184000 : ℝ) ≤ (106385991575072751454140646793 / 125000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1717613 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_125 : rowCell 0 125 ≤ (31996214062474748934894603023 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (904031093525980799060829560181 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (106385991575072751454140646793 / 125000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_125_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_125_1
+  · norm_num [gridPoint]
+
+theorem exp_0_126_0 : expNegUpper (35621091160268073753657 / 514459818940999936000 : ℝ) ≤ (170217505766900973414742128843 / 200000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1717613 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_126_1 : expNegUpper (14260972199504659337573 / 205783927576399974400 : ℝ) ≤ (800789404999786896364873963111 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1718431 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_126 : rowCell 0 126 ≤ (1505704376542241214205597549 / 12500000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (170217505766900973414742128843 / 200000000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (800789404999786896364873963111 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_126_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_126_1
+  · norm_num [gridPoint]
+
+theorem exp_0_127_0 : expNegUpper (1595127605480400782037 / 23017478530343833600 : ℝ) ≤ (12512328595699953187728668153 / 15625000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (1718431 / 1000000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem exp_0_127_1 : expNegUpper (62364950003519416443 / 899120255091556000 : ℝ) ≤ (753039383060693645627991037423 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  apply upper_of_taylor (t := (214907 / 125000 : ℝ)) (by norm_num)
+  · norm_num [expTaylor, Finset.sum_range_succ]
+  · norm_num
+
+theorem cell_0_127 : rowCell 0 127 ≤ (14163320488400118688899476447 / 125000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  simp only [rowCell]
+  apply upper_cell_of_exp (b₁ := (12512328595699953187728668153 / 15625000000000000000000000000000000000000000000000000000000 : ℝ)) (b₂ := (753039383060693645627991037423 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ))
+  · norm_num [gridPoint]
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_127_0
+  · norm_num only [gridPoint, tangent, phase, Nat.cast_add, Nat.cast_one]
+    exact exp_0_127_1
+  · norm_num [gridPoint]
+
+theorem sum_0_96_2 : blockSum (rowCell 0) 96 2 ≤ (138223077459266029375980806071 / 125000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_96) (by simpa only [blockSum_one] using cell_0_97) (by norm_num)
+
+theorem sum_0_98_2 : blockSum (rowCell 0) 98 2 ≤ (1016396584182161182372482267901 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_98) (by simpa only [blockSum_one] using cell_0_99) (by norm_num)
+
+theorem sum_0_96_4 : blockSum (rowCell 0) 96 4 ≤ (2122181203856289417380328716469 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 2) (n := 2) sum_0_96_2 sum_0_98_2 (by norm_num)
+
+theorem sum_0_100_2 : blockSum (rowCell 0) 100 2 ≤ (116427235879914742038029557141 / 125000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_100) (by simpa only [blockSum_one] using cell_0_101) (by norm_num)
+
+theorem sum_0_102_2 : blockSum (rowCell 0) 102 2 ≤ (425513260401440835124105090919 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_102) (by simpa only [blockSum_one] using cell_0_103) (by norm_num)
+
+theorem sum_0_100_4 : blockSum (rowCell 0) 100 4 ≤ (891222203921099803276223319483 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 2) (n := 2) sum_0_100_2 sum_0_102_2 (by norm_num)
+
+theorem sum_0_96_8 : blockSum (rowCell 0) 96 8 ≤ (780925122339697804786555071087 / 200000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 4) (n := 4) sum_0_96_4 sum_0_100_4 (by norm_num)
+
+theorem sum_0_104_2 : blockSum (rowCell 0) 104 2 ≤ (155065918872934070168645110459 / 200000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_104) (by simpa only [blockSum_one] using cell_0_105) (by norm_num)
+
+theorem sum_0_106_2 : blockSum (rowCell 0) 106 2 ≤ (352185276960549878674057859887 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_106) (by simpa only [blockSum_one] using cell_0_107) (by norm_num)
+
+theorem sum_0_104_4 : blockSum (rowCell 0) 104 4 ≤ (1479700148285770108191341272069 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 2) (n := 2) sum_0_104_2 sum_0_106_2 (by norm_num)
+
+theorem sum_0_108_2 : blockSum (rowCell 0) 108 2 ≤ (127627317527592991562399456669 / 200000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_108) (by simpa only [blockSum_one] using cell_0_109) (by norm_num)
+
+theorem sum_0_110_2 : blockSum (rowCell 0) 110 2 ≤ (576566027927149993879429314273 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_110) (by simpa only [blockSum_one] using cell_0_111) (by norm_num)
+
+theorem sum_0_108_4 : blockSum (rowCell 0) 108 4 ≤ (607351307782557475845713298809 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 2) (n := 2) sum_0_108_2 sum_0_110_2 (by norm_num)
+
+theorem sum_0_104_8 : blockSum (rowCell 0) 104 8 ≤ (2694402763850885059882767869687 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 4) (n := 4) sum_0_104_4 sum_0_108_4 (by norm_num)
+
+theorem sum_0_96_16 : blockSum (rowCell 0) 96 16 ≤ (3299514187774687041907771612561 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 8) (n := 8) sum_0_96_8 sum_0_104_8 (by norm_num)
+
+theorem sum_0_112_2 : blockSum (rowCell 0) 112 2 ≤ (519555593998542591103444149239 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_112) (by simpa only [blockSum_one] using cell_0_113) (by norm_num)
+
+theorem sum_0_114_2 : blockSum (rowCell 0) 114 2 ≤ (233483672917362865924873802429 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_114) (by simpa only [blockSum_one] using cell_0_115) (by norm_num)
+
+theorem sum_0_112_4 : blockSum (rowCell 0) 112 4 ≤ (986522939833268322953191754097 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 2) (n := 2) sum_0_112_2 sum_0_114_2 (by norm_num)
+
+theorem sum_0_116_2 : blockSum (rowCell 0) 116 2 ≤ (209317624052525815622164546809 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_116) (by simpa only [blockSum_one] using cell_0_117) (by norm_num)
+
+theorem sum_0_118_2 : blockSum (rowCell 0) 118 2 ≤ (374371268130744348267821937833 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_118) (by simpa only [blockSum_one] using cell_0_119) (by norm_num)
+
+theorem sum_0_116_4 : blockSum (rowCell 0) 116 4 ≤ (793006516235795979512151031451 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 2) (n := 2) sum_0_116_2 sum_0_118_2 (by norm_num)
+
+theorem sum_0_112_8 : blockSum (rowCell 0) 112 8 ≤ (444882364017266075616335696387 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 4) (n := 4) sum_0_112_4 sum_0_116_4 (by norm_num)
+
+theorem sum_0_120_2 : blockSum (rowCell 0) 120 2 ≤ (166985477678694570075276763283 / 500000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_120) (by simpa only [blockSum_one] using cell_0_121) (by norm_num)
+
+theorem sum_0_122_2 : blockSum (rowCell 0) 122 2 ≤ (297218470574233558234670610269 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_122) (by simpa only [blockSum_one] using cell_0_123) (by norm_num)
+
+theorem sum_0_120_4 : blockSum (rowCell 0) 120 4 ≤ (126237885186324539677044827367 / 200000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 2) (n := 2) sum_0_120_2 sum_0_122_2 (by norm_num)
+
+theorem sum_0_124_2 : blockSum (rowCell 0) 124 2 ≤ (65972762793569967797297585627 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_124) (by simpa only [blockSum_one] using cell_0_125) (by norm_num)
+
+theorem sum_0_126_2 : blockSum (rowCell 0) 126 2 ≤ (29220364253822530830955451937 / 125000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 1) (n := 1) (by simpa only [blockSum_one] using cell_0_126) (by simpa only [blockSum_one] using cell_0_127) (by norm_num)
+
+theorem sum_0_124_4 : blockSum (rowCell 0) 124 4 ≤ (124413491301215029459208489501 / 250000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 2) (n := 2) sum_0_124_2 sum_0_126_2 (by norm_num)
+
+theorem sum_0_120_8 : blockSum (rowCell 0) 120 8 ≤ (1128843391136482816222058094839 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 4) (n := 4) sum_0_120_4 sum_0_124_4 (by norm_num)
+
+theorem sum_0_112_16 : blockSum (rowCell 0) 112 16 ≤ (2908372847205547118687400880387 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 8) (n := 8) sum_0_112_8 sum_0_120_8 (by norm_num)
+
+theorem sum_0_96_32 : blockSum (rowCell 0) 96 32 ≤ (9507401222754921202502944105509 / 1000000000000000000000000000000000000000000000000000000000000 : ℝ) := by
+  exact block_upper (m := 16) (n := 16) sum_0_96_16 sum_0_112_16 (by norm_num)
+
+#print axioms sum_0_96_32
+
+end LiuWang.Proof.SourceRoute.HighSum.Continuation.Payment.Checked

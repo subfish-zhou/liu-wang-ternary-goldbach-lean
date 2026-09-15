@@ -1,0 +1,65 @@
+import LiuWang.Proof.EffectiveLValue.IntegralConsumer
+
+set_option pp.all true
+
+open LiuWang.Proof.EffectiveLValue
+
+#check @quadratic_factors_div_of_odd_prime_sq_dvd
+#check @primitive_quadratic_not_odd_prime_sq_dvd
+#check @primitive_quadratic_not_sixteen_dvd
+#check @coprimeUnitsEquiv
+#check @coprimeUnitsEquiv_fst
+#check @coprimeUnitsEquiv_snd
+#check @primitive_quadratic_coprime_factors
+#check @quadratic_cyclic_eq
+#check @primitive_quadratic_prime_neg_one
+#check @primitive_quadratic_odd_level_neg_one
+#check @primitive_four_odd
+#check @primitive_even_quadratic_not_four_mul_one_mod_four
+#check @pell_rat_den_sq_dvd
+#check @primitive_quadratic_pell_rat_den_dvd_two
+#check @evenCharacterLargeProduct_pell_half_integral
+#check @pell_rat_den_two_forces_four_mul_one_mod_four
+#check @primitive_even_quadratic_pell_rat_den_eq_one
+#check @evenCharacterLargeProduct_pell_int
+#check @evenCharacter_gauss_quotient_isIntegral
+#check @evenCharacter_pi_lt_log_largeProduct
+#check @evenCharacter_LFunction_one_lower
+#check @even_real_primitive_LFunction_one_lower
+#check @real_primitive_LFunction_one_lower
+#check @IntegralConsumer.actual_even_quotient_integral
+#check @IntegralConsumer.actual_even_pell_integer
+#check @IntegralConsumer.actual_even_branch
+#check @IntegralConsumer.actual_all_parity
+#check @IntegralConsumer.cutoff_987
+
+set_option pp.all false
+
+#print axioms quadratic_factors_div_of_odd_prime_sq_dvd
+#print axioms primitive_quadratic_not_odd_prime_sq_dvd
+#print axioms primitive_quadratic_not_sixteen_dvd
+#print axioms coprimeUnitsEquiv
+#print axioms coprimeUnitsEquiv_fst
+#print axioms coprimeUnitsEquiv_snd
+#print axioms primitive_quadratic_coprime_factors
+#print axioms quadratic_cyclic_eq
+#print axioms primitive_quadratic_prime_neg_one
+#print axioms primitive_quadratic_odd_level_neg_one
+#print axioms primitive_four_odd
+#print axioms primitive_even_quadratic_not_four_mul_one_mod_four
+#print axioms pell_rat_den_sq_dvd
+#print axioms primitive_quadratic_pell_rat_den_dvd_two
+#print axioms evenCharacterLargeProduct_pell_half_integral
+#print axioms pell_rat_den_two_forces_four_mul_one_mod_four
+#print axioms primitive_even_quadratic_pell_rat_den_eq_one
+#print axioms evenCharacterLargeProduct_pell_int
+#print axioms evenCharacter_gauss_quotient_isIntegral
+#print axioms evenCharacter_pi_lt_log_largeProduct
+#print axioms evenCharacter_LFunction_one_lower
+#print axioms even_real_primitive_LFunction_one_lower
+#print axioms real_primitive_LFunction_one_lower
+#print axioms IntegralConsumer.actual_even_quotient_integral
+#print axioms IntegralConsumer.actual_even_pell_integer
+#print axioms IntegralConsumer.actual_even_branch
+#print axioms IntegralConsumer.actual_all_parity
+#print axioms IntegralConsumer.cutoff_987

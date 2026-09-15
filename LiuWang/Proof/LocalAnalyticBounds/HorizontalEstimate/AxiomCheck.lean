@@ -1,0 +1,58 @@
+import LiuWang.Proof.LocalAnalyticBounds.HorizontalEstimate.Consumer
+
+/-! # 全部新增成员的完整类型与标准公理审计 -/
+
+set_option autoImplicit false
+set_option pp.universes true
+set_option pp.fullNames true
+set_option pp.explicit true
+set_option pp.proofs true
+set_option pp.deepTerms true
+set_option format.width 120
+
+open LiuWang.Proof.LocalAnalyticBounds.HorizontalEstimate
+
+#check @norm_digamma_le_explicit
+#print axioms norm_digamma_le_explicit
+#check @norm_logDeriv_gammaFactor_horizontal_explicit
+#print axioms norm_logDeriv_gammaFactor_horizontal_explicit
+#check @norm_reciprocal_difference_le_reference_kernel
+#print axioms norm_reciprocal_difference_le_reference_kernel
+#check @reference_kernel_sum_le_explicit
+#print axioms reference_kernel_sum_le_explicit
+#check @norm_tsum_reciprocal_difference_le
+#print axioms norm_tsum_reciprocal_difference_le
+#check @LFunction_ne_zero_on_separated_strip
+#print axioms LFunction_ne_zero_on_separated_strip
+#check @norm_logDeriv_separated_strip_explicit
+#print axioms norm_logDeriv_separated_strip_explicit
+#check @source_log_ge_forty
+#print axioms source_log_ge_forty
+#check @source_height_abs_bounds
+#print axioms source_height_abs_bounds
+#check @norm_logDeriv_source_height_polynomial_le
+#print axioms norm_logDeriv_source_height_polynomial_le
+#check @norm_logDeriv_source_height_le
+#print axioms norm_logDeriv_source_height_le
+#check @norm_logDeriv_source_height_right_le
+#print axioms norm_logDeriv_source_height_right_le
+#check @horizontalIntegrand
+#print axioms horizontalIntegrand
+#check @source_horizontal_parameters
+#print axioms source_horizontal_parameters
+#check @continuousOn_horizontalIntegrand
+#print axioms continuousOn_horizontalIntegrand
+#check @norm_horizontalIntegrand_le_power
+#print axioms norm_horizontalIntegrand_le_power
+#check @source_endpoint_ge_billion
+#print axioms source_endpoint_ge_billion
+#check @source_left_power_le
+#print axioms source_left_power_le
+#check @source_right_power_integral_le
+#print axioms source_right_power_integral_le
+#check @norm_horizontal_integral_source_sharp_le
+#print axioms norm_horizontal_integral_source_sharp_le
+#check @exists_source_rectangle_horizontal_estimate
+#print axioms exists_source_rectangle_horizontal_estimate
+#check @Consumer.actual_source_horizontal_budget
+#print axioms Consumer.actual_source_horizontal_budget

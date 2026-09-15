@@ -1,0 +1,11 @@
+{
+  "status": "RUNNING",
+  "head": "19fbb05b2a86809ba035f1d7e012ba747390c7cc",
+  "planned_modules": 1814,
+  "passed_modules": 1445,
+  "remaining_modules": 369,
+  "timestamp": "2026-09-15T08:57:08.937096+00:00",
+  "full_build_verified": false,
+  "main_theorem_proved": false,
+  "meaning": "Partial local isolated compilation and official-checker progress for the canonical LiuWang modules, not a completed clean-clone build or proof of the headline theorem."
+}

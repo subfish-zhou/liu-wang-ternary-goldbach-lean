@@ -1,0 +1,67 @@
+import LiuWang.Proof.EffectiveLValue.Main
+
+set_option pp.all true
+
+open LiuWang.Proof.EffectiveLValue
+
+#check OddRealPrimitiveCharacter
+#check character_sq_eq_one_iff_real
+#check characterGaussSum
+#check characterGaussSum_conj
+#check odd_characterGaussSum_sq
+#check odd_characterGaussSum_not_rat
+#check odd_characterGaussSum_integral
+#check oddCharacterField
+#check oddCharacterGenerator
+#check oddCharacterGenerator_sq
+#check oddCharacterField_finrank
+#check oddCharacterField_numberField
+#check oddCharacterField_quadratic
+#check oddCharacterField_classNumber_ge_one
+#check oddCharacterField_no_real_embedding
+#check oddCharacterField_totallyComplex
+#check oddCharacterField_nrRealPlaces
+#check oddCharacterField_nrComplexPlaces
+#check oddCharacterField_unitRank
+#check oddCharacterField_regulator
+#check oddCharacterField_residue
+#check oddCharacterField_residue_lower
+#check oddCharacterField_classNumber_formula
+#check oddCharacter_LFunction_residue
+#check sourceUnitLower
+#check sourceUnitLower_le_pellUnit
+#check pi_lt_log_sourceUnitLower
+#check pi_lt_log_pellUnit
+#check source_minimum_eq_pi_div_sqrt
+
+set_option pp.all false
+
+#print axioms OddRealPrimitiveCharacter
+#print axioms character_sq_eq_one_iff_real
+#print axioms characterGaussSum
+#print axioms characterGaussSum_conj
+#print axioms odd_characterGaussSum_sq
+#print axioms odd_characterGaussSum_not_rat
+#print axioms odd_characterGaussSum_integral
+#print axioms oddCharacterField
+#print axioms oddCharacterGenerator
+#print axioms oddCharacterGenerator_sq
+#print axioms oddCharacterField_finrank
+#print axioms oddCharacterField_numberField
+#print axioms oddCharacterField_quadratic
+#print axioms oddCharacterField_classNumber_ge_one
+#print axioms oddCharacterField_no_real_embedding
+#print axioms oddCharacterField_totallyComplex
+#print axioms oddCharacterField_nrRealPlaces
+#print axioms oddCharacterField_nrComplexPlaces
+#print axioms oddCharacterField_unitRank
+#print axioms oddCharacterField_regulator
+#print axioms oddCharacterField_residue
+#print axioms oddCharacterField_residue_lower
+#print axioms oddCharacterField_classNumber_formula
+#print axioms oddCharacter_LFunction_residue
+#print axioms sourceUnitLower
+#print axioms sourceUnitLower_le_pellUnit
+#print axioms pi_lt_log_sourceUnitLower
+#print axioms pi_lt_log_pellUnit
+#print axioms source_minimum_eq_pi_div_sqrt

@@ -1,0 +1,25 @@
+import LiuWang.Proof.SourceRoute.Exception.Multiplicity
+import LiuWang.Proof.SourceRoute.Exception.ExactCount
+
+namespace LiuWang.Proof.SourceRoute.Exception
+
+#print axioms low_scale_table_domain
+#print axioms actualZeroSlot
+#print axioms actual_zero_repulsion
+#print axioms real_actual_zero_repulsion
+#print axioms original_seed_low_lambda
+#print axioms original_complex_seed_repulsion
+#print axioms original_seed_closed_cap_pair
+#print axioms paper_induced_inverse
+#print axioms paper_source_retained_strict
+#print axioms paper_source_retained_closed_cap_empty
+#print axioms slot_closed_cap_pair
+#print axioms closed_cap_slot_card_le_two
+#print axioms original_seed_closed_cap_counted_pair
+#print axioms original_seed_closed_cap_multiplicity_le_two
+#print axioms paper_source_retainedCount_zero
+#print axioms repulsion_cap_ge_half
+#print axioms paper_source_familyCount_exact
+#print axioms paper_source_closed_boundary_count_one
+
+end LiuWang.Proof.SourceRoute.Exception

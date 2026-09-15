@@ -1,0 +1,43 @@
+import LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281.CellData
+
+set_option autoImplicit false
+noncomputable section
+
+namespace LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281
+
+certify_fixed_cell 128
+certify_fixed_cell 129
+certify_fixed_cell 130
+certify_fixed_cell 131
+certify_fixed_cell 132
+certify_fixed_cell 133
+certify_fixed_cell 134
+certify_fixed_cell 135
+certify_fixed_cell 136
+certify_fixed_cell 137
+certify_fixed_cell 138
+certify_fixed_cell 139
+certify_fixed_cell 140
+certify_fixed_cell 141
+certify_fixed_cell 142
+certify_fixed_cell 143
+certify_fixed_cell 144
+certify_fixed_cell 145
+certify_fixed_cell 146
+certify_fixed_cell 147
+certify_fixed_cell 148
+certify_fixed_cell 149
+certify_fixed_cell 150
+certify_fixed_cell 151
+certify_fixed_cell 152
+certify_fixed_cell 153
+certify_fixed_cell 154
+certify_fixed_cell 155
+certify_fixed_cell 156
+certify_fixed_cell 157
+certify_fixed_cell 158
+certify_fixed_cell 159
+
+certify_fixed_block 4
+
+end LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281

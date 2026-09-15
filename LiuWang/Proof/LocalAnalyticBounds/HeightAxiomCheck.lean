@@ -1,0 +1,63 @@
+import LiuWang.Proof.LocalAnalyticBounds.HeightConsumer
+
+/-! # 全部新增成员的完整类型与公理检查 -/
+
+set_option autoImplicit false
+set_option pp.universes true
+set_option pp.fullNames true
+set_option pp.explicit true
+set_option pp.proofs true
+set_option pp.deepTerms true
+set_option format.width 120
+
+open LiuWang.Proof.LocalAnalyticBounds
+
+#check @exists_sharp_interval_away_from_finset
+#print axioms exists_sharp_interval_away_from_finset
+#check @exists_height_away_from_completedZeros
+#print axioms exists_height_away_from_completedZeros
+#check @exists_height_away_from_completedZeros_of_count_le
+#print axioms exists_height_away_from_completedZeros_of_count_le
+
+#check @ncard_closedZeroWindow_neg_source_bound
+#print axioms ncard_closedZeroWindow_neg_source_bound
+#check @exists_source_height_index
+#print axioms exists_source_height_index
+#check @exists_source_lower_height_index
+#print axioms exists_source_lower_height_index
+#check @exists_source_rectangle_heights_index
+#print axioms exists_source_rectangle_heights_index
+#check @exists_completedZeroIndex_value_eq_of_LFunction_zero
+#print axioms exists_completedZeroIndex_value_eq_of_LFunction_zero
+#check @LFunction_zero_separated_of_index
+#print axioms LFunction_zero_separated_of_index
+#check @exists_source_height_LFunction
+#print axioms exists_source_height_LFunction
+#check @exists_source_lower_height_LFunction
+#print axioms exists_source_lower_height_LFunction
+#check @exists_source_rectangle_heights_LFunction
+#print axioms exists_source_rectangle_heights_LFunction
+
+#check @source_height_budget_pos
+#print axioms source_height_budget_pos
+#check @LFunction_ne_zero_near_separated_height
+#print axioms LFunction_ne_zero_near_separated_height
+#check @norm_inv_sub_le_of_separated_height
+#print axioms norm_inv_sub_le_of_separated_height
+#check @norm_inv_sub_le_near_separated_height
+#print axioms norm_inv_sub_le_near_separated_height
+#check @exists_source_rectangle_local_bounds
+#print axioms exists_source_rectangle_local_bounds
+
+#check @HeightConsumer.source_single_side
+#print axioms HeightConsumer.source_single_side
+#check @HeightConsumer.source_independent_sides
+#print axioms HeightConsumer.source_independent_sides
+#check @HeightConsumer.source_threshold_indices
+#print axioms HeightConsumer.source_threshold_indices
+#check @HeightConsumer.source_horizontal_nonvanishing
+#print axioms HeightConsumer.source_horizontal_nonvanishing
+#check @HeightConsumer.empty_grid
+#print axioms HeightConsumer.empty_grid
+#check @HeightConsumer.repeated_ordinate_grid
+#print axioms HeightConsumer.repeated_ordinate_grid

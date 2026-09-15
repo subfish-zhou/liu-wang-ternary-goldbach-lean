@@ -1,0 +1,75 @@
+import LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281.CellData
+
+set_option autoImplicit false
+noncomputable section
+
+namespace LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281
+
+certify_refined_cell 0
+certify_refined_cell 1
+certify_refined_cell 2
+certify_refined_cell 3
+certify_refined_cell 4
+certify_refined_cell 5
+certify_refined_cell 6
+certify_refined_cell 7
+certify_refined_cell 8
+certify_refined_cell 9
+certify_refined_cell 10
+certify_refined_cell 11
+certify_refined_cell 12
+certify_refined_cell 13
+certify_refined_cell 14
+certify_refined_cell 15
+certify_refined_cell 16
+certify_refined_cell 17
+certify_refined_cell 18
+certify_refined_cell 19
+certify_refined_cell 20
+certify_refined_cell 21
+certify_refined_cell 22
+certify_refined_cell 23
+certify_refined_cell 24
+certify_refined_cell 25
+certify_refined_cell 26
+certify_refined_cell 27
+certify_refined_cell 28
+certify_refined_cell 29
+certify_refined_cell 30
+certify_refined_cell 31
+certify_refined_cell 32
+certify_refined_cell 33
+certify_refined_cell 34
+certify_refined_cell 35
+certify_refined_cell 36
+certify_refined_cell 37
+certify_refined_cell 38
+certify_refined_cell 39
+certify_refined_cell 40
+certify_refined_cell 41
+certify_refined_cell 42
+certify_refined_cell 43
+certify_refined_cell 44
+certify_refined_cell 45
+certify_refined_cell 46
+certify_refined_cell 47
+certify_refined_cell 48
+certify_refined_cell 49
+certify_refined_cell 50
+certify_refined_cell 51
+certify_refined_cell 52
+certify_refined_cell 53
+certify_refined_cell 54
+certify_refined_cell 55
+certify_refined_cell 56
+certify_refined_cell 57
+certify_refined_cell 58
+certify_refined_cell 59
+certify_refined_cell 60
+certify_refined_cell 61
+certify_refined_cell 62
+certify_refined_cell 63
+
+certify_refined_block 0
+
+end LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281

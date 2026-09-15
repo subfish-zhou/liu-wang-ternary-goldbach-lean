@@ -1,0 +1,23 @@
+/- Selected canonical Mathlib prerequisites. -/
+import Mathlib.Analysis.Fourier.AddCircle
+import Mathlib.Analysis.Fourier.FiniteAbelian.Orthogonality
+import Mathlib.Analysis.Fourier.ZMod
+import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+import Mathlib.NumberTheory.AbelSummation
+import Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt
+import Mathlib.NumberTheory.Chebyshev
+import Mathlib.NumberTheory.DiophantineApproximation.Basic
+import Mathlib.NumberTheory.DirichletCharacter.Basic
+import Mathlib.NumberTheory.DirichletCharacter.GaussSum
+import Mathlib.NumberTheory.DirichletCharacter.Orthogonality
+import Mathlib.NumberTheory.EulerProduct.DirichletLSeries
+import Mathlib.NumberTheory.GaussSum
+import Mathlib.NumberTheory.LSeries.Dirichlet
+import Mathlib.NumberTheory.LSeries.DirichletContinuation
+import Mathlib.NumberTheory.LSeries.Nonvanishing
+import Mathlib.NumberTheory.LSeries.PrimesInAP
+import Mathlib.NumberTheory.LSeries.SumCoeff
+import Mathlib.NumberTheory.LSeries.ZetaZeros
+import Mathlib.NumberTheory.NumberField.DedekindZeta
+import Mathlib.NumberTheory.SelbergSieve
+import Mathlib.NumberTheory.SumPrimeReciprocals

@@ -1,0 +1,11 @@
+{
+  "target_definition_smoke": {
+    "command": "env -u LEAN_PATH -u LEAN_SYSROOT lake env lean -DwarningAsError=true LiuWang/Target.lean",
+    "exit_code": 0,
+    "dependency_mode": "existing locked dependency cache; not a from-scratch dependency download"
+  },
+  "proof_sources_unchanged_in_export": true,
+  "private_history_published": false,
+  "full_build_verified": false,
+  "main_theorem_proved": false
+}

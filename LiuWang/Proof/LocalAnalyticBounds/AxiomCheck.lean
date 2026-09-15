@@ -1,0 +1,44 @@
+import LiuWang.Proof.LocalAnalyticBounds.Main
+
+set_option autoImplicit false
+set_option pp.universes true
+set_option pp.fullNames true
+set_option format.width 120
+
+open LiuWang.Proof.LocalAnalyticBounds
+
+#print digammaApprox
+#print gammaFactorApprox
+#print referencePoint
+#print closedZeroWindow
+#print Complex.Hadamard.divisorZeroIndex
+#print Complex.Hadamard.divisorZeroIndex₀
+#print LiuWang.Proof.Interfaces.CompletedZeroIndex
+#print LiuWang.Proof.Interfaces.completedZeroValue
+
+#check @norm_digamma_sub_approx_le
+#print axioms norm_digamma_sub_approx_le
+#check @digamma_re_mem_approx_interval
+#print axioms digamma_re_mem_approx_interval
+#check @norm_logDeriv_gammaFactor_sub_approx_even_le
+#print axioms norm_logDeriv_gammaFactor_sub_approx_even_le
+#check @norm_logDeriv_gammaFactor_sub_approx_odd_le
+#print axioms norm_logDeriv_gammaFactor_sub_approx_odd_le
+#check @two_fifths_le_reference_kernel
+#print axioms two_fifths_le_reference_kernel
+#check @finite_closedZeroWindow
+#print axioms finite_closedZeroWindow
+#check @ncard_closedZeroWindow_le_reference_kernel
+#print axioms ncard_closedZeroWindow_le_reference_kernel
+#check @ncard_closedZeroWindow_le_gamma_zeta
+#print axioms ncard_closedZeroWindow_le_gamma_zeta
+#check @digamma_re_le_log_add_two
+#print axioms digamma_re_le_log_add_two
+#check @logDeriv_gammaFactor_re_le_on_two
+#print axioms logDeriv_gammaFactor_re_le_on_two
+#check @norm_neg_logDeriv_zeta_two_le_six
+#print axioms norm_neg_logDeriv_zeta_two_le_six
+#check @ncard_closedZeroWindow_le_explicit
+#print axioms ncard_closedZeroWindow_le_explicit
+#check @ncard_closedZeroWindow_source_bound
+#print axioms ncard_closedZeroWindow_source_bound

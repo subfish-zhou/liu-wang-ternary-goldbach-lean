@@ -1,0 +1,9 @@
+{
+  "upstream": "https://github.com/leanprover-community/mathlib4/blob/141f6b6455959bfeb0b2a6b04118031191d62683/Mathlib/NumberTheory/LSeries/RiemannZetaLogDeriv.lean",
+  "author": "Terence Tao",
+  "license": "Apache-2.0",
+  "source_sha256": "b09a1cd88dc5579c9e5c1a0cdffd25ade8d6598765f20dc45e1b51fd30cb68d8",
+  "destination": "LiuWang/Foundations/ZetaLogDerivative.lean",
+  "changes": "Proof backport to old logDeriv_mul/logDeriv_comp/pointwise API; original theorem type retained; parent added backport notice.",
+  "integrated_sha256": "a70fef2c4281a3bad35c522c2c3de741a73f4bda740ea8a1e8e05ce2575b346a"
+}

@@ -1,0 +1,16 @@
+Liu–Wang foundations: selected-source integration.
+
+This distribution includes unchanged or explicitly recorded adaptations of
+subfish-zhou/goldbach-lean. Its upstream sources include
+UyNewNas/chen-theorem-lean, UyNewNas/analytic-number-theory-lean,
+and AlexKontorovich/PrimeNumberTheoremAnd, as well as Mathlib.
+Original per-file copyright and author notices are retained.
+All newly adapted third-party sources are identified in provenance/.
+The collection does not claim authorship of reused mathematical proofs.
+
+Additional integrated or adapted sources: kimihiro64/bombieri-vinogradov,
+kimihiro64/PrimeNumberTheoremAnd, kimihiro64/Robin1984,
+gersh/ternary-goldbach-lean (finite circle method only), and
+Mathlib RiemannZetaLogDeriv (Terence Tao). See LICENSES/ and the per-file
+provenance maps. In particular, the StrongPNT file is a single-statement
+extraction, not a claim that the entire upstream project is complete.
