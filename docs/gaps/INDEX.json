@@ -94,7 +94,8 @@
         "ZS-HIGH-SHORT",
         "MA-HIGH"
       ],
-      "acceptance_status": "OPEN_OR_PARTIAL"
+      "acceptance_status": "INDEPENDENT_BUDGET_DISCHARGED_AT_ORIGINAL_FINAL_STRENGTH",
+      "literal_intermediate_proof_not_claimed": true
     },
     {
       "id": "M09",
@@ -104,7 +105,8 @@
         "ZS-HIGH-ZEROTAIL",
         "MA-HIGH"
       ],
-      "acceptance_status": "OPEN_OR_PARTIAL"
+      "acceptance_status": "INDEPENDENT_BUDGET_DISCHARGED_AT_ORIGINAL_FINAL_STRENGTH",
+      "literal_intermediate_proof_not_claimed": true
     },
     {
       "id": "M10",
@@ -113,7 +115,7 @@
       "raw_ids": [
         "M2-ORIGINAL-LOW-SCALAR"
       ],
-      "acceptance_status": "OPEN_OR_PARTIAL"
+      "acceptance_status": "CLOSED_IN_ORIGINAL_CONSUMERS"
     },
     {
       "id": "M11",
@@ -186,7 +188,8 @@
       "raw_ids": [
         "MA-ORDREM"
       ],
-      "acceptance_status": "OPEN_OR_PARTIAL"
+      "acceptance_status": "INDEPENDENT_BUDGET_DISCHARGED_AT_ORIGINAL_FINAL_STRENGTH",
+      "literal_intermediate_proof_not_claimed": true
     }
   ],
   "literal_source_intermediates": [
@@ -831,18 +834,31 @@
   "verification_scope": "Parent verified 695 reported source hashes and 43 principal source anchors. Key frontier semantics reviewed; no claim that every proof body or original paper page was independently verified.",
   "head_at_parent_reconciliation": "f1476f0b217a3b10bf02e82af67d2dc5740841d3",
   "acceptance_snapshot": {
-    "date": "2026-09-15",
     "closed_core_ids": [
       "M02",
-      "M03"
+      "M03",
+      "M10"
     ],
-    "open_core_count": 16,
-    "accepted_consumer_subitems": [
-      "P01",
-      "W01",
-      "W03"
+    "discharged_independent_budget_ids": [
+      "M08",
+      "M09",
+      "M18"
     ],
-    "details": "ACCEPTED-20260915.md",
-    "main_theorem_proved": false
+    "remaining_independent_mainline_ids": [
+      "M01",
+      "M04",
+      "M05",
+      "M06",
+      "M07",
+      "M11",
+      "M12",
+      "M13",
+      "M14",
+      "M15",
+      "M16",
+      "M17"
+    ],
+    "main_theorem_proved": false,
+    "details": "ACCEPTED-20260915.md"
   }
 }
