@@ -59,6 +59,10 @@ M04-V02已核收。`Parent.LeftC2TailAudit.actual_prefactored_left_tail` 控制�
 
 M07已整体父验并由`Parent.SmallConductorPaidRoot.threeOddPrimes_of_two_shared_inputs`实际消去。所有q≤986的原本原二次实零区域排除完整进入Lean闭包；不是只接受外部枚举。新主根只保留M04与M06，有限阈值以下范围仍未闭。最终共同入口4894/4894通过，旧官方检查缓存按原标签复用，不冒称全部重新编译或重放。
 
+## 本次追加：实参数Mertens运输与对数尾
+
+`Parent.MertensTransportAudit.actual_product_theta_error` 核收实际Euler乘积与θ误差积分的恒等式；精确floor修正、真实素数对数幂级数尾及Abel端点均已证明。原尖尾和乘积抵消消费者保留全尾Theorem9及原Lemma13输入，不能由有限窗θ上界支付；M06.PR01不整体核销。
+
 ## 断联后的恢复原则
 
 以本仓库主根、最新验证摘要和明确的任务分解文档恢复，不以聊天中的计划或CLI退出消息认定闭合。保留一个main主工作树；活跃工作者只写独占新模块，父级核收后冻结、构建并发布。未验草稿、运行日志、扫描文献、凭据和私有会话不在公开包内。
