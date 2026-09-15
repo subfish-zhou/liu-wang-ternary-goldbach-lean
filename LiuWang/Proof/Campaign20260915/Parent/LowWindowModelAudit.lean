@@ -1,0 +1,276 @@
+import LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.StartupWindow
+import LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.HorizontalDerivative
+import LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.EMCorrectionData
+
+/-! Certified low-window approximation and startup phase, not zero-window completeness.
+No concrete sign interval or numerical zero-count upper bound is supplied by this audit.
+The unaccepted EMFiniteSum evaluator bridge remains excluded.
+-/
+set_option autoImplicit false
+set_option Elab.async false
+noncomputable section
+open Complex
+namespace LiuWang.Proof.Campaign20260915.Parent.LowWindowModelAudit
+open LiuWang.Proof.Campaign20260915.ZetaValidation
+open LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate
+
+theorem actual_through_startup_remainder {s : ℂ}
+    (hslo : 1 / 2 ≤ s.re) (hshi : s.re ≤ 2)
+    (ht : |s.im| ≤ startupHeight) (hs1 : s ≠ 1) :
+    ‖riemannZeta s - eulerMaclaurinApprox s (lowPrefix s.im) 63‖ ≤
+      1 / 1000000000000000000 :=
+  through_startup_remainder hslo hshi ht hs1
+
+theorem actual_startup_gram :
+    ∃ t ∈ Set.Ioo (12570 : ℝ) 12580,
+      LiuWang.Proof.Campaign20260915.ZetaGramBlocks.IsGramPoint 13210 t :=
+  exists_startup_gram
+
+#print axioms actual_through_startup_remainder
+#print axioms actual_startup_gram
+end LiuWang.Proof.Campaign20260915.Parent.LowWindowModelAudit
+
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.lowPrefix_bounds
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.lowPrefix_scale
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bounded_prefix_order64_remainder
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.low_order64_remainder
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.low_critical_order64_remainder
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.low_normalized_order64_remainder
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.source_thresholds_below_start
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.low_source_window_covered
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startupArgumentCenter_error
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startup_left_rational
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startup_right_rational
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startup_left_argument
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startup_right_argument
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.exists_startup_gram
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startupHeight_bounds
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startupHeight_isGramPoint
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startupHeight_source_thresholds
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.lowPrefix_startupHeight
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startup_phase_one
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startup_real_remainder
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.through_startup_remainder
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.mem_windowValues
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.positiveCount_eq_one_add_windowCount
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startup_count_split
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startup_turingS_eq_windowCount
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startup_partition
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.quarter_strip_zeta_norm
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.horizontal_quarter_disk_bounds
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.horizontal_derivative_bound
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.horizontal_cell_derivative_bound
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.low_horizontal_derivative_bound
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.horizontal_ball_of_actual_derivative
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rotated_critical_re
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rotationFactor_error
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rotationFactor_pos
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rotated_critical_pos_iff
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rotated_critical_neg_iff
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.low_rotated_em_error
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.low_positive_of_rotated_em_lower
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.low_negative_of_rotated_em_upper
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startupRotation_error
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.norm_startupRotation
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startupRotation_pos_iff
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.startupRotation_neg_iff
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.eulerMaclaurinApprox_factored
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rotated_em_factored
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rotated_em_error_of_prefix_and_last_power
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.low_positive_of_prefix_and_last_power
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.low_negative_of_prefix_and_last_power
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_0
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_1
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_2
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_3
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_4
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_5
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_6
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_7
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_8
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_9
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_10
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_11
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_12
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_13
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_14
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_15
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_16
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_17
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_18
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_19
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_20
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_21
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_22
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_23
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_24
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_25
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_26
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_27
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_28
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_29
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_30
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_31
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_32
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_33
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_34
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_35
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_36
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_37
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_38
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_39
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_40
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_41
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_42
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_43
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_44
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_45
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_46
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_47
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_48
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_49
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_50
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_51
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_52
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_53
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_54
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_55
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_56
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_57
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_58
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_59
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_60
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_61
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_62
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_63
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.bernoulli_data_64
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_0
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_1
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_2
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_3
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_4
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_5
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_6
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_7
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_8
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_9
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_10
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_11
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_12
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_13
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_14
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_15
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_16
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_17
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_18
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_19
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_20
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_21
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_22
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_23
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_24
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_25
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_26
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_27
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_28
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_29
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_30
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_31
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_32
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_33
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_34
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_35
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_36
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_37
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_38
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_39
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_40
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_41
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_42
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_43
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_44
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_45
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_46
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_47
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_48
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_49
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_50
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_51
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_52
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_53
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_54
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_55
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_56
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_57
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_58
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_59
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_60
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_61
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_62
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12570_63
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.emTailFactor_data_12570
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_0
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_1
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_2
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_3
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_4
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_5
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_6
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_7
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_8
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_9
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_10
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_11
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_12
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_13
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_14
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_15
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_16
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_17
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_18
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_19
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_20
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_21
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_22
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_23
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_24
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_25
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_26
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_27
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_28
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_29
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_30
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_31
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_32
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_33
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_34
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_35
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_36
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_37
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_38
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_39
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_40
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_41
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_42
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_43
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_44
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_45
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_46
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_47
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_48
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_49
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_50
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_51
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_52
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_53
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_54
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_55
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_56
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_57
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_58
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_59
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_60
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_61
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_62
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.rising_data_12580_63
+#print axioms LiuWang.Proof.Campaign20260915.ZetaLowWindowCertificate.emTailFactor_data_12580
