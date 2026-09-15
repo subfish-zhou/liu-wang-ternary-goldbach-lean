@@ -1,0 +1,44 @@
+import LiuWang.Proof.Campaign20260915.ZetaValidation.CentralZetaConsumer
+
+namespace LiuWang.Proof.Campaign20260915.ZetaValidation
+
+#check rsCentral_finite_contour_identity
+#check rsHankelTiltedC1_eq_sourceC2
+#check zeta_eq_source_sums_add_C2
+#check zeta_eq_source_local_truncation
+
+#print axioms central_exact_convex
+#print axioms central_exact_union
+#print axioms rsCentral_patches_open
+#print axioms rsCentral_patches_convex
+#print axioms rsCentralDomain_open
+#print axioms rsCentralDomain_kernel_analytic
+#print axioms rsCentralDomain_exact
+#print axioms rsCentralDomain_mem_iff
+#print axioms rsCentralDomain_mem_of_cut
+#print axioms rsHankel_exp_avoids_cut
+#print axioms rsCentral_arc_mem
+#print axioms rsCentral_ray_mem
+#print axioms rsCentral_right_mem
+#print axioms rsCentral_left_mem
+#print axioms rsCentral_horizontal_mem
+#print axioms rsCentralPrimitive_deriv
+#print axioms rsCentral_path_integral
+#print axioms rsCentral_line_integral
+#print axioms rsCentral_ray_integral
+#print axioms rsCentral_arc_integral
+#print axioms rsCentral_right_integral
+#print axioms rsCentral_left_integral
+#print axioms rsCentral_ray_endpoints
+#print axioms rsCentral_horizontal_integral
+#print axioms rsCentralCircularTruncation_primitive
+#print axioms rsCentralSourceTruncation_primitive
+#print axioms rsCentral_finite_contour_identity
+#print axioms rsCentralCircularTruncation_limit
+#print axioms rsCentralSourceTruncation_limit
+#print axioms rsHankelTiltedC1_eq_sourceC2
+#print axioms zeta_eq_source_sums_add_C2
+#print axioms zeta_eq_source_local_truncation
+#print axioms zeta_eq_C2_local_split
+
+end LiuWang.Proof.Campaign20260915.ZetaValidation
