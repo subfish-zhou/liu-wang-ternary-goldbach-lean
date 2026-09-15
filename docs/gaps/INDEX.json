@@ -1,0 +1,815 @@
+{
+  "target": "Odd N and Real.exp 3100 ≤ (N : ℝ) imply three odd prime summands, repetitions allowed.",
+  "count_semantics": "Work packages: not independent lemmas; cumulative-count source issues retained. Shared consumers are mapped, not counted repeatedly.",
+  "counts": {
+    "substantive_work_packages": 18,
+    "literal_source_intermediate_inputs": 2,
+    "wiring_packages": 7,
+    "alternative_budget_records": 1,
+    "additional_source_checks": 4,
+    "outside_original_target": 1,
+    "raw_records": 43
+  },
+  "substantive": [
+    {
+      "id": "M01",
+      "title": "Chen 非主字符的原全族零密度界",
+      "description": "严格左边界、闭高度、普通字符全族与解析重数；统一供给 T7、hseven 等。",
+      "raw_ids": [
+        "DE-DENS-CHEN",
+        "ZS-T7",
+        "MINOR-T7"
+      ]
+    },
+    {
+      "id": "M02",
+      "title": "主字符 Gamma 低高度严格界",
+      "description": "移位2的 Gamma 差分在 |t|<1 的原 0.0615 界。",
+      "raw_ids": [
+        "DE-EX-GAMMA-LOW",
+        "ZS-GAMMA-LOW"
+      ]
+    },
+    {
+      "id": "M03",
+      "title": "主字符 Gamma 高高度严格界",
+      "description": "移位2的 Gamma 差分在 |t|≥1 的 κ log|t|+0.3316 界。",
+      "raw_ids": [
+        "DE-EX-GAMMA-HIGH",
+        "ZS-GAMMA-HIGH"
+      ]
+    },
+    {
+      "id": "M04",
+      "title": "ζ 零点的有限高度验证",
+      "description": "临界带内 |Imρ|<1894438 的零点须在临界线上；不是整数 totient 比值界。",
+      "raw_ids": [
+        "ZS-RS"
+      ]
+    },
+    {
+      "id": "M05",
+      "title": "原 c1 零区域与例外分支的完整覆盖",
+      "description": "c1=9.645908801；从任意原窗零点作分类，覆盖无实种子、非实零、各移动高度。LocalC1Data 还共同依赖 M07。",
+      "raw_ids": [
+        "DE-EX-ORIGINAL-REGION",
+        "ZS-LOW-SHORT",
+        "ZS-LOW-COMPLEX",
+        "MA-LOW",
+        "M3-LOCAL-C1",
+        "M3-HIGH-LOCAL-REGION",
+        "M2-C1-TAIL-SOURCE"
+      ]
+    },
+    {
+      "id": "M06",
+      "title": "原 Rosser–Schoenfeld totient–ν 界",
+      "description": "证明实际整数 q/φ(q) 的原 ν 上界，正确单独处理小 q；ν 的单调性不能代付。",
+      "raw_ids": [
+        "MA-RS",
+        "MINOR-NU-TOTIENT"
+      ]
+    },
+    {
+      "id": "M07",
+      "title": "原区域内例外导子的完整小范围排除",
+      "description": "仍需供给 conductor≥987；已覆盖小段与孤立例子不算覆盖全部小导子。",
+      "raw_ids": [
+        "MA-SMALL",
+        "M3-LOCAL-C1"
+      ]
+    },
+    {
+      "id": "M08",
+      "title": "高零和的实际短高度积分转移",
+      "description": "保留真实 φ(q)、积分端点及 transferRemainder；原 .00197 标量已证但转移未闭。",
+      "raw_ids": [
+        "ZS-HIGH-SHORT",
+        "MA-HIGH"
+      ]
+    },
+    {
+      "id": "M09",
+      "title": "高零和的 zeroTail 残项",
+      "description": "λ从0开始的累计计数积分，不在已付有限K3中；须按原路线核清并处理。",
+      "raw_ids": [
+        "ZS-HIGH-ZEROTAIL",
+        "MA-HIGH"
+      ]
+    },
+    {
+      "id": "M10",
+      "title": "第二弧原低段 0.0000076 积分预算",
+      "description": "originalLowScalar(3100) 固定证书及全部实 L≥3100 的统一上界；旧实际低段强界不是此原积分界。",
+      "raw_ids": [
+        "M2-ORIGINAL-LOW-SCALAR"
+      ]
+    },
+    {
+      "id": "M11",
+      "title": "第二弧原 (5.17) 最末稀疏带预算",
+      "description": "保持两指数的有号差及原对数积分，不能拿 (5.16) 的不同衰减率代付。",
+      "raw_ids": [
+        "M2-LAST-STRIP-SCALAR"
+      ]
+    },
+    {
+      "id": "M12",
+      "title": "第二弧原截断端点预算",
+      "description": "含 endpointDensityBound 和 14000 的完整右端尚未得到原预算终端。",
+      "raw_ids": [
+        "M2-ENDPOINT-SCALAR"
+      ]
+    },
+    {
+      "id": "M13",
+      "title": "第三弧中高度端点预算",
+      "description": "sigma5 在 U=10πL⁷/q 的 countIntegral 端点，不是已付 T=L¹⁵ 端点。",
+      "raw_ids": [
+        "M3-MIDDLE-ENDPOINT"
+      ]
+    },
+    {
+      "id": "M14",
+      "title": "第三弧中高度内积分预算",
+      "description": "sigma5 原 [10000π,U] 积分的密度项、近一表价及边界处理。",
+      "raw_ids": [
+        "M3-MIDDLE-HEIGHT"
+      ]
+    },
+    {
+      "id": "M15",
+      "title": "第三弧高段 sourceM5 预算",
+      "description": "保留原 q、权和区间 [U,T]；sourceM6 的 6e−9 不能代付 bulk。",
+      "raw_ids": [
+        "M3-HIGH-M5"
+      ]
+    },
+    {
+      "id": "M16",
+      "title": "第三弧密度高度门的合法应用",
+      "description": "已有原整数域 U<10000 log q 的见证；须按原文核清欠缺区间的合法分段/输入，不能缩域。",
+      "raw_ids": [
+        "M3-DENSITY-DOMAIN-SOURCE"
+      ]
+    },
+    {
+      "id": "M17",
+      "title": "正高度带与累计计数中的实零尾处理",
+      "description": "第二弧截断尾及第三弧 sourceHighRealTail 不能因真实正高度带无实零而直接删去；与 M05 分类共同处理。",
+      "raw_ids": [
+        "M2-C1-TAIL-SOURCE",
+        "M3-HIGH-REAL-TAIL-SOURCE"
+      ]
+    },
+    {
+      "id": "M18",
+      "title": "例外主弧普通余项的原有符号总预算",
+      "description": "当前 hordinary 的 −9e−8 N² 是现有合装的充分预算，不冒称原文必须满足这一加强值。",
+      "raw_ids": [
+        "MA-ORDREM"
+      ]
+    }
+  ],
+  "literal_source_intermediates": [
+    {
+      "id": "P01",
+      "title": "Chen (24), k=1 的字面均方输入",
+      "raw_ids": [
+        "DE-DENS-CHEN24"
+      ],
+      "note": "Original intermediate expression unpaid; its terminal bound has another proved producer."
+    },
+    {
+      "id": "P02",
+      "title": "Chen Lemma 14 的字面右线输入",
+      "raw_ids": [
+        "DE-DENS-CHEN14"
+      ],
+      "note": "Original intermediate expression unpaid; its terminal bound has another proved producer."
+    }
+  ],
+  "wiring": [
+    {
+      "id": "W01",
+      "title": "把已证更强主字符密度界接入 principalSevenBound",
+      "raw_ids": [
+        "ZS-T7"
+      ]
+    },
+    {
+      "id": "W02",
+      "title": "把已证二零定理接入第二弧 htwo",
+      "raw_ids": [
+        "M2-T2-ADAPTER"
+      ]
+    },
+    {
+      "id": "W03",
+      "title": "把已证 ν 单调性接入第三弧 M6",
+      "raw_ids": [
+        "M3-NU-MONOTONE-ADAPTER"
+      ]
+    },
+    {
+      "id": "W04",
+      "title": "宽 PaperSource 六项到原例外整主弧的合装",
+      "raw_ids": [
+        "MA-PAPER-ASSEMBLY"
+      ]
+    },
+    {
+      "id": "W05",
+      "title": "原第二弧的完整包与弧终端合装",
+      "raw_ids": [
+        "M2-ORIGINAL-ASSEMBLY"
+      ]
+    },
+    {
+      "id": "W06",
+      "title": "原第三弧各段到同一有理弧见证的合装",
+      "raw_ids": [
+        "M3-ORIGINAL-ASSEMBLY"
+      ]
+    },
+    {
+      "id": "W07",
+      "title": "主定理最终圆法/素数幂/正性接线",
+      "raw_ids": [
+        "ROOT-ANALYTIC-ASSEMBLY",
+        "ROOT-RESIDUAL"
+      ]
+    }
+  ],
+  "alternative_budgets": [
+    {
+      "id": "B01",
+      "title": "当前 no_RS 辅助路线的 1/3 有限头 4.01 预算",
+      "raw_ids": [
+        "MA-QHEAD"
+      ],
+      "note": "Not a newly imposed necessary lemma of the original proof; original I13 arithmetic still needs its actual final consumer."
+    }
+  ],
+  "source_checks": [
+    {
+      "id": "S01",
+      "title": "Chen 密度与字面中间式的原文归属/量词核查",
+      "raw_ids": [
+        "DE-SOURCE-CHECK-DENSITY"
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "McCurley Gamma 与原 c1 窗的原文严格边界核查",
+      "raw_ids": [
+        "DE-SOURCE-CHECK-EXCEPTION"
+      ]
+    },
+    {
+      "id": "S03",
+      "title": "原 (2.29) 印式核查；不抹去现有 (2.28) 推论",
+      "raw_ids": []
+    },
+    {
+      "id": "S04",
+      "title": "原 (2.37) 印式及单独 .00006 数值归属核查",
+      "raw_ids": []
+    }
+  ],
+  "outside_original_target": {
+    "id": "OUTSIDE-SMALL-RANGE",
+    "description": "如果目标扩大到全部≥9的奇数，还缺1000<N<exp3100的覆盖；这不属于当前原论文大数定理的缺口。",
+    "source": "LiuWang/Proof/FiniteTernaryClosure/Analytic.lean:43",
+    "consumer": "LiuWang.Proof.FiniteTernaryClosure.threeOddPrimes_on_certified_union",
+    "assumptions": [
+      "hdomain"
+    ],
+    "kind": "outside_original_target"
+  },
+  "raw_records": {
+    "DE-DENS-CHEN": {
+      "id": "DE-DENS-CHEN",
+      "description": "Chen 非主字符原密度上界尚未提供：严格左边界、闭高度窗、全部非主字符及普通 L 函数解析重数。当前闭窗转换与 T7 合账只是消费者。整族乘积/Jensen 路线仍落在实际 familyMean、familyMaximum 或 diskEnergy，不是此数值上界；这些受阻下游不另计缺口。",
+      "source": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/FamilyAssembly.lean:130",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.complete_family_sourceSeven_from_original_inputs; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.closed_nonprincipal_of_chen",
+      "assumptions": [
+        "同一 q≠0、y≥max(100000/q,10000 log q)；q≥3 时须 ∀β∈[1/2,1), strictNonprincipalCount(q,β,y)≤(250359/log(qy)+5700)(q³y⁴)^(1−β)log(qy)^(6β)。",
+        "原函数定义及边界：LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenBoundary.lean:21；原式系数：同文件:59。不能只证明 primitive 字符子族，也不能用较窄 α 区间代替全部消费者区间。",
+        "同树低 α 全族密度已有生产者；非主高 α 定量输入未找到无条件生产者。主字符 hprincipal 另有同域更强生产者，见 closed_examples，不列缺口。"
+      ],
+      "kind": "数学输入未提供"
+    },
+    "DE-DENS-CHEN24": {
+      "id": "DE-DENS-CHEN24",
+      "description": "Chen (24), k=1 的字面 mollifier 均方估计仍作为 hchen24 传入。此项是原证明过程的未付输入，不是声称 Lemma 3.4 或 Lemma 3.5 的结论无人证明。",
+      "source": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Critical336/Consumer.lean:54",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.Critical336.lemma_3_5_at_source_shift_with_zeta_paid; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.Critical336.lemma_3_4_with_zeta_paid; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.MeanBudgets.equation_3_44",
+      "assumptions": [
+        "y≥10000 log 6；∀u≥0, ∫[-yu,yu] ‖Q(y,1/2+it)‖² dt ≤ y(2.19021u+2.906)log y；source-shift 消费者从其原高度条件推出该 y 域。",
+        "Q 必须保留同一严格实 cutoff；常数、u 的无界量词不可改。",
+        "已有 Sharp.Q_mean_sieved / sieved_mean_budget 给出较粗的 Q 均方界，并足以直接证明相同 Lemma 3.4 终点，但不等于这里的 Chen (24) 合同。对应生产者：LiuWang/Proof/GlobalZeroDensity/Sharp/SievedMean.lean:86、:97、:116。"
+      ],
+      "kind": "原文中间输入未提供（终点另已证）"
+    },
+    "DE-DENS-CHEN14": {
+      "id": "DE-DENS-CHEN14",
+      "description": "Chen Lemma 14 的原右线均方输入 hchen14 未提供；加权积分、核矩、插值消费者已实现。既有直接加权右端估计和 Lemma 3.5 不可被标成重新证明了这一全 u 的原输入。",
+      "source": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Critical336/Consumer.lean:57",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.Critical336.lemma_3_5_at_source_shift_with_zeta_paid; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.MeanBudgets.equation_3_45; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.MeanBudgets.equation_3_46",
+      "assumptions": [
+        "y≥10000 log 6；δ(y)=1/(1.5 log y)；∀u≥0, M(y,1+δ(y),yu)≤(67.929+0.0003u)log(y)^5。",
+        "LiuWang/Proof/GlobalZeroDensity/MeanInterpolation/RightMean.lean:115 给出另一条线性上界；WeightedRight.lean:114 已证所需加权右端 90.5727 log(y)^5，但不提供此字面未加权窗口输入。"
+      ],
+      "kind": "原文中间输入未提供（终点另已证）"
+    },
+    "DE-EX-GAMMA-LOW": {
+      "id": "DE-EX-GAMMA-LOW",
+      "description": "主字符/ζ 的 McCurley 低高度 Gamma 差分严格估计未提供。δ=2 的 gammaTerm 不可用普通非主字符 δ=0/1 的 Gamma 估计替代；低高度全窗也不能由 t=0 一点代替。",
+      "source": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrincipalIdentity.lean:67",
+      "consumer": "LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l24_low_of_gamma_estimate",
+      "assumptions": [
+        "1<σ<1.15；∀|u|<1, gammaTerm(2,σ,u)<0.0615。",
+        "gammaTerm 定义：LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/ZeroTransport.lean:83；保留 K=1/√5 及 Stechkin σ₁。",
+        "同树 Sharp.shiftedGamma_real_bound 只覆盖 t=0；Sharp.shiftedGamma_all_height 的一般费用尚不足以支付原严格低估计。LiuWang/Proof/ZeroRegionFamily/Sharp/Principal.lean:82、:100。LowSum 的 hgammaLow 是同一输入的另一种写法，不另计。"
+      ],
+      "kind": "数学输入未提供"
+    },
+    "DE-EX-GAMMA-HIGH": {
+      "id": "DE-EX-GAMMA-HIGH",
+      "description": "主字符/ζ 的 McCurley 高高度 Gamma 差分严格估计未提供。principalEulerDifference、有号完整零点和与极点项的处理均已提供，但这些恒等式不支付 0.3316。",
+      "source": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrincipalIdentity.lean:80",
+      "consumer": "LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l24_high_of_gamma_estimate",
+      "assumptions": [
+        "1<σ<1.15，1≤|t|；gammaTerm(2,σ,t)<κ log|t|+0.3316，κ=(5−√5)/10。",
+        "已有 Sharp.shiftedGamma_all_height 保留较大费用 23/40−11K/30，不能当作此严格常数。LowSum 的 gammaHalfDifference、高估计 hgammaHigh 与本项同一对象（展开后），应合并。"
+      ],
+      "kind": "数学输入未提供"
+    },
+    "DE-EX-ORIGINAL-REGION": {
+      "id": "DE-EX-ORIGINAL-REGION",
+      "description": "原 c1=9.645908801 区域的无预给实种子分类/非实零排除仍未由当前 Exception 消费者提供。固定真实二次例外源后，跨字符、跨模数唯一性和单重性已经证明；未付的是从任意原窗口零点出发的完整原域输入，尤其无例外分支及移动高度的非实尾部，绝不是必须无条件存在一个例外零。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/RealTail.lean:87",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.equation_5_42_with_real_tail; LiuWang.Proof.SourceRoute.LowSum.Continuation.Restart.original_low_sum_of_short_absence; LiuWang.Proof.SourceRoute.Exception.Restart.paper_source_original_zero_iff（仅提供已有实源分支）",
+      "assumptions": [
+        "移动高度实际消费 hlocal：∀y∈[middleHeight(N,q),sourceT(N)], ∀χ,ρ，Lχ(ρ)=0、0<Reρ<1、|Imρ|≤y、1−1/(c1 log(qy))<Reρ ⇒ Imρ=0。不能从给定 datumL(d,β)=0 的 fixed_source_characterization 得出它。",
+        "低模数消费者还需 hshort（短原窗无零的分支条件）及 hcomplex：paperCap≤Reρ 且 Imρ≠0 时 Reρ≤cap(N,1/c1)。hshort 本身可作为无例外分支条件，不把它当成需全局成立的定理；关键是原域分类及高窗非实零估计。见 LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/NoExceptionAssembly.lean:109。",
+        "原 R24/R20 生产者、固定实源 Restart.Family、低高度三次/二次特殊分支各有真证明，但不足以替换完整原区域。原严格/闭边界须分别处理；不要求把严格源区域擅自加强为闭区域无条件无零。"
+      ],
+      "kind": "原域覆盖输入未提供（跨模块共享）"
+    },
+    "DE-SOURCE-CHECK-DENSITY": {
+      "id": "DE-SOURCE-CHECK-DENSITY",
+      "description": "SOURCE_CHECK：Chen 原密度定理的完整假设尚未从当前树所含原文证据核定；同时需核 Chen (24), k=1 与 Lemma 14 到 LWD 原证明链的准确归属、常数、截断及量词。该项是来源验收，不是重复计算前述数学不等式。",
+      "source": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenBoundary.lean:5",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.closed_nonprincipal_of_chen; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.complete_family_sourceSeven_from_original_inputs; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.Critical336.lemma_3_5_at_source_shift_with_zeta_paid",
+      "assumptions": [
+        "源码明确写 Chinese original p.687，且 supplied transcription does not settle every hypothesis。LWD p.285 Lemma 3.4 及 Chen (24) 的归属见 LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/CriticalMean.lean:7；LWD p.288 合账见 LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/FamilyAssembly.lean:5。",
+        "当前主树未含 PDF/TeX 原文；本次仅检视源码注释及定理类型，未逐页检查文献。SOURCE_CHECK 为本报告类别，不声称该 Lean 文件中存在同名字面标记。",
+        "即使同域更强库生产者已支付目标不等式，也不能据此宣称陈述完全遵循原证明或原文全验证。"
+      ],
+      "kind": "SOURCE_CHECK"
+    },
+    "DE-SOURCE-CHECK-EXCEPTION": {
+      "id": "DE-SOURCE-CHECK-EXCEPTION",
+      "description": "SOURCE_CHECK：LWD (2.4)–(2.8)、McCurley Gamma 输入与原 c1 区域的来源及严格边界仍需原文逐式核对。本树的恒等式、传输和固定实源分类不构成原页已验证的证据。",
+      "source": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrincipalIdentity.lean:3",
+      "consumer": "LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l24_low_of_gamma_estimate; LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l24_high_of_gamma_estimate; LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l25_induced_of_gamma_estimate; LiuWang.Proof.SourceRoute.Exception.Restart.paper_source_original_zero_iff",
+      "assumptions": [
+        "完整零点和的源码归属见 LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/ZeroTransport.lean:5；LWD (2.5)–(2.6) 及两个 McCurley 输入见 LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrincipalIdentity.lean:3。",
+        "需要核普通 L 函数重数、导出字符 Euler 修正符号、δ=0/1 与 δ=2、σ∈(1,1.15)、|t|<1 与 |t|≥1、原 c1 窗与种子量词；当前树没有原文扫描证据。",
+        "docs/STATUS.md:20 的字面 SOURCE_CHECK 具体指 (2.29)、(2.37)，属 LowSum 等模块，列在 coverage 中交叉引用，不伪装成本目录已定位的同名印式缺口。"
+      ],
+      "kind": "SOURCE_CHECK"
+    },
+    "ZS-GAMMA-HIGH": {
+      "id": "ZS-GAMMA-HIGH",
+      "description": "主字符移位 Gamma 的高虚部严格界；全部八种三零组合及严格/闭边界 T1 重复消费同一输入，合并计一次。",
+      "source": "LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/OriginalV1/CountCap/Counts.lean:33",
+      "consumer": "LiuWang.Proof.SourceRoute.LowSum.Continuation.Restart.OriginalV1.CountCap.original_T1_strict_family_le_four",
+      "assumptions": [
+        "对所需的每个 x≥8000000000，∀t∈ℝ，1≤|t| → gammaHalfDifference (lwdSourceSigma x) t < stechkinConductorCoeff·log|t|+0.3316。具体前提在同文件:37。",
+        "令 κ=stechkinConductorCoeff，k=stechkinK，A(x)=(√3−1)/(7κ+2.4998/log x)，σ(x)=1+A(x)/log x。gammaHalfDifference σ t=(Re digamma((σ+it)/2+1)−k Re digamma((stechkinSigma σ+it)/2+1))/2。定义分别见 LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/OriginalV1/CaseIV.lean:15、18 与 LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/OriginalV1/PrincipalCases/Kernels.lean:14。",
+        "源参数定理 LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/OriginalV1/CaseIV.lean:20 已给 1<σ(x)≤1.02，不另算域缺口；HighSum 所需为每个高度 y 的 x=q*y。",
+        "同树 LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrincipalIdentity.lean:78 的 gammaTerm 2 仍以同型 hgamma 为前提。函数经代数改写与此 +1 移位一致，kappa_eq 也已有，但这不是分析生产者。",
+        "LiuWang/Proof/ZeroRegionFamily/Sharp/Gamma.lean:92 的 gammaDifferenceAt 只有奇偶位移 0/1，不是这里的位移2；其4/15或非主字符0.3918界不能直接替代。全树检索未见此严格界的无额外分析前提生产者。"
+      ],
+      "kind": "未付解析输入"
+    },
+    "ZS-GAMMA-LOW": {
+      "id": "ZS-GAMMA-LOW",
+      "description": "主字符移位 Gamma 的 |t|<1 严格常数界；不同于高虚部界，也不同于短高度零点排除。",
+      "source": "LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/OriginalV1/CountCap/Counts.lean:33",
+      "consumer": "LiuWang.Proof.SourceRoute.LowSum.Continuation.Restart.OriginalV1.CountCap.original_T1_strict_family_le_four",
+      "assumptions": [
+        "对每个所需 x≥8000000000，∀t∈ℝ，|t|<1 → gammaHalfDifference (lwdSourceSigma x) t < 0.0615。参数与函数严格同 ZS-GAMMA-HIGH；具体前提在同文件:39。",
+        "非严格的 PrincipalCases/FarHeight.lwd_case_ii（LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/OriginalV1/PrincipalCases/FarHeight.lean:74）可由严格版本供给，不重复计数。",
+        "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrincipalIdentity.lean:65 的 l24_low_of_gamma_estimate 同样保留 hgamma。Sharp/Gamma 的奇偶界不支付此移位2的0.0615界。"
+      ],
+      "kind": "未付解析输入"
+    },
+    "ZS-RS": {
+      "id": "ZS-RS",
+      "description": "有限高度 ζ 零点验证输入；所有主字符槽的 Riemann–Siegel 型使用合并为一次。",
+      "source": "LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/OriginalV1/CountCap/Counts.lean:33",
+      "consumer": "LiuWang.Proof.SourceRoute.LowSum.Continuation.Restart.OriginalV1.CountCap.original_T1_strict_family_le_four",
+      "assumptions": [
+        "∀z∈ℂ，riemannZeta z=0 → 0<z.re → z.re<1 → |z.im|<1894438 → z.re=1/2。高度与临界带端点均按严格不等式保留；同文件:35。",
+        "LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/OriginalV1/CountedTriples/SelectedCosts.lean:15 的 principal_slot_RS 只将此假设变成非临界线主字符槽 |Imρ|≥1894438，不是验证本身。",
+        "全树当前可读项目源码检索未见该高度的无前提证明或可读验收证书生产者；AxiomCheck 中 #check/#print 指令不作为本次运行证据。"
+      ],
+      "kind": "未付外部验证输入"
+    },
+    "ZS-T7": {
+      "id": "ZS-T7",
+      "description": "原 T7 全字符族密度输入尚未闭合；endpoint、(2.26)、Source20、HeightCases 的相同 hT7 合并。追生产者后主要未付分析边为 Chen 非主字符族，主字符已有足够强的生产者待适配。",
+      "source": "LiuWang/Proof/SourceRoute/HighSum/Continuation/Payment/Checked/Restart/OriginalV1/HeightCases/Assembly.lean:33",
+      "consumer": "LiuWang.Proof.SourceRoute.HighSum.Continuation.Payment.Checked.Restart.OriginalV1.HeightCases.highSum_small_height",
+      "assumptions": [
+        "实际 hT7：∀α,y∈ℝ，1/2≤α → α<1 → max(100000/q,10000 log q)≤y → familyCount q α y ≤ B7(q,α,y)。全体模 q 字符、闭实部左边界、闭高度、实际零重数；不除以φ(q)。",
+        "B7=16541(log y)^6+(17102+254231/log(qy))(q^3 y^4)^(1−α)(log(qy))^(6α)；LiuWang/Proof/DirichletZeroCount/Applications/LowAlpha.lean:15。",
+        "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/FamilyAssembly.lean:107 的 family_sourceSeven_from_original_inputs 将它归约成 hprincipal、hchen。hchen：3≤q → ∀β∈[1/2,1)，strictNonprincipalCount q β y ≤ (250359/log(qy)+5700)(q^3 y^4)^(1−β)(log(qy))^(6β)。其严格实部左界、闭高度、实际重数定义在 LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenBoundary.lean:21，bound在:59，:98仅作严格到闭边界运输，不证明此分析估计。",
+        "hprincipal 目标为 count(1:Character 1) α y ≤ 16541(log y)^6+11402 y^(4(1−α))(log y)^(6α)+3872 y^(4(1−α))(log y)^(8α−3)，仅在 α≥1/2+2 sourceDelta y 时需要。",
+        "现成 LiuWang/Proof/GlobalZeroDensity/MeanInterpolation/Continuation/OrdinaryBudget.lean:112 给 7000 y^(4(1−α))(log y)^(6α)+51(log y)^3。LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/AuxiliaryDomain.lean:31 已证 sourceDelta=Strip.delta。y≥10000 时 log y≥1，7000≤11402、51(log y)^3≤16541(log y)^6且剩余项非负，故足以支付hprincipal；只剩标量适配，未写/未编译该适配器。此复用不自动验收原论文内部每一箭头。",
+        "低α族界已有 LowAlpha.lean:89；q=1,2 非主族为空。不能用主字符计数≤B7冒充完整族和≤B7。ChenBoundary.lean:4 的原文假设核查提醒保留为 SOURCE_CHECK。"
+      ],
+      "kind": "未付解析输入及待接线"
+    },
+    "ZS-LOW-SHORT": {
+      "id": "ZS-LOW-SHORT",
+      "description": "LowSum 无例外消费路径的短高度排除/分支证据尚未全面接上；不是要求对所有 q 无条件排除例外零。",
+      "source": "LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/NoExceptionAssembly.lean:109",
+      "consumer": "LiuWang.Proof.SourceRoute.LowSum.Continuation.Restart.original_low_sum_of_short_absence",
+      "assumptions": [
+        "N≥exp3100、0<q≤P 下，需要 ∀χ:Character q，∀ρ∈CompleteExpansion.zeroValues χ ω，|ρ.im|≤P/q → ρ.re<paperCap N，其中 paperCap=1−1/(9.645908801 log P)。hshort在同文件:111；与 |t|<1、ζ高度1894438均不同。",
+        "必须从所处的实际无例外分支获得此闭短窗中的无零证据；hN、hq本身不提供它。不能抹去已有例外源。",
+        "现成 LiuWang/Proof/SourceRoute/Exception/Restart/PaperApplication.lean:30 在给定 PaperSource N d e 且 ¬d.modulus∣q 时，提供同短窗非零结论；用零成员条件ρ.re<1排除pole后可供hshort。这个特定分支只需接线，不再新开分析缺口；一般无源分支没有在此消费文件中被生产/接入。",
+        "给定PaperSource且d.modulus∣q的分支已由 LiuWang/Proof/SourceRoute/LowSum/Continuation/InducedException.lean:43 支付 primed bound；PaperSource存在与否是分支数据，不能按假设名字自动计缺口。"
+      ],
+      "kind": "分支数学输入及待接线"
+    },
+    "ZS-LOW-COMPLEX": {
+      "id": "ZS-LOW-COMPLEX",
+      "description": "LowSum 高实部非实种子的原 c1 截断界；同树已有较弱/分支区域不足以支付全部范围。",
+      "source": "LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/NoExceptionAssembly.lean:109",
+      "consumer": "LiuWang.Proof.SourceRoute.LowSum.Continuation.Restart.original_low_sum_of_short_absence",
+      "assumptions": [
+        "N≥exp3100、0<q≤P 下，需要 ∀χ:Character q，∀ρ∈CompleteExpansion.zeroValues χ ω，paperCap N≤ρ.re → ρ.im≠0 → ρ.re≤cap N (1/9.645908801)。hcomplex在同文件:113；cap N a=1−a/log(3.36P)。输入paperCap用log P，输出cap用log(3.36P)，不能混淆。",
+        "同文件:85的完整hc1由hshort+hcomplex经original_high_seed_nonreal合成；hc1、family_tail_exhaustive、original_low_sum_exhaustive、最终0.0194/L和Jrho界都是下游，不另外计数。",
+        "LiuWang/Proof/ZeroRegionFamily/Sharp/Consumer.lean:10 仅R20且χ≠1、非二次或|Imρ|≥1/2；LiuWang/Proof/ZeroRegionFamily/ApplicationScale/Continuation/Frontier/LowHeight.lean:79 仅原常数下二/三阶小高度分支，均不覆盖全部字符/所需非实高度。",
+        "LiuWang/Proof/SourceRoute/Exception/PaperWindow.lean:27 的原种子排斥只限制别的、非共轭零，不限制种子自身实部，不能当hcomplex生产者。"
+      ],
+      "kind": "未付零区域输入"
+    },
+    "ZS-HIGH-ZEROTAIL": {
+      "id": "ZS-HIGH-ZEROTAIL",
+      "description": "HighSum 仍带从λ=0起的 zeroTail；有限K3付款未覆盖这段，保留 SOURCE_CHECK。",
+      "source": "LiuWang/Proof/SourceRoute/HighSum/Continuation/Payment/Checked/Restart/OriginalV1/HeightCases/Assembly.lean:15",
+      "consumer": "LiuWang.Proof.SourceRoute.HighSum.Continuation.Payment.Checked.Restart.OriginalV1.HeightCases.highSum_large_height",
+      "assumptions": [
+        "zeroTail N q = ∫_{ω}^{T} y^(−2)[L/log(qy)·∫_{0}^{1/9.645908801} N^(−λ/log(qy)) familyCount q (1−λ/log(qy)) y dλ]dy；字面式 LiuWang/Proof/SourceRoute/HighSum/Continuation/Payment/Checked/Restart/OriginalV1/Source3536/Payment.lean:91。",
+        "finiteK3区间是[1/9.645908801,0.36]，其0.0102654 q/L^4已有条件于T1的付款。original_height_zero_tail只做精确分拆，未付zeroTail预算。",
+        "这里的familyCount计入|Imρ|≤y全部零，包括低高度/实零；即使highValues排除了低高度，这个分部求和后计数也不是过滤后的highValues。不能从例外源实性或文件名推出zeroTail=0。",
+        "需要原路线对该实际积分的源核、补偿或定量控制；当前消费者没有给出并证明此段独立预算。本表不另造zeroTail=0或任意余量目标。ZS-LOW-COMPLEX即使补上，也不等于此全族尾积分已付。"
+      ],
+      "kind": "未付残项及SOURCE_CHECK"
+    },
+    "ZS-HIGH-SHORT": {
+      "id": "ZS-HIGH-SHORT",
+      "description": "(2.25)实际短高度积分到(2.27)印式预算的归一化转移未付；印式数值证书本身已付。",
+      "source": "LiuWang/Proof/SourceRoute/HighSum/Continuation/Payment/Checked/Restart/OriginalV1/Source27/Difference.lean:101",
+      "consumer": "LiuWang.Proof.SourceRoute.HighSum.Continuation.Payment.Checked.Restart.OriginalV1.Source27.actualShort_le_literal_add_remainder",
+      "assumptions": [
+        "短分支ω<q1=max(100000/q,10000 log q)。actualShort=∫_{ω}^{q1} y^(−2)∫_{19/20}^{1−0.478/log(qy)} N^(α−1)L familyCount q α y dα dy；LiuWang/Proof/SourceRoute/HighSum/Continuation/Payment/Checked/Restart/OriginalV1/Source27/Normalization.lean:16、36。与ZS-LOW-SHORT逐零排除不是同一输入。",
+        "现成确切上界actualShort≤(q/L^4)exactEnvelope；exactEnvelope=∫_{log(3.36L^3)}^{log(q q1)}K ds；K=L^4[(φ/q)(s/π−0.874)+φ(6.8423s+15)e^(−s)](e^(−0.478L/s)−e^(−L/20))，φ=φ(q)。Normalization.lean:27、106 保留实际φ。",
+        "已付印式scalar(L)=∫_{log(3.36L^3)}^{log(10000L^3 log(L^3))}I ds≤197/100000；I=L^4[s/π−0.874+(6.8423s+15)e^(−s)/700000]e^(−0.478L/s)。LiuWang/Proof/SourceRoute/HighSum/Continuation/Payment/Checked/Restart/OriginalV1/Source27/Literal.lean:14、37、44。",
+        "精确桥exactEnvelope=scalar+transferRemainder，R=∫_{lower}^{log(q q1)}(K−I)ds−∫_{log(q q1)}^{upper}I ds；Difference.lean:11、19、84。最新上界仍带R，实际短积分到印式0.00197 q/L^4的箭头没有支付；不把较强的R≤0或点态支配当作已知或额外必需任务。",
+        "Difference.lean:110、117、125、133给φ/q≤1、1/q≤1/700000<φ(q)，主系数差非正而指数系数差严格正。不能把φ偷换成1/q，也不能由一个正项判定含负端点/尾段的完整R符号或论文定理错误；保留SOURCE_CHECK，不修印式。",
+        "同一个实际短积分在 LiuWang/Proof/SourceRoute/HighSum/Continuation/Payment/Checked/Restart/OriginalV1/HeightCases/Assembly.lean:43、LiuWang/Proof/SourceRoute/HighSum/Continuation/Payment/Checked/Restart/OriginalV1/Source20/Payment.lean:37 等下游重复出现，不另外计数。"
+      ],
+      "kind": "未付转移及SOURCE_CHECK"
+    },
+    "MA-LOW": {
+      "id": "MA-LOW",
+      "description": "普通支低零和的实际分支输入仍须交付并接到主弧；不能把消费者对全部 q 的 hlow 当作无条件定理。已有 original_low_sum_exhaustive 把低和归约到高实部种子的 c1 上界，original_low_sum_of_short_absence 另显式保留短窗无零 hshort 与非实种子 hcomplex。低和算术积分与种子分支不应重新计成主弧独立缺口。",
+      "source": "LiuWang/Proof/SourceRoute/MajorOrdinary/Continuation/IntegralCertificates/FiniteHeads/Restart/QuadraticArithmetic.lean:189",
+      "consumer": "LiuWang.Proof.SourceRoute.MajorOrdinary.Continuation.IntegralCertificates.FiniteHeads.Restart.ordinary_major_lower_of_finite_head；LiuWang.Proof.SourceRoute.MajorOrdinary.Continuation.IntegralCertificates.FiniteHeads.Restart.OriginalV1.I12_original_arithmetic_consumer",
+      "assumptions": [
+        "N ≥ exp(3100)，Odd N，∀q∈denominators(sourceP N)，lowWeightSum N q ≤ 0.0194/sourceL N。",
+        "共同上游消费者：LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/NoExceptionAssembly.lean:83 的 original_low_sum_exhaustive 仍要求 hc1；:109 的 original_low_sum_of_short_absence 要求 hshort、hcomplex。",
+        "lowWeightSum 是 sourceT 截断后再取 |Im ρ|≤omegaCutoff 的有限和；须用同树 values_low_eq_filter/omegaCutoff_le_sourceT 桥接 lowSum，不能忽略截断及重数。",
+        "本记录按共同上游边界记账，不断言该边界内所有局部零区间/计数引理均缺失。"
+      ],
+      "kind": "共同上游／原证明分支输入与连接"
+    },
+    "MA-HIGH": {
+      "id": "MA-HIGH",
+      "description": "原门槛 N≥exp(3100) 下统一 highSum ≤0.0126 q/L^4 尚未在本次定位的实际消费者链中封口。最新 Source3536 消费者仍带 Theorem 7 密度输入、随高度一致的谱分支，以及 zeroTail；小高度支还留实际双积分。它是普通主弧和例外主弧共享的高零和输入，不是第二或第三整弧估计。",
+      "source": "LiuWang/Proof/SourceRoute/MajorException/Continuation/CriticalCertificate/SourceConsumption/Restart/Consumer.lean:91",
+      "consumer": "LiuWang.Proof.SourceRoute.MajorException.Continuation.CriticalCertificate.SourceConsumption.Restart.caseII_of_original_low_high_and_ordinary；LiuWang.Proof.SourceRoute.MajorOrdinary.Continuation.IntegralCertificates.FiniteHeads.Restart.ordinary_major_lower_of_finite_head；LiuWang.Proof.SourceRoute.MajorException.Continuation.CriticalCertificate.SourceConsumption.Restart.OriginalV1.I16_original_sum / I17_original_sum / I19_original_sum",
+      "assumptions": [
+        "∀q≤P（例外混合项只需 d.modulus∣q），WeightedHighZeros.highSum N q ≤0.0126*q/L^4。",
+        "原主弧 highWeightSum 用严格 omegaCutoff<|Im ρ|，WeightedHighZeros.highSum 的闭高窗可作上界；LiuWang/Proof/SourceRoute/MajorException/Continuation/CriticalCertificate/SourceConsumption/Restart/MotherTransport.lean:39 已证明对应 highMother_le_closed_high，不能把边界改动算作新分析定理。",
+        "共同上游：LiuWang/Proof/SourceRoute/HighSum/Continuation/Payment/Checked/Restart/OriginalV1/Source3536/Assembly.lean:35、:52 保留 hT7、hcase、zeroTail 和小高度积分。",
+        "同树 WeightedHighZeros.highSum_le_large_log（LiuWang/Proof/WeightedHighZeros/LargeLog.lean:115）确有完整界，但要求 N≥exp(100000000)，不能支付 exp(3100) 指标。"
+      ],
+      "kind": "共同上游／原门槛定量输入"
+    },
+    "MA-RS": {
+      "id": "MA-RS",
+      "description": "Rosser–Schoenfeld 的实际整数比值界 q/φ(q)≤ν(q) 仍为假设。ν 的正性、单调性和固定 ν 积分已有证明，不会自动给出整数比值不等式。该义务被原普通支 I12/R14 与例外导子数值比较共同使用；只计一次。",
+      "source": "LiuWang/Proof/SourceRoute/MajorOrdinary/Continuation/IntegralCertificates/FiniteHeads/Restart/OriginalV1/OriginalArithmetic.lean:88",
+      "consumer": "LiuWang.Proof.SourceRoute.MajorOrdinary.Continuation.IntegralCertificates.FiniteHeads.Restart.OriginalV1.I12_original_arithmetic_consumer；LiuWang.Proof.SourceRoute.MajorOrdinary.Continuation.IntegralCertificates.FiniteHeads.Restart.OriginalV1.R14_bound；LiuWang.Proof.SourceRoute.MajorException.Continuation.CriticalCertificate.SourceConsumption.Restart.actual_mixed_totals_paid；LiuWang.Proof.SourceRoute.MajorException.Continuation.CriticalCertificate.SourceConsumption.Restart.caseII_of_original_low_high_and_ordinary",
+      "assumptions": [
+        "原路线 hRS：∀q:ℕ，3≤q→(q:ℝ)/(q.totient:ℝ)≤nu q。",
+        "例外 hphi 只需同一个实际导子 r 上的 r/φ(r)≤ν(r)，不能把全域 hRS 与这个实例重复计数。",
+        "I12_no_RS、I14_no_RS 已有不使用 hRS 的估计，但这是已证替代算术路径；严格原证明任务不能据此宣称原 hRS 证明已补。",
+        "同树全量 Lean 文本检索 q/φ、nu、2.50637 后，相关精确签名均停留在假设或条件运输；未定位无条件原域生产者。"
+      ],
+      "kind": "共同上游／原证明算术输入"
+    },
+    "MA-SMALL": {
+      "id": "MA-SMALL",
+      "description": "例外导子 r≥987 仍由外部 h987 提供；必须补齐实际原实零区域内的剩余小导子排除，不能把“有若干小导子证书”当成全覆盖。大导子有效 L(1,χ) 与零间距生产者已经存在，故缺口不是重新证明全部有效 L 值理论。",
+      "source": "LiuWang/Proof/SourceRoute/MajorException/Continuation/CriticalCertificate/SourceConsumption/Restart/Consumer.lean:94",
+      "consumer": "LiuWang.Proof.SourceRoute.MajorException.Continuation.CriticalCertificate.SourceConsumption.Restart.actual_mixed_totals_paid；LiuWang.Proof.SourceRoute.MajorException.Continuation.CriticalCertificate.SourceConsumption.Restart.caseII_of_original_low_high_and_ordinary；LiuWang.Proof.SourceRoute.MajorException.Continuation.CriticalCertificate.SourceConsumption.actual_pure_integrals",
+      "assumptions": [
+        "实际 exceptionalValues 见证、q≤P，需要 987≤chi.conductor。",
+        "已检同树 Through64.lean:39、VerifiedScan/Batch65_80.lean:22 与 Prime163.lean:35：有连续小段和孤立实例，未给出全部 r<987 的覆盖。",
+        "LiuWang/Proof/SourceRoute/MajorException/Continuation/CriticalCertificate/SourceConsumption/ActualGap.lean:27 的 actual_exceptional_gap 在 h987 下已从 ExceptionalZeroGap.real_primitive_local_zero_gap 产出 π/(0.4923√r(log r)^2)≤1−β，故不另立 hgap 缺口。"
+      ],
+      "kind": "共同上游／原证明有限覆盖输入"
+    },
+    "MA-QHEAD": {
+      "id": "MA-QHEAD",
+      "description": "当前 no_RS 普通整主弧消费者仍要求 totientMoment 100000 (1/3)≤4.01。该特定三分之一次幂有限头未找到同树生产者；已证的是 1/6 与 7/6 两个不同有限头，不能相互冒名。但 4.01 是当前二次项割线预算所选的充分常数，不应转写成原论文必需新增引理。严格原路线仍应交付实际 I13 原界或接上等价充分算术支付。",
+      "source": "LiuWang/Proof/SourceRoute/MajorOrdinary/Continuation/IntegralCertificates/FiniteHeads/Restart/QuadraticArithmetic.lean:154",
+      "consumer": "LiuWang.Proof.SourceRoute.MajorOrdinary.Continuation.IntegralCertificates.FiniteHeads.Restart.I13_of_finite_head；LiuWang.Proof.SourceRoute.MajorOrdinary.Continuation.IntegralCertificates.FiniteHeads.Restart.ordinary_major_lower_of_finite_head",
+      "assumptions": [
+        "hhead：totientMoment 100000 (1/3)≤4.01。",
+        "该 hhead 与 MA-LOW/MA-HIGH 合用推出 ‖I13‖≤0.0016 N² 及 majorIntegral.re≥0.5437 N²。",
+        "同树精确对象与 4.01 检索只见 QuadraticArithmetic 中的条件消费者；WholeHeads.lean:108 的两个已证头是另外的指数。",
+        "记录的是现有路径的预算输入，不把它与未定位的原 I13 算术封口机械相加成两个独立数学缺口。"
+      ],
+      "kind": "预算参数／未付有限证书（非新增原义务）"
+    },
+    "MA-ORDREM": {
+      "id": "MA-ORDREM",
+      "description": "例外情形的 ordinaryIntegral（删去实际例外零后的三个普通交互项）还需原证明的有符号总下界。caseII 消费者把 −9e−8 N² 下界直接作为 hordinary；未找到该实际积分的数值生产者。9e−8 只是现有合装的充分预算，不能反推“原证明必须逐项达到此加强界”。",
+      "source": "LiuWang/Proof/SourceRoute/MajorException/Continuation/CriticalCertificate/SourceConsumption/Restart/Consumer.lean:96",
+      "consumer": "LiuWang.Proof.SourceRoute.MajorException.Continuation.CriticalCertificate.SourceConsumption.Restart.caseII_of_original_low_high_and_ordinary；LiuWang.Proof.SourceRoute.MajorException.Continuation.CriticalCertificate.SourceConsumption.Restart.major_lower_without_mixed_mothers",
+      "assumptions": [
+        "hordinary：−(0.00000009*N²)≤(MajorException.ordinaryIntegral N).re。",
+        "对象定义：LiuWang/Proof/SourceRoute/MajorException/AllInteractions.lean:18、:52；不是 MajorOrdinary.I12/I13/I14 的未删全零包。",
+        "必须覆盖所有 q≤P，而不只是例外导子整除的模数；低和在整除分支已有删除生产者，非整除分支/选定源一致性须纳入实际普通项总账。",
+        "若按原常数及有符号余量重新合装，应支付原实际余项而非固定要求这个预算接口；无条件模型下界不能代替实际积分。"
+      ],
+      "kind": "预算接口背后的原证明有符号余项义务"
+    },
+    "MA-PAPER-ASSEMBLY": {
+      "id": "MA-PAPER-ASSEMBLY",
+      "description": "最新 OriginalV1 已把同一个 PaperSource 的六个原交互项做到逐弧恒等式和实际有限模数和界，但尚未找到这些原对象通往原主弧最终数值下界的完整消费者。旧 Restart.Consumer 的整主弧结论从较窄 R24 exceptionalValues 见证出发，不能直接冒充所有原 PaperSource 的完成。需要实际分支覆盖、原六项与整弧对象的连接、原数值支付和普通余项统一合装；这是连接工作包，不把已证六项 Hölder/有限和重新列缺口。",
+      "source": "LiuWang/Proof/SourceRoute/MajorException/Continuation/CriticalCertificate/SourceConsumption/Restart/OriginalV1/SourceSums.lean:66",
+      "consumer": "LiuWang.Proof.SourceRoute.MajorException.Continuation.CriticalCertificate.SourceConsumption.Restart.OriginalV1.I15_original_sum / I16_original_sum / I17_original_sum / I18_original_sum / I19_original_sum / I110_original_sum；LiuWang.Proof.SourceRoute.MajorException.Continuation.CriticalCertificate.SourceConsumption.Restart.caseII_of_original_low_high_and_ordinary",
+      "assumptions": [
+        "OriginalV1 固定 PaperSource：d≤P、datumL d e=0、Im e=0、Re e<1、1−1/(9.645908801 log P)<Re e。",
+        "较旧路径的 exceptionalValues 输入是 R24 区域；LiuWang/Proof/SourceRoute/MajorException/Continuation/CriticalCertificate/SourceConsumption/Restart/SourceTotal.lean:33 只证明由这个窄见证产生 PaperSource 的方向，不能倒推宽窗见证必在 R24。",
+        "LiuWang/Proof/SourceRoute/MajorException/Continuation/CriticalCertificate/SourceConsumption/Restart/OriginalV1/SixTerms.lean:77 已证明 same_source_six_arcs；SourceSums 的 I15/I18/I110 无 low/high 假设，I16/I17/I19 的 retained low 输入已有同树生产者、高和归入 MA-HIGH。",
+        "统一常数与导子域的未付输入分别归入 MA-RS、MA-SMALL、MA-ORDREM，不重复计数；按原分支进行的纯连接与数学支付仍须分报。"
+      ],
+      "kind": "原证明对象与分支／待连接合装"
+    },
+    "MINOR-T7": {
+      "id": "MINOR-T7",
+      "description": "共享 Theorem 7 高 alpha 的实际全角色、解析重数密度输入仍未支付。第二弧 hseven、第三弧低窗 hdensity 与高端点 hhigh 是同一生产者的不同特化，不是三条独立密度定理。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/Assembly.lean:64",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.LowHeight.actual_M1_le_original_low_scalar",
+      "assumptions": [
+        "第二弧 N≥exp3100、1≤q≤L³：∀y≥densityGate(q)=max(100000/q,10000 log q)，∀alpha∈[1/2,1)，familyCount(q,alpha,y)≤sourceSevenBound(q,alpha,y)。",
+        "第三弧 L³≤q≤L⁶：低窗 y=10000 log q，alpha∈[59/60,1−0.478/log(q·10000π)]；高端点 y=T=L¹⁵、alpha=59/60。sourceDensity(q,y,alpha) 与 sourceSevenBound(q,alpha,y) 字面同式。低窗实际消费于 LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/Assembly.lean:43，高端点于 LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/RealTail.lean:119。",
+        "同树 LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/FamilyAssembly.lean:107 的 family_sourceSeven_from_original_inputs 仍需 hprincipal、hchen：高 alpha 主角色 principalSevenBound 与 3≤q 时∀beta∈[1/2,1) 的严格非主 Chen 计数。已证低 alpha 和普通主角色 sourceSevenBound 不够代付整个家族。深层密度输入由父级审查共享。"
+      ],
+      "kind": "mathematical_input"
+    },
+    "MINOR-NU-TOTIENT": {
+      "id": "MINOR-NU-TOTIENT",
+      "description": "原 sourceNu 算术界未找到同树可直接实例化的无条件生产者；不同于 sourceNu 自身单调性/数值上界，也不同于已证多项式 totient 界。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/Assembly.lean:64",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.LowHeight.actual_M1_le_original_low_scalar",
+      "assumptions": [
+        "第二弧：N≥exp3100，1≤q≤L³，q/φ(q)≤sourceNu(L³)；小 q 须保留实际域，不得盲写 sourceNu(q)。",
+        "第三弧：L³≤q≤L⁶，q/φ(q)≤sourceNu(q)，供 Source521523/Assembly.lean:42、Source524/Consumer.lean:117、Source525526/Consumer.lean:34,48、M6Certificate/Payment.lean:73。",
+        "sourceNu(x)=exp(γ)log log x+2.50637/(log log x)。对同树全部 Lean 源码检索 sourceNu、2.50637 及同式 nu 定义后，已见单调性与条件消费者，未定位该实际 totient 数值上界。"
+      ],
+      "kind": "mathematical_input"
+    },
+    "M2-ORIGINAL-LOW-SCALAR": {
+      "id": "M2-ORIGINAL-LOW-SCALAR",
+      "description": "严格原积分 originalLowScalar 的固定 3100 证书及所有实 L≥3100 上界尚未闭。旧 coupledKernel 已付同一实际低段，但其较强实际上界不推出原积分上界。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/Assembly.lean:64",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.LowHeight.actual_M1_le_original_low_scalar",
+      "assumptions": [
+        "所需原账：∀L∈ℝ，3100≤L → originalLowScalar(L)≤0.0000076；固定点认证与统一参数比较是同一工作包的两个验收项。",
+        "定义 LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/OriginalScalar.lean:18：区间 [3.36 L³,10000 L³ log(L³)]，被积函数 L·lowWeight(L³,y)·exp(−0.478(L+log0.001)/log y)。",
+        "现有 M1 合账是 (8√q/φ(q))actualM1≤(0.032281+8 originalLowScalar(L))/L。LowHeight/LogScalar.lean:45 只给精确换元；同树实际 lowHeightIntegral 的 .0000076 见 closed_examples，不再报成实际计数缺口。"
+      ],
+      "kind": "quantitative_input"
+    },
+    "M2-T2-ADAPTER": {
+      "id": "M2-T2-ADAPTER",
+      "description": "htwo 是已证数学输入尚未接入，不是缺失的二零定理。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/SparseBands.lean:81",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.actual_last_strip_log_bound",
+      "assumptions": [
+        "∀x≥8e9，q≤x，∀alpha，1−0.2067/log x<alpha<1 → familyCount(q,alpha,x/q)≤2。",
+        "生产者 LiuWang/Proof/MultiZeroRepulsion/Continuation/GeneralFamily.lean:62 的 general_theorem_two；桥 LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source525526/Count.lean:50 的 strict_to_closed_count。只需严格间隙与 Nat→Real cast。"
+      ],
+      "kind": "wiring"
+    },
+    "M2-LAST-STRIP-SCALAR": {
+      "id": "M2-LAST-STRIP-SCALAR",
+      "description": "(5.17) 已到实际计数的精确对数积分，但未发现这一原积分的终端数值支付；(5.16) 不同衰减率的证书不能代付。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/SparseBands.lean:81",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.actual_last_strip_log_bound",
+      "assumptions": [
+        "N≥exp3100，1≤q≤L³；外系数 16N·q/φ(q)。区间 [log(3.36L³),log(10πL⁷)]。",
+        "核 exp(−z/2)[exp(−(L+log0.001)/(9.645908801 z))−exp(−0.2067(L+log0.001)/z)]。保持两项符号。",
+        "T2 见 M2-T2-ADAPTER；原 nu 见 MINOR-NU-TOTIENT。公开树无原扫描，最终原十进制预算未核，不猜写。"
+      ],
+      "kind": "quantitative_input"
+    },
+    "M2-ENDPOINT-SCALAR": {
+      "id": "M2-ENDPOINT-SCALAR",
+      "description": "原截断端点停在 endpointDensityBound 与 14000 的显式右端，尚无此整式的原预算终端。已有 .0004 只支付旧消费者的端点尾，不能覆盖整段 59/60..siegelCutoff。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Endpoint.lean:61",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.truncated_endpoint_bound",
+      "assumptions": [
+        "N≥exp3100，1≤q≤L³，U=10πL⁷/q，hseven 见 MINOR-T7。",
+        "右端 U^(−1/2)[endpointDensityBound(q,U)exp(−0.478(L+log0.001)/log(10πL⁷))+14000 exp(−0.10367089(L+log0.001)/log(10πL⁷))]，加实际包外系数后支付。",
+        "同目录 Assembly.lean:119 的 endpointDensityBound_source_form 只是原参数展开，不是数值预算。"
+      ],
+      "kind": "quantitative_input"
+    },
+    "M2-C1-TAIL-SOURCE": {
+      "id": "M2-C1-TAIL-SOURCE",
+      "description": "从实际 full count 截到 siegelCutoff 的源域义务未接入：middlePacket 仍积分到 1，原截断端点/稀疏带只到 c1 界，不得静默删余尾。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/Packet.lean:61",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.middlePacket_low_alpha_and_endpoint_tail_paid_all_heights",
+      "assumptions": [
+        "同一 N,q，y∈[omegaCutoff,U]；旧实际余带 stripUpper(q,y)..1，原截断出口 stripUpper(q,y)..siegelCutoff(q,y)。",
+        "需在实际零点载体上处理例外实零并付非实 c1 原窗排除。累计 familyCount 含 |Im rho|=0，而正下端 band 本身不含实零。",
+        "这是原域/截断对应待核，不能据此宣称原论文结论错误；和父级例外零/基础生产者共享。"
+      ],
+      "kind": "SOURCE_CHECK"
+    },
+    "M2-ORIGINAL-ASSEMBLY": {
+      "id": "M2-ORIGINAL-ASSEMBLY",
+      "description": "第二弧 .032281 与原低标量最新消费者尚未接成完整原域包/弧终端。较早强常数 10/5 的 packet 不是已接好的原 16/8 总账。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/OriginalIntegrals.lean:30",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.source_57_middle_packet",
+      "assumptions": [
+        "接实际 M1、端点、两稀疏带与 c1 尾，保持同一 N,q,a,eta 与解析重数。",
+        "局部已证 10 可放宽为原 16，但不授权改原路线、另降常数或重新分配预算。未付数学按本表共享依赖去重；根定理和其他弧归父级。"
+      ],
+      "kind": "wiring"
+    },
+    "M3-LOCAL-C1": {
+      "id": "M3-LOCAL-C1",
+      "description": "第三弧 (5.21)–(5.27) 最新原消费者仍需存在 e 与 LocalC1Data q e；结构定义不是局部 LWD Lemma 2.1 的无条件实例。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/LocalSplit.lean:34",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.Source521523.LocalC1Data",
+      "assumptions": [
+        "原高度 lowHeight=10000π、尺度 x=q·lowHeight，L³≤q≤L⁶。e=some z 时需成员、lastUpper 右侧、实零、simple、非主、实角色、原始来源零点、987≤conductor≤x。",
+        "全家族 region：chi.LFunction rho=0，0<Re rho<1，|Im rho|≤lowHeight，lastUpper(q)<Re rho ⇒ e=some(chi,rho)。",
+        "实际消费 LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/Assembly.lean:47 的 hloc。已查同树实角色唯一性与部分小导子排除，但这些不自动给全角色非实零排除及此结构全部字段。"
+      ],
+      "kind": "mathematical_input"
+    },
+    "M3-MIDDLE-ENDPOINT": {
+      "id": "M3-MIDDLE-ENDPOINT",
+      "description": "sigma5 的实际中高度端点尚未支付。已闭 (5.41) 的 T=L¹⁵ 高端点预算不能代替 U=10πL⁷/q。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OrdinaryPayment.lean:82",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.equation_5_31_actual_count",
+      "assumptions": [
+        "N≥exp3100，L³≤q≤L⁶，X=0.001N，未付项 (16N√q/(φ(q)√U)) countIntegral(q,X,U,59/60,1)。",
+        "已有 SourceWindows.lean:60、TablePayments.lean:109 的实际密度余项/表价拆分；密度门问题见 M3-DENSITY-DOMAIN-SOURCE。"
+      ],
+      "kind": "quantitative_input"
+    },
+    "M3-MIDDLE-HEIGHT": {
+      "id": "M3-MIDDLE-HEIGHT",
+      "description": "sigma5 的实际中高度内积分未到原数值终端；Fubini、移动 strip 与表价变换已闭，不重做。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OrdinaryPayment.lean:82",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.equation_5_31_actual_count",
+      "assumptions": [
+        "未付 (8N√q/φ(q))∫[10000π,U] y^(−3/2)countIntegral(q,0.001N,y,59/60,1)dy。",
+        "需付 59/60..(1−0.478/log(qy)) 实际密度部分、近一表价部分以及原 c1/实零边界。完整原域 N≥exp3100、L³≤q≤L⁶，不能只取满足密度门的子区间。",
+        "已证 HeightPayments.lean:92,114,143 的表拆分/对数换元右侧仍有积分。"
+      ],
+      "kind": "quantitative_input"
+    },
+    "M3-DENSITY-DOMAIN-SOURCE": {
+      "id": "M3-DENSITY-DOMAIN-SOURCE",
+      "description": "第三弧原中高度及高窗下端不统一达到 Theorem 7 高度门；仓库已证明原整数域 U<10000 log q 的见证。不能把 T7 直接用于整个 [10000π,U] 或 [U,T]。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/DensityDomainCheck.lean:40",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.original_integer_density_domain_failure",
+      "assumptions": [
+        "见证 N=ceil(exp3100)、q=3100⁶，满足 N≥exp3100、L³<q≤L⁶，但 middleHeight(N,q)<10000 log q。",
+        "影响 OrdinaryPayment.equation_5_31_actual_count 与 RealTail.sigma6_original_reduction_with_real_tail 的 sourceM5。须回原论文核合法分段、原普通计数支付或原高度替换；不得缩 q 域、改 N 门槛或称贡献为零。",
+        "仅否定直接域包含，不否定原总预算；本公开树未含原扫描，源文细节仍待核。"
+      ],
+      "kind": "SOURCE_CHECK"
+    },
+    "M3-HIGH-M5": {
+      "id": "M3-HIGH-M5",
+      "description": "sigma6 的高高度 bulk sourceM5 仍在右侧；它不是已闭 sourceM6 标量。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/RealTail.lean:116",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.sigma6_original_reduction_with_real_tail",
+      "assumptions": [
+        "sourceM5=(5N√q/φ(q))∫[U,T]y^(−2)countIntegral(q,N,y,59/60,1−0.478/log(qy))dy。",
+        "N≥exp3100、L³≤q≤L⁶；密度母输入见 MINOR-T7，低于 gate 部分见 M3-DENSITY-DOMAIN-SOURCE。保持同 q、原权和端点后付原预算，不能以 M6 的 6e−9 抵消未知 bulk。"
+      ],
+      "kind": "quantitative_input"
+    },
+    "M3-HIGH-LOCAL-REGION": {
+      "id": "M3-HIGH-LOCAL-REGION",
+      "description": "高高度 hlocal 尚未由完整原 c1 非实零排除实例化；实角色唯一性与若干低虚部支不覆盖全角色移动窗。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/RealTail.lean:116",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.sigma6_original_reduction_with_real_tail",
+      "assumptions": [
+        "∀y∈[U,T]，∀chi,rho，chi.LFunction rho=0，0<Re rho<1，|Im rho|≤y，1−1/(9.645908801 log(qy))<Re rho ⇒ Im rho=0。",
+        "它仅识别余累计计数为实零计数，不推出余项=0；与 M3-LOCAL-C1 共享局部原零区域基础，不重复另开零区域理论。"
+      ],
+      "kind": "mathematical_input"
+    },
+    "M3-HIGH-REAL-TAIL-SOURCE": {
+      "id": "M3-HIGH-REAL-TAIL-SOURCE",
+      "description": "sigma6 原正下端 band 不含实零，但累计 familyCount 的 Abel 上界引入 sourceHighRealTail；不能凭 hlocal 删除。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/RealTail.lean:79",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.sourceHighRealTail",
+      "assumptions": [
+        "原保留项 (5N√q/φ(q))∫[U,T]y^(−2)countIntegral(q,N,0,1−0.10367089/log(qy),1)dy。",
+        "RealTail.lean:84 精确分解、:116 sigma6 消费者都显式保留。需按原非实 band 的忠实计数 Abel 回接，或使用原文允许的例外零支付。",
+        "低 sigma4 的 primedSigma4 分解不自动消除移动高窗累计实尾；累计尾非零可能性也不说明真实高 band 有实零。"
+      ],
+      "kind": "SOURCE_CHECK"
+    },
+    "M3-NU-MONOTONE-ADAPTER": {
+      "id": "M3-NU-MONOTONE-ADAPTER",
+      "description": "M6 的 hnu 是同树现成同式单调性未接，不是独立数学或数值缺口。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/M6Certificate/Payment.lean:70",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.M6Certificate.equation_5_44_paid",
+      "assumptions": [
+        "需 sourceNu(q)≤sourceNu(L⁶)，原域 q≥L³≥100000、q≤L⁶。",
+        "MajorOrdinary/Continuation/Nu.lean:59 的 nu_monotoneOn 覆盖 [100000,∞)，两个定义同式；也可用 Source524/FirstMonotone.lean:14 的 logNu_monotone（log q≥24）。",
+        "仍需 MINOR-NU-TOTIENT 的 q/φ(q) 估计；单调性不支付该算术不等式。"
+      ],
+      "kind": "wiring"
+    },
+    "M3-ORIGINAL-ASSEMBLY": {
+      "id": "M3-ORIGINAL-ASSEMBLY",
+      "description": "第三弧最新 sigma4=.36938 与 M6=6e−9 尚未接至同一 S/primeS 原域总账；旧 S_four_new_payments 仍留整段实际余项。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OrdinaryPayment.lean:110",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.S_four_new_payments",
+      "assumptions": [
+        "保持 sourceIndex(a,q)、L³<q≤L⁶、|eta|≤L⁷/(qN)、N≥exp3100 与同一有理弧见证。",
+        "以 Source521523.equation_5_27_original_conditional 代换整个 sigma4，不再把 .11585 叠加到旧 exceptionalTailBill 上。",
+        "M6 已闭数值，应接 M6Certificate.equation_5_44_paid；其余未付依本表去重。根圆法总装及第四弧由父级负责。"
+      ],
+      "kind": "wiring"
+    },
+    "ROOT-ANALYTIC-ASSEMBLY": {
+      "id": "ROOT-ANALYTIC-ASSEMBLY",
+      "description": "原文主弧下界、第二/第三弧界全部供给后，接入同一完整能量、扣除素数幂并得到主命题；目前无无条件 TheoremStatement 证明。",
+      "source": "LiuWang/Target.lean:20",
+      "consumer": "LiuWang.TheoremStatement",
+      "assumptions": [
+        "按原文域的主弧零点相互作用/主弧下界",
+        "原第二弧与第三弧上界"
+      ],
+      "kind": "root_assembly_not_independent_analytic_input"
+    },
+    "ROOT-RESIDUAL": {
+      "id": "ROOT-RESIDUAL",
+      "description": "现有可调用存在性出口仍含真实相互作用积分与M2/M3积分的合计余项前提；它是分析缺口的总接口，不另算一个独立分析难题。",
+      "source": "LiuWang/Proof/FiniteTernaryClosure/Analytic.lean:29",
+      "consumer": "LiuWang.Proof.FiniteTernaryClosure.threeOddPrimes_of_circle_residual",
+      "assumptions": [
+        "hresidual"
+      ],
+      "kind": "aggregate_interface_not_atomic_gap"
+    },
+    "OUTSIDE-SMALL-RANGE": {
+      "id": "OUTSIDE-SMALL-RANGE",
+      "description": "如果目标扩大到全部≥9的奇数，还缺1000<N<exp3100的覆盖；这不属于当前原论文大数定理的缺口。",
+      "source": "LiuWang/Proof/FiniteTernaryClosure/Analytic.lean:43",
+      "consumer": "LiuWang.Proof.FiniteTernaryClosure.threeOddPrimes_on_certified_union",
+      "assumptions": [
+        "hdomain"
+      ],
+      "kind": "outside_original_target"
+    }
+  },
+  "verification_scope": "Parent verified 695 reported source hashes and 43 principal source anchors. Key frontier semantics reviewed; no claim that every proof body or original paper page was independently verified.",
+  "head_at_parent_reconciliation": "f1476f0b217a3b10bf02e82af67d2dc5740841d3"
+}

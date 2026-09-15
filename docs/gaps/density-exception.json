@@ -1,0 +1,697 @@
+{
+  "gaps": [
+    {
+      "id": "DE-DENS-CHEN",
+      "description": "Chen 非主字符原密度上界尚未提供：严格左边界、闭高度窗、全部非主字符及普通 L 函数解析重数。当前闭窗转换与 T7 合账只是消费者。整族乘积/Jensen 路线仍落在实际 familyMean、familyMaximum 或 diskEnergy，不是此数值上界；这些受阻下游不另计缺口。",
+      "source": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/FamilyAssembly.lean:130",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.complete_family_sourceSeven_from_original_inputs; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.closed_nonprincipal_of_chen",
+      "assumptions": [
+        "同一 q≠0、y≥max(100000/q,10000 log q)；q≥3 时须 ∀β∈[1/2,1), strictNonprincipalCount(q,β,y)≤(250359/log(qy)+5700)(q³y⁴)^(1−β)log(qy)^(6β)。",
+        "原函数定义及边界：LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenBoundary.lean:21；原式系数：同文件:59。不能只证明 primitive 字符子族，也不能用较窄 α 区间代替全部消费者区间。",
+        "同树低 α 全族密度已有生产者；非主高 α 定量输入未找到无条件生产者。主字符 hprincipal 另有同域更强生产者，见 closed_examples，不列缺口。"
+      ],
+      "kind": "数学输入未提供"
+    },
+    {
+      "id": "DE-DENS-CHEN24",
+      "description": "Chen (24), k=1 的字面 mollifier 均方估计仍作为 hchen24 传入。此项是原证明过程的未付输入，不是声称 Lemma 3.4 或 Lemma 3.5 的结论无人证明。",
+      "source": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Critical336/Consumer.lean:54",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.Critical336.lemma_3_5_at_source_shift_with_zeta_paid; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.Critical336.lemma_3_4_with_zeta_paid; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.MeanBudgets.equation_3_44",
+      "assumptions": [
+        "y≥10000 log 6；∀u≥0, ∫[-yu,yu] ‖Q(y,1/2+it)‖² dt ≤ y(2.19021u+2.906)log y；source-shift 消费者从其原高度条件推出该 y 域。",
+        "Q 必须保留同一严格实 cutoff；常数、u 的无界量词不可改。",
+        "已有 Sharp.Q_mean_sieved / sieved_mean_budget 给出较粗的 Q 均方界，并足以直接证明相同 Lemma 3.4 终点，但不等于这里的 Chen (24) 合同。对应生产者：LiuWang/Proof/GlobalZeroDensity/Sharp/SievedMean.lean:86、:97、:116。"
+      ],
+      "kind": "原文中间输入未提供（终点另已证）"
+    },
+    {
+      "id": "DE-DENS-CHEN14",
+      "description": "Chen Lemma 14 的原右线均方输入 hchen14 未提供；加权积分、核矩、插值消费者已实现。既有直接加权右端估计和 Lemma 3.5 不可被标成重新证明了这一全 u 的原输入。",
+      "source": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Critical336/Consumer.lean:57",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.Critical336.lemma_3_5_at_source_shift_with_zeta_paid; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.MeanBudgets.equation_3_45; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.MeanBudgets.equation_3_46",
+      "assumptions": [
+        "y≥10000 log 6；δ(y)=1/(1.5 log y)；∀u≥0, M(y,1+δ(y),yu)≤(67.929+0.0003u)log(y)^5。",
+        "LiuWang/Proof/GlobalZeroDensity/MeanInterpolation/RightMean.lean:115 给出另一条线性上界；WeightedRight.lean:114 已证所需加权右端 90.5727 log(y)^5，但不提供此字面未加权窗口输入。"
+      ],
+      "kind": "原文中间输入未提供（终点另已证）"
+    },
+    {
+      "id": "DE-EX-GAMMA-LOW",
+      "description": "主字符/ζ 的 McCurley 低高度 Gamma 差分严格估计未提供。δ=2 的 gammaTerm 不可用普通非主字符 δ=0/1 的 Gamma 估计替代；低高度全窗也不能由 t=0 一点代替。",
+      "source": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrincipalIdentity.lean:67",
+      "consumer": "LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l24_low_of_gamma_estimate",
+      "assumptions": [
+        "1<σ<1.15；∀|u|<1, gammaTerm(2,σ,u)<0.0615。",
+        "gammaTerm 定义：LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/ZeroTransport.lean:83；保留 K=1/√5 及 Stechkin σ₁。",
+        "同树 Sharp.shiftedGamma_real_bound 只覆盖 t=0；Sharp.shiftedGamma_all_height 的一般费用尚不足以支付原严格低估计。LiuWang/Proof/ZeroRegionFamily/Sharp/Principal.lean:82、:100。LowSum 的 hgammaLow 是同一输入的另一种写法，不另计。"
+      ],
+      "kind": "数学输入未提供"
+    },
+    {
+      "id": "DE-EX-GAMMA-HIGH",
+      "description": "主字符/ζ 的 McCurley 高高度 Gamma 差分严格估计未提供。principalEulerDifference、有号完整零点和与极点项的处理均已提供，但这些恒等式不支付 0.3316。",
+      "source": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrincipalIdentity.lean:80",
+      "consumer": "LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l24_high_of_gamma_estimate",
+      "assumptions": [
+        "1<σ<1.15，1≤|t|；gammaTerm(2,σ,t)<κ log|t|+0.3316，κ=(5−√5)/10。",
+        "已有 Sharp.shiftedGamma_all_height 保留较大费用 23/40−11K/30，不能当作此严格常数。LowSum 的 gammaHalfDifference、高估计 hgammaHigh 与本项同一对象（展开后），应合并。"
+      ],
+      "kind": "数学输入未提供"
+    },
+    {
+      "id": "DE-EX-ORIGINAL-REGION",
+      "description": "原 c1=9.645908801 区域的无预给实种子分类/非实零排除仍未由当前 Exception 消费者提供。固定真实二次例外源后，跨字符、跨模数唯一性和单重性已经证明；未付的是从任意原窗口零点出发的完整原域输入，尤其无例外分支及移动高度的非实尾部，绝不是必须无条件存在一个例外零。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/RealTail.lean:87",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.equation_5_42_with_real_tail; LiuWang.Proof.SourceRoute.LowSum.Continuation.Restart.original_low_sum_of_short_absence; LiuWang.Proof.SourceRoute.Exception.Restart.paper_source_original_zero_iff（仅提供已有实源分支）",
+      "assumptions": [
+        "移动高度实际消费 hlocal：∀y∈[middleHeight(N,q),sourceT(N)], ∀χ,ρ，Lχ(ρ)=0、0<Reρ<1、|Imρ|≤y、1−1/(c1 log(qy))<Reρ ⇒ Imρ=0。不能从给定 datumL(d,β)=0 的 fixed_source_characterization 得出它。",
+        "低模数消费者还需 hshort（短原窗无零的分支条件）及 hcomplex：paperCap≤Reρ 且 Imρ≠0 时 Reρ≤cap(N,1/c1)。hshort 本身可作为无例外分支条件，不把它当成需全局成立的定理；关键是原域分类及高窗非实零估计。见 LiuWang/Proof/SourceRoute/LowSum/Continuation/Restart/NoExceptionAssembly.lean:109。",
+        "原 R24/R20 生产者、固定实源 Restart.Family、低高度三次/二次特殊分支各有真证明，但不足以替换完整原区域。原严格/闭边界须分别处理；不要求把严格源区域擅自加强为闭区域无条件无零。"
+      ],
+      "kind": "原域覆盖输入未提供（跨模块共享）"
+    },
+    {
+      "id": "DE-SOURCE-CHECK-DENSITY",
+      "description": "SOURCE_CHECK：Chen 原密度定理的完整假设尚未从当前树所含原文证据核定；同时需核 Chen (24), k=1 与 Lemma 14 到 LWD 原证明链的准确归属、常数、截断及量词。该项是来源验收，不是重复计算前述数学不等式。",
+      "source": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenBoundary.lean:5",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.closed_nonprincipal_of_chen; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.complete_family_sourceSeven_from_original_inputs; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.Critical336.lemma_3_5_at_source_shift_with_zeta_paid",
+      "assumptions": [
+        "源码明确写 Chinese original p.687，且 supplied transcription does not settle every hypothesis。LWD p.285 Lemma 3.4 及 Chen (24) 的归属见 LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/CriticalMean.lean:7；LWD p.288 合账见 LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/FamilyAssembly.lean:5。",
+        "当前主树未含 PDF/TeX 原文；本次仅检视源码注释及定理类型，未逐页检查文献。SOURCE_CHECK 为本报告类别，不声称该 Lean 文件中存在同名字面标记。",
+        "即使同域更强库生产者已支付目标不等式，也不能据此宣称陈述完全遵循原证明或原文全验证。"
+      ],
+      "kind": "SOURCE_CHECK"
+    },
+    {
+      "id": "DE-SOURCE-CHECK-EXCEPTION",
+      "description": "SOURCE_CHECK：LWD (2.4)–(2.8)、McCurley Gamma 输入与原 c1 区域的来源及严格边界仍需原文逐式核对。本树的恒等式、传输和固定实源分类不构成原页已验证的证据。",
+      "source": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrincipalIdentity.lean:3",
+      "consumer": "LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l24_low_of_gamma_estimate; LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l24_high_of_gamma_estimate; LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l25_induced_of_gamma_estimate; LiuWang.Proof.SourceRoute.Exception.Restart.paper_source_original_zero_iff",
+      "assumptions": [
+        "完整零点和的源码归属见 LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/ZeroTransport.lean:5；LWD (2.5)–(2.6) 及两个 McCurley 输入见 LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrincipalIdentity.lean:3。",
+        "需要核普通 L 函数重数、导出字符 Euler 修正符号、δ=0/1 与 δ=2、σ∈(1,1.15)、|t|<1 与 |t|≥1、原 c1 窗与种子量词；当前树没有原文扫描证据。",
+        "docs/STATUS.md:20 的字面 SOURCE_CHECK 具体指 (2.29)、(2.37)，属 LowSum 等模块，列在 coverage 中交叉引用，不伪装成本目录已定位的同名印式缺口。"
+      ],
+      "kind": "SOURCE_CHECK"
+    }
+  ],
+  "closed_examples": [
+    {
+      "id": "DE-CLOSED-PRINCIPAL",
+      "description": "hprincipal 不是新数学缺口：同树普通主字符预算 ≤7000 y^(4(1−α))log(y)^(6α)+51log(y)^3，原高 α 同域成立；由 log y≥1、7000≤11402、51log³≤16541log⁶及剩余项非负，可推出 principalSevenBound。现缺的是原消费者的导入/标量连接与原证明来源验收，不是主字符密度定理。未修改 Lean，也未编译该适配。",
+      "source": "LiuWang/Proof/GlobalZeroDensity/MeanInterpolation/Continuation/OrdinaryBudget.lean:112",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.family_sourceSeven_from_original_inputs"
+    },
+    {
+      "id": "DE-CLOSED-NONPRINCIPAL-GAMMA",
+      "description": "l25 的 hgamma=0.3918 已有同域更强生产者：gammaDifference_le_four_fifteenths 给 4/15，利用 gammaDifference_eq 与 kappa_eq，4/15<0.3918。包括 induced/imprimitive 转移；不因 OriginalV1 仍把 hgamma 写成参数而列为数学缺口。",
+      "source": "LiuWang/Proof/ZeroRegionFamily/Sharp/Gamma.lean:114",
+      "consumer": "LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l25_primitive_of_gamma_estimate; LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l25_imprimitive_of_gamma_estimate; LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.l25_induced_of_gamma_estimate"
+    },
+    {
+      "id": "DE-CLOSED-CHEN11-12",
+      "description": "Chen (11)、(12) 所需 Q 边界已经用平方因子计数、Abel 与原常数比较给出，Titchmarsh 旧消费者的 hchen11/hchen12 不再计缺口；最新 ChenArithmetic.Consumer 无这两项前提。",
+      "source": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenArithmetic/QBoundary.lean:46",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.ChenArithmetic.equation_3_40; LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.ChenArithmetic.equation_3_41_at_source_shift"
+    },
+    {
+      "id": "DE-CLOSED-336",
+      "description": "原实 cutoff N=|1/2+it|/2（含 t=0 时 N=1/4）及 (3.36) 已有实数 cutoff Euler–Maclaurin 生产者；zeta_inputs 消除了 hzmax、hzmean、h336，不应再报缺口。",
+      "source": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Critical336/OriginalCutoff.lean:76",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.Critical336.zeta_inputs"
+    },
+    {
+      "id": "DE-CLOSED-MEAN-ENDPOINTS",
+      "description": "GlobalZeroDensity.Sharp.actual_detector_lemma_3_4、MeanInterpolation.actual_source_3_45、actual_lemma_3_5 均有同域无额外解析前提的生产者。分别与 DE-DENS-CHEN24/14 的字面中间输入区分；禁止宣称原链缺口推出这些终点仍未证。",
+      "source": "LiuWang/Proof/GlobalZeroDensity/MeanInterpolation/Consumer.lean:45",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.Critical336.lemma_3_5_with_zeta_paid"
+    },
+    {
+      "id": "DE-CLOSED-LOW-ALPHA",
+      "description": "全族 T7 的原低 α 分支已有生产者，q=1、2 无非主字符也已处理；缺口集中在 Chen 非主高 α 定量输入。",
+      "source": "LiuWang/Proof/DirichletZeroCount/Applications/LowAlpha.lean:89",
+      "consumer": "LiuWang.Proof.SourceRoute.Density.Restart.OriginalV1.family_sourceSeven_from_original_inputs"
+    },
+    {
+      "id": "DE-CLOSED-TRANSPORT",
+      "description": "Euler 主/非主导出修正、有号完整零点和、原窗普通 L 重数到本原字符的等价与高度单调均已提供；原窗成员资格只是定义/域条件。",
+      "source": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/OriginalWindows.lean:90",
+      "consumer": "LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.original_window_sum_transport; LiuWang.Proof.SourceRoute.Exception.Restart.OriginalV1.original_window_count_le_conductor"
+    },
+    {
+      "id": "DE-CLOSED-FIXED-SOURCE",
+      "description": "给定原域实际实二次源后，原窗内零点的字符/模数/位置分类、单重性、槽 Subsingleton、非诱导模数无零和主论文 N≥exp3100 的实例化均已提供。PaperSource 是此分支的条件，不意味着必须证明例外零无条件存在。",
+      "source": "LiuWang/Proof/SourceRoute/Exception/Restart/Family.lean:72",
+      "consumer": "LiuWang.Proof.SourceRoute.Exception.Restart.fixed_source_characterization; LiuWang.Proof.SourceRoute.Exception.Restart.paper_source_original_zero_iff"
+    },
+    {
+      "id": "DE-CLOSED-REPULSION",
+      "description": "已有原种子排斥到 cap(N,0.3221)、保留计数为零及已诱导模数精确计数等式，不把 hdiv 或给定种子当作未证明数学输入。",
+      "source": "LiuWang/Proof/SourceRoute/Exception/ExactCount.lean:43",
+      "consumer": "LiuWang.Proof.SourceRoute.Exception.paper_source_familyCount_exact"
+    }
+  ],
+  "coverage": [
+    {
+      "scope": "目标与审查证据",
+      "source": "LiuWang/Target.lean:20",
+      "description": "主论文目标为每个奇数 N≥exp(3100) 是三个奇素数之和（可重复），不是 10^3100，也不要求本报告补齐更小奇数。HEAD 从 .git/HEAD 与 refs/heads/main 直接读取：7e236a0008bf1ac1d4a7b923a8a4a34342f87315；未运行 git、编译或外部 CLI。下列逐文件覆盖是接口/前提/依赖静态检索，不冒充逐证明核验或内核重放。"
+    },
+    {
+      "scope": "范围外 SOURCE_CHECK",
+      "source": "docs/STATUS.md:20",
+      "description": "现树唯一具体标出的原印式待核为 (2.29)、(2.37)。本报告不关闭它们、不复制为 Density/Exception 数学缺口；CountCap 已证明的 (2.28) 推论不核实 (2.29)，第三谱类表台阶恒等式不核实 (2.37) 或单独 .00006 预算。"
+    },
+    {
+      "scope": "数学去重与源路线",
+      "description": "数学输入按对象/参数/量词去重，原文中间输入与已有终点分开。原区域覆盖项属于跨模块共享，应与 LowSum/ThirdArc 总表合并一次；不能把它和每个 hlocal/hcomplex 的出现重复计数。普通域假设、反例源分支条件、已证未导入的输入均不计。"
+    },
+    {
+      "scope": "来源可用性",
+      "source": "docs/STATUS.md:26",
+      "description": "当前树未发现论文 PDF/TeX，发布说明也明示未发布原扫描/内部审查报告。本次没有外部检索或原页图像检查，因此 SOURCE_CHECK 仍未验收。"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/AxiomCheck.lean",
+      "sha256": "cef38bf6018214f238322e9012dffeb0aafb70989061ca840d21aeb1a16b0fad",
+      "lines": 74,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/EnergyCount.lean",
+      "sha256": "56bc6845231b33cf9f23074176781ec7cc7ef03ffa67ffa42e499ad8dccf9e75",
+      "lines": 92,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/FamilyBoundary.lean",
+      "sha256": "955bc892d7af75891c92fd4ab18b1ddbfc74091693b0433dbb51ce9bfc160a12",
+      "lines": 78,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/FamilyLittlewood.lean",
+      "sha256": "7ededc43d3ecf2bfbd2f8ac1b6ba5b211e1029b10ab984d7f3225e96f243b637",
+      "lines": 123,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/HorizontalArgument.lean",
+      "sha256": "b958f0ed10aac5afd334343d93281a5cca30e672bde983893319f05d0b4aa64c",
+      "lines": 164,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/ReflectedDetector.lean",
+      "sha256": "ea62f093291b355fcce69d9ab4c63e684c8db9f1dec7a68dfdf7eedefd22ace8",
+      "lines": 95,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/ReflectedJensen.lean",
+      "sha256": "47ab73dbed2ed2c67dc12d344b823ebd035bb58eb2ba3b086da32ca95803395c",
+      "lines": 168,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Regression.lean",
+      "sha256": "33e55bc634e472e884f1332b3f7a8dfa70d31408d35a0d41d77d0f78497f7d92",
+      "lines": 71,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/AnchoredArgument.lean",
+      "sha256": "058d4acec276981ac7419c6b8fcc4ecdb38773219f2609e22cdf30558f2f5ad1",
+      "lines": 72,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/AxiomCheck.lean",
+      "sha256": "0f9a83395b6e60162f9b351cc36ffa5198439fae0914ac4734b617af0bdfe2b1",
+      "lines": 115,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/FamilyMaximum.lean",
+      "sha256": "aa6b603839d4f56804ce90f70f570f227c5bc7a2fb70f5f778e0e6eb42fa4d42",
+      "lines": 113,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/FamilyProduct.lean",
+      "sha256": "02f4a2cbd97de05167c42a3012ef67741b0d639fef3e650ea6d4663751b68a4e",
+      "lines": 136,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Audit.lean",
+      "sha256": "68031d979e6cc6309fd09825073f9173cb9d7dc34c2484af2603d23c788335b4",
+      "lines": 114,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/AuxiliaryDomain.lean",
+      "sha256": "9a8ef95d71a182eee43bd85562c9fa1ede7545cb3b7e6afa0fa8c6e5b4143fc6",
+      "lines": 62,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenArithmetic/Abel.lean",
+      "sha256": "ad0784138bf04adfb1a762d381ad22db4ae38bdb2214ea23cce402eb3d2aa84a",
+      "lines": 99,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenArithmetic/Audit.lean",
+      "sha256": "54744ec6f0bb095da73a57a766bba9c60fca4453e9d9beeb56308d0ed5544fea",
+      "lines": 112,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenArithmetic/Consumer.lean",
+      "sha256": "516eed7d08c1db62d0d22c32c1cd179b9833d8ac0b71f7dfdc8b6448cf3c600c",
+      "lines": 36,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenArithmetic/Counting.lean",
+      "sha256": "5563aef00ae8a302905314cc307647716a3d25372beb5ea7ce6b4e33512e82eb",
+      "lines": 85,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenArithmetic/Endpoints.lean",
+      "sha256": "1cae661aa0f825f71d2405289a57caaec6e778e3c543047bca2f10cdff45370e",
+      "lines": 27,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenArithmetic/EulerSeries.lean",
+      "sha256": "6049ee8a10d30e19c9b3b61349c4efd5c9aaa168dae62f58b2240fc729916d4c",
+      "lines": 82,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenArithmetic/QBoundary.lean",
+      "sha256": "d8192f501c29535523db735b9af1121a2d109ff622f06e49a80b8067f6c4b2f9",
+      "lines": 56,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenArithmetic/SourceComparison.lean",
+      "sha256": "790049c74ac494814316f52f79a88587a66d5f78255f141dd767e6a4f35b11ce",
+      "lines": 60,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenArithmetic/SquareDivisors.lean",
+      "sha256": "98d51b1bb1e557f9e1d50af70fbc057d4284e90c6ac78006a35144fa604d79f5",
+      "lines": 115,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenArithmetic/WeightedBounds.lean",
+      "sha256": "144125ad41eef407af34d874b4a648963160658e91865537faf2abfef79cae6e",
+      "lines": 121,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/ChenBoundary.lean",
+      "sha256": "06c49d5e989d785891e8dc1bd02cc103ab4c669db20670082dd7b7a4dbeeb471",
+      "lines": 106,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Critical336/Audit.lean",
+      "sha256": "a66c176f75b1319ce41effa875135fe987ef8bb2e7d58c9ee6c3cf5d634e06df",
+      "lines": 84,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Critical336/Consumer.lean",
+      "sha256": "d74f3ab8f4c60078113c94b003969420ac322f5be0c2ed16e527584d5e98ed37",
+      "lines": 64,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Critical336/FiniteSum.lean",
+      "sha256": "a45b7655207b4cba4620c9f63ed512b36329252ec305d8c115f5d5a9a57714d4",
+      "lines": 36,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Critical336/OriginalCutoff.lean",
+      "sha256": "a6b790dc470a3d4909a8d2f32d7a2bb63f6b4134fc9049cf08cf12e05362715d",
+      "lines": 125,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Critical336/RealCutoff.lean",
+      "sha256": "8cab7559a75223b6f87acf87e4a622378d7f62ff7a62f376af89c0c064c9115f",
+      "lines": 152,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/CriticalMean.lean",
+      "sha256": "50f24aaf6d498644c2acca391e31c0cec46555ec319fbd260d91b3e1b2143a1f",
+      "lines": 240,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/FamilyAssembly.lean",
+      "sha256": "dd99ee368d03c97a1da3c93fd64c6b78ea3741cbfca5916c6f2a1b5c60ff2f13",
+      "lines": 142,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanBudgets/Audit.lean",
+      "sha256": "22db02d66d5d2e4c20e2f6ce712e2ca60ad44bb0b8bdd3fd7ad2f254be5fbdd2",
+      "lines": 107,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanBudgets/Consumer.lean",
+      "sha256": "0e74034e286f72e70c6bb27299ac352f62a4e8b7c0ab2b5bd790c43198842cf7",
+      "lines": 121,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanBudgets/Endpoints.lean",
+      "sha256": "7668826128667d526a18b3ce5a07565d7ed623199e4fa47531ca6b99cc1b3e18",
+      "lines": 68,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanBudgets/Interpolation.lean",
+      "sha256": "f24c4b979e7750544a190135e8a1c92052382df554ae5282b7966443bb8dca55",
+      "lines": 117,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanBudgets/KernelBudgets.lean",
+      "sha256": "55307861a71f4d68e104be623427153f9931b8d80e5cd35641bf8babbb4b149d",
+      "lines": 106,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanBudgets/Moments.lean",
+      "sha256": "96c36c6f8c1b416f8ec358573843b9ddb1122ae83965011276ae7d5f7350c747",
+      "lines": 154,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanTransfer/Audit.lean",
+      "sha256": "1ff838546b154643fd8beeb48015782e9c2dba3f85d43e0df4ba1bc222b31274",
+      "lines": 114,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanTransfer/Finiteness.lean",
+      "sha256": "1f415601a7d10235704611e2eb93f4742e193ac31ef53e28572960b33d4217df",
+      "lines": 83,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanTransfer/Kernel.lean",
+      "sha256": "7e102aeaba99f3cd93b75a12c94aea1220441332c35570e17769ac2612fd5057",
+      "lines": 98,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanTransfer/Transfer.lean",
+      "sha256": "3ac5f9a8745f41685015a27df571b897ea081df2d8d7fa690df98e8216029202",
+      "lines": 157,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanTransfer/Weight.lean",
+      "sha256": "33bfed74739f697470e5bc22e0e6d424508cd64c8d12776983ecc6df80fd60ab",
+      "lines": 121,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/MeanTransfer/Window.lean",
+      "sha256": "36fe1aa2bc3e665aa66b80c0830c166f11b1a249737fde4a307dfcc77b6df2cd",
+      "lines": 139,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Titchmarsh/Audit.lean",
+      "sha256": "3cc832958a73cacfa0a24a89c5f569a264b41ea124fbab4743a1070ed20f9aa8",
+      "lines": 83,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Titchmarsh/Consumer.lean",
+      "sha256": "70ea9c713644f63e6e203a7b5fef7475f5ee516d9a5495df118f9a4b6241ff22",
+      "lines": 52,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Titchmarsh/EulerIdentity.lean",
+      "sha256": "c8ca3bfcead0aeea4c5ee2e1734b04322df87b7e569f790a8d7ef141c5126bde",
+      "lines": 109,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Titchmarsh/MollifierInterpolation.lean",
+      "sha256": "70a6c362a818208d4e21efba6c3a834ae94b7f0a78f683b5ab90ae6fbc9af2e7",
+      "lines": 56,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Titchmarsh/SmallHeight.lean",
+      "sha256": "5f6ae5352c1ecaacb8f099c3e3dfb1feea9eab2a511774eca4eb5465ab82ea8a",
+      "lines": 159,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/Titchmarsh/SmallMean.lean",
+      "sha256": "556c57c4b4533728d94ca550152e0b3308297f6fb1afd19eb5c8c4f9012cc43f",
+      "lines": 121,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/ProductContour.lean",
+      "sha256": "0bd3b84ac3f6b14a7ddd57cb1e3d029b108f702da73fa647a72c2c2c315c388a",
+      "lines": 130,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/ProductCount.lean",
+      "sha256": "d92780725859ec66d80e0e477433cf2ad128ff4930e3b5cc7a647f8f6ef96885",
+      "lines": 94,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/ProductHorizontal.lean",
+      "sha256": "5e8d2ac3148ae2c1a96d3270f66b8a6808330e9bc996f02f35b376d199bfdb18",
+      "lines": 145,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/ProductJensen.lean",
+      "sha256": "e0b7258ba0da44a4ba0e1b5b34ce9ecbaf067117dbfaf7afe2c1083f2aca4692",
+      "lines": 100,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/ProductReflection.lean",
+      "sha256": "15229e33eadf514a0879a7b30e75589beed254cf951ac920053530add2f0adb6",
+      "lines": 108,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/ProductRight.lean",
+      "sha256": "74d84694b7621e06bcd8a32135191ddf3939e4fd0353a86fdadd7762fb9dbab5",
+      "lines": 64,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/ProductVertical.lean",
+      "sha256": "642b797337af2727ad3a0223bf95d84066e1bf4c1eadc695297b19a2d671c354",
+      "lines": 124,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/Regression.lean",
+      "sha256": "b31c786aa7d0422f96dd67bec29be6d176562bae5c2b0b9dd027f246222585bb",
+      "lines": 61,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/SourceParameters.lean",
+      "sha256": "398e35eedd269ee922befb5be42ae7af11ebf0a4a09af9a0cc54bdfd4f3b7480",
+      "lines": 64,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/Restart/WindowClosure.lean",
+      "sha256": "4b5a49413c688774c5f459276fae06a6c9011a99f5c6967549283338d0579a72",
+      "lines": 48,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/WeightedContour.lean",
+      "sha256": "ea9f72493fc5b1e0c952b48a48b9b38ffaa1ee5b61faecb4b80a37a8d1e9d5fd",
+      "lines": 130,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Density/WeightedDetection.lean",
+      "sha256": "b651ea5b8a2c65e04321ddae37077664a810711a169aeb6273633645a492597d",
+      "lines": 102,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/AxiomCheck.lean",
+      "sha256": "1a134475b35d4c3eec909e958d4293bce322ded4c7bf9092e65817d8a067637a",
+      "lines": 25,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/ExactCount.lean",
+      "sha256": "421d69fc8d49e2018076902622a4dd29f4d8d6f0bf8d36c0ae54d4e51f1fbfad",
+      "lines": 68,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Multiplicity.lean",
+      "sha256": "589531580097faf1a99c6ae3a718b105863852e088446b9f6d25cd7cedae0e1f",
+      "lines": 70,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/PaperWindow.lean",
+      "sha256": "42381a62851f41a7fc04276dd20336b15187b6c5171062ec729ba0e5880c59c1",
+      "lines": 89,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/AxiomCheck.lean",
+      "sha256": "ee29eb63a9d7676a93f336c4a3112570346fe3128613030489eef9a0a481fb86",
+      "lines": 65,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/DampedFourFactor.lean",
+      "sha256": "47e916f05834972ae8a7e889f897e1d2594d507a4c2a63dcb9a38990b17e906b",
+      "lines": 100,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/Family.lean",
+      "sha256": "31a8162e3ff7f2f35c76a1858e165a3a8586b12dd99ae04bb6cb5e93e263f4cd",
+      "lines": 153,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/FixedSource.lean",
+      "sha256": "e44ed15496f0b57c7494f31360b74600b6fe2d5ea0876cf3276dede3872a57cc",
+      "lines": 153,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/MixedSources.lean",
+      "sha256": "10f8c0e53ec4b3e99c0ac8ae2a952fc822b9c3db698cb530211b20429d85e75a",
+      "lines": 119,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/MovingHeight.lean",
+      "sha256": "b3c08f4ef08e69b4f617ea66002751a7642b61e2ddb9eeef515174a41e5d1de6",
+      "lines": 51,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/Multiplicity.lean",
+      "sha256": "746ecc51af2160ed96d1140b0c2e641a670739edcf57e2e4b940a1a6f68895be",
+      "lines": 63,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalPayment.lean",
+      "sha256": "ba235f867a8d6544d70693473ec1b195232cec32878a825994a3fe3998ae2012",
+      "lines": 43,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/AxiomCheck.lean",
+      "sha256": "8226a171d1ada830f1b86baecf9731a7a7fd6b05d58dd54d61219a1cb7e81e01",
+      "lines": 145,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/EulerSeries.lean",
+      "sha256": "c0bb22dfa647beb002b31dd509154b5cce17d9971b324d6730a234609b1d3481",
+      "lines": 99,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/EulerTransport.lean",
+      "sha256": "0473ae28e5b060d1c906688d66b9f940baf23218b8d955e574e7fdd8288a7149",
+      "lines": 130,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/InducedCharacter.lean",
+      "sha256": "c43f18954819088a4d493895cff8711e2295f812d49e812e4c0ddf3b4fd992fc",
+      "lines": 49,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/OriginalWindows.lean",
+      "sha256": "9df72d7f49ffc3d2769ab07671c0e9c778e5fe2853a639f3678b653e046cebcb",
+      "lines": 110,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrimeSupport.lean",
+      "sha256": "ff656197a15beee48c5599b2f68997faf2dc8b830472fa85e73ac3ecf545b6aa",
+      "lines": 47,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/PrincipalIdentity.lean",
+      "sha256": "89ed8622e0b55776c071ebd855e9c8e6b9b2d2112f62adea78f6803426ff92e5",
+      "lines": 90,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/WindowDomain.lean",
+      "sha256": "9b596a3340e0581909848d58511abf61dcd75e6b7e1a09ae8c58fc5aefab4d65",
+      "lines": 36,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/OriginalV1/ZeroTransport.lean",
+      "sha256": "89209807673def849613c550c04ee1cde088048e502f3fe3891ecffe2999da0a",
+      "lines": 151,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/PaperApplication.lean",
+      "sha256": "ac463a45253b186a29f175091a1bb6571da4ea045afc8757b4b5e9878ee16cf4",
+      "lines": 38,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/PrincipalSource.lean",
+      "sha256": "838f520b05902b352f3c0cc357b2a7c4ee45a6bfcc58bed06e21e912305ababf",
+      "lines": 89,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/Restart/RealSources.lean",
+      "sha256": "8b5dab83adfb855ee18b2e0224d34b0ad5fe3ee71e508f4f28f517cbebfa5d52",
+      "lines": 108,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    },
+    {
+      "path": "LiuWang/Proof/SourceRoute/Exception/StrictRepulsion.lean",
+      "sha256": "7c07d59efb2e454ba70fa0ba9f47703a8e952507e43ab701f0f000383faca841",
+      "lines": 86,
+      "mode": "源码声明、显式数学前提及依赖静态检索；非编译验证"
+    }
+  ]
+}

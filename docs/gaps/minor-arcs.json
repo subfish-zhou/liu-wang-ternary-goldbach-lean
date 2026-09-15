@@ -1,0 +1,1617 @@
+{
+  "gaps": [
+    {
+      "id": "MINOR-T7",
+      "description": "共享 Theorem 7 高 alpha 的实际全角色、解析重数密度输入仍未支付。第二弧 hseven、第三弧低窗 hdensity 与高端点 hhigh 是同一生产者的不同特化，不是三条独立密度定理。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/Assembly.lean:64",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.LowHeight.actual_M1_le_original_low_scalar",
+      "assumptions": [
+        "第二弧 N≥exp3100、1≤q≤L³：∀y≥densityGate(q)=max(100000/q,10000 log q)，∀alpha∈[1/2,1)，familyCount(q,alpha,y)≤sourceSevenBound(q,alpha,y)。",
+        "第三弧 L³≤q≤L⁶：低窗 y=10000 log q，alpha∈[59/60,1−0.478/log(q·10000π)]；高端点 y=T=L¹⁵、alpha=59/60。sourceDensity(q,y,alpha) 与 sourceSevenBound(q,alpha,y) 字面同式。低窗实际消费于 LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/Assembly.lean:43，高端点于 LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/RealTail.lean:119。",
+        "同树 LiuWang/Proof/SourceRoute/Density/Restart/OriginalV1/FamilyAssembly.lean:107 的 family_sourceSeven_from_original_inputs 仍需 hprincipal、hchen：高 alpha 主角色 principalSevenBound 与 3≤q 时∀beta∈[1/2,1) 的严格非主 Chen 计数。已证低 alpha 和普通主角色 sourceSevenBound 不够代付整个家族。深层密度输入由父级审查共享。"
+      ],
+      "kind": "mathematical_input"
+    },
+    {
+      "id": "MINOR-NU-TOTIENT",
+      "description": "原 sourceNu 算术界未找到同树可直接实例化的无条件生产者；不同于 sourceNu 自身单调性/数值上界，也不同于已证多项式 totient 界。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/Assembly.lean:64",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.LowHeight.actual_M1_le_original_low_scalar",
+      "assumptions": [
+        "第二弧：N≥exp3100，1≤q≤L³，q/φ(q)≤sourceNu(L³)；小 q 须保留实际域，不得盲写 sourceNu(q)。",
+        "第三弧：L³≤q≤L⁶，q/φ(q)≤sourceNu(q)，供 Source521523/Assembly.lean:42、Source524/Consumer.lean:117、Source525526/Consumer.lean:34,48、M6Certificate/Payment.lean:73。",
+        "sourceNu(x)=exp(γ)log log x+2.50637/(log log x)。对同树全部 Lean 源码检索 sourceNu、2.50637 及同式 nu 定义后，已见单调性与条件消费者，未定位该实际 totient 数值上界。"
+      ],
+      "kind": "mathematical_input"
+    },
+    {
+      "id": "M2-ORIGINAL-LOW-SCALAR",
+      "description": "严格原积分 originalLowScalar 的固定 3100 证书及所有实 L≥3100 上界尚未闭。旧 coupledKernel 已付同一实际低段，但其较强实际上界不推出原积分上界。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/Assembly.lean:64",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.LowHeight.actual_M1_le_original_low_scalar",
+      "assumptions": [
+        "所需原账：∀L∈ℝ，3100≤L → originalLowScalar(L)≤0.0000076；固定点认证与统一参数比较是同一工作包的两个验收项。",
+        "定义 LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/OriginalScalar.lean:18：区间 [3.36 L³,10000 L³ log(L³)]，被积函数 L·lowWeight(L³,y)·exp(−0.478(L+log0.001)/log y)。",
+        "现有 M1 合账是 (8√q/φ(q))actualM1≤(0.032281+8 originalLowScalar(L))/L。LowHeight/LogScalar.lean:45 只给精确换元；同树实际 lowHeightIntegral 的 .0000076 见 closed_examples，不再报成实际计数缺口。"
+      ],
+      "kind": "quantitative_input"
+    },
+    {
+      "id": "M2-T2-ADAPTER",
+      "description": "htwo 是已证数学输入尚未接入，不是缺失的二零定理。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/SparseBands.lean:81",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.actual_last_strip_log_bound",
+      "assumptions": [
+        "∀x≥8e9，q≤x，∀alpha，1−0.2067/log x<alpha<1 → familyCount(q,alpha,x/q)≤2。",
+        "生产者 LiuWang/Proof/MultiZeroRepulsion/Continuation/GeneralFamily.lean:62 的 general_theorem_two；桥 LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source525526/Count.lean:50 的 strict_to_closed_count。只需严格间隙与 Nat→Real cast。"
+      ],
+      "kind": "wiring"
+    },
+    {
+      "id": "M2-LAST-STRIP-SCALAR",
+      "description": "(5.17) 已到实际计数的精确对数积分，但未发现这一原积分的终端数值支付；(5.16) 不同衰减率的证书不能代付。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/SparseBands.lean:81",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.actual_last_strip_log_bound",
+      "assumptions": [
+        "N≥exp3100，1≤q≤L³；外系数 16N·q/φ(q)。区间 [log(3.36L³),log(10πL⁷)]。",
+        "核 exp(−z/2)[exp(−(L+log0.001)/(9.645908801 z))−exp(−0.2067(L+log0.001)/z)]。保持两项符号。",
+        "T2 见 M2-T2-ADAPTER；原 nu 见 MINOR-NU-TOTIENT。公开树无原扫描，最终原十进制预算未核，不猜写。"
+      ],
+      "kind": "quantitative_input"
+    },
+    {
+      "id": "M2-ENDPOINT-SCALAR",
+      "description": "原截断端点停在 endpointDensityBound 与 14000 的显式右端，尚无此整式的原预算终端。已有 .0004 只支付旧消费者的端点尾，不能覆盖整段 59/60..siegelCutoff。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Endpoint.lean:61",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.truncated_endpoint_bound",
+      "assumptions": [
+        "N≥exp3100，1≤q≤L³，U=10πL⁷/q，hseven 见 MINOR-T7。",
+        "右端 U^(−1/2)[endpointDensityBound(q,U)exp(−0.478(L+log0.001)/log(10πL⁷))+14000 exp(−0.10367089(L+log0.001)/log(10πL⁷))]，加实际包外系数后支付。",
+        "同目录 Assembly.lean:119 的 endpointDensityBound_source_form 只是原参数展开，不是数值预算。"
+      ],
+      "kind": "quantitative_input"
+    },
+    {
+      "id": "M2-C1-TAIL-SOURCE",
+      "description": "从实际 full count 截到 siegelCutoff 的源域义务未接入：middlePacket 仍积分到 1，原截断端点/稀疏带只到 c1 界，不得静默删余尾。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/Packet.lean:61",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.middlePacket_low_alpha_and_endpoint_tail_paid_all_heights",
+      "assumptions": [
+        "同一 N,q，y∈[omegaCutoff,U]；旧实际余带 stripUpper(q,y)..1，原截断出口 stripUpper(q,y)..siegelCutoff(q,y)。",
+        "需在实际零点载体上处理例外实零并付非实 c1 原窗排除。累计 familyCount 含 |Im rho|=0，而正下端 band 本身不含实零。",
+        "这是原域/截断对应待核，不能据此宣称原论文结论错误；和父级例外零/基础生产者共享。"
+      ],
+      "kind": "SOURCE_CHECK"
+    },
+    {
+      "id": "M2-ORIGINAL-ASSEMBLY",
+      "description": "第二弧 .032281 与原低标量最新消费者尚未接成完整原域包/弧终端。较早强常数 10/5 的 packet 不是已接好的原 16/8 总账。",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/OriginalIntegrals.lean:30",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.source_57_middle_packet",
+      "assumptions": [
+        "接实际 M1、端点、两稀疏带与 c1 尾，保持同一 N,q,a,eta 与解析重数。",
+        "局部已证 10 可放宽为原 16，但不授权改原路线、另降常数或重新分配预算。未付数学按本表共享依赖去重；根定理和其他弧归父级。"
+      ],
+      "kind": "wiring"
+    },
+    {
+      "id": "M3-LOCAL-C1",
+      "description": "第三弧 (5.21)–(5.27) 最新原消费者仍需存在 e 与 LocalC1Data q e；结构定义不是局部 LWD Lemma 2.1 的无条件实例。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/LocalSplit.lean:34",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.Source521523.LocalC1Data",
+      "assumptions": [
+        "原高度 lowHeight=10000π、尺度 x=q·lowHeight，L³≤q≤L⁶。e=some z 时需成员、lastUpper 右侧、实零、simple、非主、实角色、原始来源零点、987≤conductor≤x。",
+        "全家族 region：chi.LFunction rho=0，0<Re rho<1，|Im rho|≤lowHeight，lastUpper(q)<Re rho ⇒ e=some(chi,rho)。",
+        "实际消费 LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/Assembly.lean:47 的 hloc。已查同树实角色唯一性与部分小导子排除，但这些不自动给全角色非实零排除及此结构全部字段。"
+      ],
+      "kind": "mathematical_input"
+    },
+    {
+      "id": "M3-MIDDLE-ENDPOINT",
+      "description": "sigma5 的实际中高度端点尚未支付。已闭 (5.41) 的 T=L¹⁵ 高端点预算不能代替 U=10πL⁷/q。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OrdinaryPayment.lean:82",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.equation_5_31_actual_count",
+      "assumptions": [
+        "N≥exp3100，L³≤q≤L⁶，X=0.001N，未付项 (16N√q/(φ(q)√U)) countIntegral(q,X,U,59/60,1)。",
+        "已有 SourceWindows.lean:60、TablePayments.lean:109 的实际密度余项/表价拆分；密度门问题见 M3-DENSITY-DOMAIN-SOURCE。"
+      ],
+      "kind": "quantitative_input"
+    },
+    {
+      "id": "M3-MIDDLE-HEIGHT",
+      "description": "sigma5 的实际中高度内积分未到原数值终端；Fubini、移动 strip 与表价变换已闭，不重做。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OrdinaryPayment.lean:82",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.equation_5_31_actual_count",
+      "assumptions": [
+        "未付 (8N√q/φ(q))∫[10000π,U] y^(−3/2)countIntegral(q,0.001N,y,59/60,1)dy。",
+        "需付 59/60..(1−0.478/log(qy)) 实际密度部分、近一表价部分以及原 c1/实零边界。完整原域 N≥exp3100、L³≤q≤L⁶，不能只取满足密度门的子区间。",
+        "已证 HeightPayments.lean:92,114,143 的表拆分/对数换元右侧仍有积分。"
+      ],
+      "kind": "quantitative_input"
+    },
+    {
+      "id": "M3-DENSITY-DOMAIN-SOURCE",
+      "description": "第三弧原中高度及高窗下端不统一达到 Theorem 7 高度门；仓库已证明原整数域 U<10000 log q 的见证。不能把 T7 直接用于整个 [10000π,U] 或 [U,T]。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/DensityDomainCheck.lean:40",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.original_integer_density_domain_failure",
+      "assumptions": [
+        "见证 N=ceil(exp3100)、q=3100⁶，满足 N≥exp3100、L³<q≤L⁶，但 middleHeight(N,q)<10000 log q。",
+        "影响 OrdinaryPayment.equation_5_31_actual_count 与 RealTail.sigma6_original_reduction_with_real_tail 的 sourceM5。须回原论文核合法分段、原普通计数支付或原高度替换；不得缩 q 域、改 N 门槛或称贡献为零。",
+        "仅否定直接域包含，不否定原总预算；本公开树未含原扫描，源文细节仍待核。"
+      ],
+      "kind": "SOURCE_CHECK"
+    },
+    {
+      "id": "M3-HIGH-M5",
+      "description": "sigma6 的高高度 bulk sourceM5 仍在右侧；它不是已闭 sourceM6 标量。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/RealTail.lean:116",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.sigma6_original_reduction_with_real_tail",
+      "assumptions": [
+        "sourceM5=(5N√q/φ(q))∫[U,T]y^(−2)countIntegral(q,N,y,59/60,1−0.478/log(qy))dy。",
+        "N≥exp3100、L³≤q≤L⁶；密度母输入见 MINOR-T7，低于 gate 部分见 M3-DENSITY-DOMAIN-SOURCE。保持同 q、原权和端点后付原预算，不能以 M6 的 6e−9 抵消未知 bulk。"
+      ],
+      "kind": "quantitative_input"
+    },
+    {
+      "id": "M3-HIGH-LOCAL-REGION",
+      "description": "高高度 hlocal 尚未由完整原 c1 非实零排除实例化；实角色唯一性与若干低虚部支不覆盖全角色移动窗。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/RealTail.lean:116",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.sigma6_original_reduction_with_real_tail",
+      "assumptions": [
+        "∀y∈[U,T]，∀chi,rho，chi.LFunction rho=0，0<Re rho<1，|Im rho|≤y，1−1/(9.645908801 log(qy))<Re rho ⇒ Im rho=0。",
+        "它仅识别余累计计数为实零计数，不推出余项=0；与 M3-LOCAL-C1 共享局部原零区域基础，不重复另开零区域理论。"
+      ],
+      "kind": "mathematical_input"
+    },
+    {
+      "id": "M3-HIGH-REAL-TAIL-SOURCE",
+      "description": "sigma6 原正下端 band 不含实零，但累计 familyCount 的 Abel 上界引入 sourceHighRealTail；不能凭 hlocal 删除。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/RealTail.lean:79",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.sourceHighRealTail",
+      "assumptions": [
+        "原保留项 (5N√q/φ(q))∫[U,T]y^(−2)countIntegral(q,N,0,1−0.10367089/log(qy),1)dy。",
+        "RealTail.lean:84 精确分解、:116 sigma6 消费者都显式保留。需按原非实 band 的忠实计数 Abel 回接，或使用原文允许的例外零支付。",
+        "低 sigma4 的 primedSigma4 分解不自动消除移动高窗累计实尾；累计尾非零可能性也不说明真实高 band 有实零。"
+      ],
+      "kind": "SOURCE_CHECK"
+    },
+    {
+      "id": "M3-NU-MONOTONE-ADAPTER",
+      "description": "M6 的 hnu 是同树现成同式单调性未接，不是独立数学或数值缺口。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/M6Certificate/Payment.lean:70",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.M6Certificate.equation_5_44_paid",
+      "assumptions": [
+        "需 sourceNu(q)≤sourceNu(L⁶)，原域 q≥L³≥100000、q≤L⁶。",
+        "MajorOrdinary/Continuation/Nu.lean:59 的 nu_monotoneOn 覆盖 [100000,∞)，两个定义同式；也可用 Source524/FirstMonotone.lean:14 的 logNu_monotone（log q≥24）。",
+        "仍需 MINOR-NU-TOTIENT 的 q/φ(q) 估计；单调性不支付该算术不等式。"
+      ],
+      "kind": "wiring"
+    },
+    {
+      "id": "M3-ORIGINAL-ASSEMBLY",
+      "description": "第三弧最新 sigma4=.36938 与 M6=6e−9 尚未接至同一 S/primeS 原域总账；旧 S_four_new_payments 仍留整段实际余项。",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OrdinaryPayment.lean:110",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.S_four_new_payments",
+      "assumptions": [
+        "保持 sourceIndex(a,q)、L³<q≤L⁶、|eta|≤L⁷/(qN)、N≥exp3100 与同一有理弧见证。",
+        "以 Source521523.equation_5_27_original_conditional 代换整个 sigma4，不再把 .11585 叠加到旧 exceptionalTailBill 上。",
+        "M6 已闭数值，应接 M6Certificate.equation_5_44_paid；其余未付依本表去重。根圆法总装及第四弧由父级负责。"
+      ],
+      "kind": "wiring"
+    }
+  ],
+  "closed_examples": [
+    {
+      "id": "C-M2-032281",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryBudget.lean:57",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281.original_all_L_032281",
+      "description": "原 originalDensityScalar(L)≤32281/1000000 对所有实 L≥3100 已证明；固定点 original_fixed_032281 与 recovery_rational_budget 生产链俱在，不再报 .032281 数值缺口。"
+    },
+    {
+      "id": "C-M2-032281-ACTUAL",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryActual.lean:30",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.Fixed032281.actual_high_branch_032281",
+      "description": "已把 .032281 接至 max(omegaCutoff,densityGate)..middleUpper 的真实 familyCount 积分，仅保留 hseven/hnu；不是孤立标量。"
+    },
+    {
+      "id": "C-M2-LOW-COUNT",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/ActualCount.lean:30",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.LowHeight.familyCount_le_source24",
+      "description": "主/非主 ordinary-L 原低高度 source24 计数已付；其运输到原低积分已在 LowHeight/ActualHeight.lean:48 证明。"
+    },
+    {
+      "id": "C-M2-513-ACTUAL",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Payment.lean:69",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.actual_513_payment",
+      "description": "同一实际 lowHeightIntegral 的 .0000076 已闭（actual_513_normalized_sharp 更强 .000006510372/L）；走 coupledKernel，不能推 originalLowScalar≤.0000076。"
+    },
+    {
+      "id": "C-M2-516-SCALAR",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/GaussianPayment.lean:154",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.original_516_scalar_payment",
+      "description": "原 (5.16) 标量 112000 L sourceNu(L³) 乘原积分≤.000021 已闭。"
+    },
+    {
+      "id": "C-M2-516-ACTUAL",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/Payment.lean:56",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.actual_516_payment",
+      "description": "实际 full-family strip 的 .000021N/L 已无 hphi（更强 .00001777664）；旧 OriginalPayment 的 hphi 不应导致重报整个 (5.16)。"
+    },
+    {
+      "id": "C-M2-LOW-ALPHA",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/LowAlpha.lean:85",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.actual_low_alpha_strong_payment",
+      "description": "实际低 alpha 外权 10N√q/φ(q) 的 .00065N/L 已付；原 .000065/L 标量亦已付。"
+    },
+    {
+      "id": "C-T2",
+      "source": "LiuWang/Proof/MultiZeroRepulsion/Continuation/GeneralFamily.lean:62",
+      "consumer": "LiuWang.Proof.MultiZeroRepulsion.Continuation.general_theorem_two",
+      "description": "x≥8e9、q≤x 的全家族计重严格窗≤2 已无额外数学假设；第三弧已调用，第二弧 htwo 仅待接。"
+    },
+    {
+      "id": "C-NU-MONO",
+      "source": "LiuWang/Proof/SourceRoute/MajorOrdinary/Continuation/Nu.lean:59",
+      "consumer": "LiuWang.Proof.SourceRoute.MajorOrdinary.Continuation.nu_monotoneOn",
+      "description": "同一 exp(γ)loglog+2.50637/loglog 函数在 [100000,∞) 已证单调；这不是 q/φ(q) 的生产者。"
+    },
+    {
+      "id": "C-M3-523",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/BaseConsumer.lean:64",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.Source521523.equation_5_23_original",
+      "description": "原 (5.23) 实际 lowBetaBill≤.00365N/L，N≥exp3100、q≤L⁶，无 hdensity/htotient。"
+    },
+    {
+      "id": "C-M3-524-SCALAR",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/Payment.lean:95",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.Source524.originalBracket_paid",
+      "description": "原 (5.24) originalBracket 在全部 L≥3100、3≤x≤6 的 .24981 数值预算已闭；实际原消费者保留 htotient、hdensity。"
+    },
+    {
+      "id": "C-M3-525526-SCALAR",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source525526/Scalar.lean:181",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.Source525526.scalar525_paid",
+      "description": "scalar525 与 scalar526 在 L≥3100、3≤x≤6 各≤3/100000 已闭；Source525526/Count 已接 T2，实际原支付仅保留 htotient。"
+    },
+    {
+      "id": "C-M3-521-SCALE",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/SingleScale.lean:93",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.Source521523.equation_5_21_original",
+      "description": "单个原低零项 .11585 标量已付；不包含 LocalC1Data 的存在与全角色唯一性。"
+    },
+    {
+      "id": "C-M3-527-CONDITIONAL",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/Assembly.lean:39",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.Source521523.equation_5_27_original_conditional",
+      "description": "实际 sigma4≤.36938N/L 条件合账已证；准确保留 htotient、hdensity、hloc，不是又缺 .36938 标量。"
+    },
+    {
+      "id": "C-M3-530540",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OrdinaryPayment.lean:40",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.sigma5_low_beta_paid",
+      "description": "sigma5 的 .0011N/L 与 sigma6 的 .00012N/L 普通计数部分均已到实际零和；高 alpha 项显式保留。"
+    },
+    {
+      "id": "C-M3-541-SCALAR",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/HighEndpoint.lean:42",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.equation_5_41_explicit",
+      "description": "T=L¹⁵ 高端点标量 7/10³¹ 已闭，equation_5_41_actual_count 仅留真实密度；不重报高端点标量。"
+    },
+    {
+      "id": "C-M3-544-SCALAR",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/M6Certificate/Payment.lean:66",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.M6Certificate.m6OriginalScalar_le",
+      "description": "所有实 L≥3100 的 m6OriginalScalar≤6/1000000000 已闭；equation_5_44_paid 已到 sourceM6，仅留 htotient/hnu。"
+    },
+    {
+      "id": "C-M3-PRINCIPAL",
+      "source": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/Principal.lean:49",
+      "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.S_principal_and_error_paid",
+      "description": "主角色及展开误差已付 .000000680001N/L；ErrorBudget.primePower_error_paid 另付素数幂误差，不重开该账。"
+    },
+    {
+      "id": "C-T7-LOW",
+      "source": "LiuWang/Proof/DirichletZeroCount/Applications/LowAlpha.lean:89",
+      "consumer": "LiuWang.Proof.DirichletZeroCount.Applications.familyCount_le_sourceSeven_original_low",
+      "description": "原高度门上的 alpha≤1/2+2sourceDelta(y) 已闭；另有 y≥10000、alpha≤2/3 生产者，但不覆盖本次高 alpha 实际消费域。"
+    },
+    {
+      "id": "C-M2-LOW-TANGENT",
+      "source": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/ExpTangent.lean:53",
+      "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.LowHeight.original_low_exp_le_tangent",
+      "description": "父级同树新增：∀L≥3100、c∈ℝ、z>0、b>0，原 exp(cz−0.478(L+log .001)/z) 受切线指数上界控制。原参数非负与显式非负余量已证；未接入 originalLowScalar 积分消费者，不是 7.6e−6 固定预算或全 L 积分上界，不删除 M2-ORIGINAL-LOW-SCALAR。"
+    }
+  ],
+  "coverage": [
+    {
+      "scope": "snapshot",
+      "head": "f1476f0b217a3b10bf02e82af67d2dc5740841d3",
+      "branch": "main",
+      "worktree": "/home/azureuser/liu-wang-ternary-goldbach-lean",
+      "method": "只读源码；全目录声明/前提/引用检索，关键消费者与同树生产者正文复核。未编译，未启动 Lean/代理 CLI，未改 Lean。",
+      "source_check_note": "两个受审目录无字面 SOURCE_CHECK 标记；本报告用该 kind 明示原域待核义务，不伪造仓库既有标记。公开快照无原论文扫描/旧私有源核报告，未独立核实原印式。",
+      "count_note": "gaps 是待办/源核/接线条目，不是互相独立的未证 lemma 数；T7、nu、c1 共享基础去重。",
+      "kind_counts": {
+        "mathematical_input": 4,
+        "quantitative_input": 6,
+        "wiring": 4,
+        "SOURCE_CHECK": 3
+      },
+      "initial_head": "7e236a0008bf1ac1d4a7b923a8a4a34342f87315",
+      "concurrent_change": "父级在同一 main 新增 LowHeight/ExpTangent.lean；git diff 初始HEAD..收尾HEAD 在受审两目录仅此新增。已读正文，保留所有核心缺口。父级报告严格编译/官方checker/5项标准公理检查通过；本子任务未独立重跑。"
+    },
+    {
+      "scope": "SecondArc",
+      "file_count": 226,
+      "inspection": "全目录词法/声明与引用覆盖；恢复证书按 RecoveryBudget/RecoveryActual 生产链核实，不冒称逐块独立重算或内核重放。",
+      "source_files": [
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/AlphaIntegral.lean",
+          "sha256": "59e68da993534691751216b2b52ee3708c164c0d87c7cf561135d63c5e9cc596"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/AxiomCheck.lean",
+          "sha256": "5544f942450baa5fa404d0a4c767427443cf7a16ed1ef1e67b87e62daf05e4d6"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ActualCount.lean",
+          "sha256": "c98a5b1f98ddaf1072e5c5bcefcf4aa8afb6f94fdfd53a192942b2a40cdcac6b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ActualIntegral.lean",
+          "sha256": "2f7cb817fc9585176644f55757ed0c8a63213f45a4534b95b5132e8c6491bc11"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/AxiomCheck.lean",
+          "sha256": "f89472005386bb07685e13017b8c8afc9d20cb9df0cc79adc899d7016fcac881"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/ActualHeight.lean",
+          "sha256": "2ff722d83a515dfeb155e97c0889ac0a352ad6b61cb8136ee3d8fd9a1296d032"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/ActualInner.lean",
+          "sha256": "619262a7f642e32a1ba01049a06076d50b5042681b7acdeb7dd490c23b4652b1"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/AxiomCheck.lean",
+          "sha256": "f41bdb891d8f4013db60357c8d7aa16dbf098a332e6fbe3856ef8e9e30a5b03b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/ExponentialIntegral.lean",
+          "sha256": "d8117cd506e522e1bc9d514b4f4bd2bfd11089bb0f451a085c91f36cf49b33a6"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/GateDomain.lean",
+          "sha256": "c0972cc4d3e30e23d3e82a1c80a8329daae13ba5cd74e0850a311c093d11d8c4"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Packet.lean",
+          "sha256": "d7c1a6adcb715ffe1f837bb0ec29d6bb1cce9f30596dd54fc6a3b97cbd6f744d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Payment.lean",
+          "sha256": "ddd17a726080a085e47ea5d60ee687a0f64de4143e6f129bab323ba187b61f9c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/AxiomCheck.lean",
+          "sha256": "187c9e2db9edb6302216362bcd93ca1a9e365a801b9573c20babb7de6b507be7"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/BandDomain.lean",
+          "sha256": "91519922e13a22f6611b3bcfb49df7312328740add6d29b74aaccc32508d05c7"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/BandMass.lean",
+          "sha256": "06fec4cfc443771e2e141fce219e46bab68ef50f63ee293f6b4b343859f0e67c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/Endpoint.lean",
+          "sha256": "ada4fc203a5052550f3d237a851e4c3a267950cb8450a743469f31a543b92063"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/FixedIntegral/AxiomCheck.lean",
+          "sha256": "aceb16dd12b67619158b128b184c79aa5893ce7d8fe399c177def334a090284d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/FixedIntegral/CellIntegral.lean",
+          "sha256": "031c63e5af31feb6baf309f3759050ec9d3069eb12f9283e71d2e330848784d4"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/FixedIntegral/DirectedConstants.lean",
+          "sha256": "1a1931e932dc3c077db041d1e14d4d783f5ec0e870fafc06cefb7ed5dac2becd"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/FixedIntegral/Envelope.lean",
+          "sha256": "142e989f7deddbd189a4ebcbca450974fde6163da49420c2c1d70ed1ad83a1d0"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/FixedIntegral/ExponentialMoments.lean",
+          "sha256": "619d618d4889039c1242a5c36381cd0fbb87999e76c640bf7008565d27e103db"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/FixedIntegral/FiniteExpression.lean",
+          "sha256": "35aaa817ae3701d2324bbde8bb18698f48e5cb8ad5b64ac7bfbb9f13fab468cc"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/FixedIntegral/Partition.lean",
+          "sha256": "427d18b0447ce42bd4f1831d1e95d0efe14631b636cd20d8c5af43d848c4afd4"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/LowAlpha.lean",
+          "sha256": "1b11a3a66079952eec5e40d55aa352f2d05274e83bb04a2600d5533ea949c047"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Assembly.lean",
+          "sha256": "b640d981d8f0449ca90d174c7dfd3f043e1c0785a535642c95f3dd9966c62a57"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/AxiomCheck.lean",
+          "sha256": "9b23408708f76e2e3fa6a063e238672fe07dbb54a05eb2cef13d176835123b18"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Endpoint.lean",
+          "sha256": "3f965924fa277c19c66b1d837d67161742c4590628a6844dd1a21b4004d52129"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/Block0.lean",
+          "sha256": "05ce0d3bc96a005ec4c1a260e08d42be746d0b2d1d89d53c4d535e07e66c3015"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/Block1.lean",
+          "sha256": "8a02d19b996115df83fdb55f14233f076c4c06ed29555cef1606f7b564fae1c9"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/Block2.lean",
+          "sha256": "f67f97f9ef3d57fd05c2c8b0f022ac604617a2d39fe350062eb8299d11a70165"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/Block3.lean",
+          "sha256": "688a879bf025c2959a3a1b2fdea174b72083f5093b94b67c00da2972d2f1b80a"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/Block4.lean",
+          "sha256": "db3c98a49375d9550b1c7f1d472bad8a15b4bd5d62bae231abe88300a03feede"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/Block5.lean",
+          "sha256": "1deaa5815d6bb2206d59ca475d6c80a96ae7a546b87ab065d5ea6ddaaf2d121f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/Block6.lean",
+          "sha256": "ef3c0149f6dfcabd4d176ff606cbb96ae89b6f3fe4f9e4deb18745f772840780"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/Block7.lean",
+          "sha256": "1043476d97b3e06555625200f007bcc13285f6c2a9e1c94b90f1ddb4929e2bb9"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/Budget.lean",
+          "sha256": "668c9591a04bfa81900503fafc453120bc9c003a3533137d19110863f140a035"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/CellCertificate.lean",
+          "sha256": "0bbfc510a97677e40e068e75388e45fd0ea7262a2ac870a764bcbf64db486644"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/CellData.lean",
+          "sha256": "fd9f63f87e265224b7bcf43100cb27997d5fa885c7c66cd4ef5336e2a23008d9"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/CellZero.lean",
+          "sha256": "98112918a2fcf3bafc678d1886c43ac305a111ec940d1bf3c6ebf9590e4ac848"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/ConcretePartition.lean",
+          "sha256": "a441aabe77c7d43903f9e0696217ae160a036aec9e2f6da1f910d2e7ea81a3a7"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/Constants.lean",
+          "sha256": "4e88baf46df87dd6353bc92080bebbbb2830f81d349b331b36b71f03485853f9"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/DirectedExp.lean",
+          "sha256": "ffd6d44d8cf75540e12e291574e8d6975f64bd86212e9b49d59bf7762c5f4cc5"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/EulerConstant.lean",
+          "sha256": "482096765988916177c724f8c90c9544364dc5d60d3aec203908ee81da4fc261"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryActual.lean",
+          "sha256": "fe0e7ef1596a364310c91362979d9f2a714048f2af92562e7b3fa38eb3f70275"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryAudit.lean",
+          "sha256": "4b2ec1c72f765aa47556d0e2bb22ec0e3e23caacd5c29563a6d8ebdc65213e9d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryBudget.lean",
+          "sha256": "7eba08ffcd2fc457bb777745ae840170b4945f97f947997709d008599acb8042"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk00.lean",
+          "sha256": "5604e6ba4f707bbc1caf63344168351f94964b024da2cf86f7968930bed993db"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk01.lean",
+          "sha256": "db41c339d13a831fe11becc3939b253fb6f459e36b634b3085af882c0cc7ea12"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk02.lean",
+          "sha256": "92037d8a263e181fb28f9306629a760bda4bd207192e24f6c081c5334102807c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk03.lean",
+          "sha256": "44a520958c1c1cd8184c72ff747d15af213be7ac658b53dbbdfd3ad2f9228369"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk04.lean",
+          "sha256": "04186d85ed42898c76dc5f03af667dbfb0283033188e7fde9aad24161513696d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk05.lean",
+          "sha256": "bfe18d5b11956f8840e24f6a4afd8ed66bc351778b3f7f8da8f2e3c0df04365e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk06.lean",
+          "sha256": "534914f43d8c57ccb71216168eb6e11dd8e3d2a1a4be24520ea9118bdd66908d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk07.lean",
+          "sha256": "635bee6a90790e90853a67405127292ac5a23c22a8d0caba540c73617c6fb2fb"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk08.lean",
+          "sha256": "701d546038dccb0f57ec7edbb2f23f7d0d9cbbc49eb386be98f86eef9e4547fa"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk09.lean",
+          "sha256": "2c6f84d0cc087f42f470319a52a81f7a0d062eb9e59c1f99151d4e7a254b8a99"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk10.lean",
+          "sha256": "413193b439400e6527ec72103aed5c728b8dfaf80dc4e7d41829cfc837c9fd3a"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk100.lean",
+          "sha256": "966b0742cec37fb82de3c3752a1b34f83bc2bfaed947d9a2b2c66a94613eb403"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk101.lean",
+          "sha256": "994c545c582a7520f991ed63a9adf4d7d7838f34dee7910acc53bb0ff9b8a894"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk102.lean",
+          "sha256": "1a2ce1df421e063f484cddbddb3eb72882a1c19deaac3b9e3bf6a168dbb5eab0"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk103.lean",
+          "sha256": "7a19cb711ffd77940bea5f10cf2c97cfbac3a473a3766de979c9eb155e395d7e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk104.lean",
+          "sha256": "3efc66fbcbcb8cb76950e5efd74989d27f4c9126579ef459f974e63df7d17232"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk105.lean",
+          "sha256": "d3e93d156be895f13eb80c415528a7926acaebb746cb47441756e52ca5bb047c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk106.lean",
+          "sha256": "5fe63223c04e109fda09334a4f88660d6077dc131de7bc95eac5ff4373b7c334"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk107.lean",
+          "sha256": "8065a224bc22395f56b50b76892e46f4d8094117eceebd8f6b56e18e4c8af08c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk108.lean",
+          "sha256": "8c2a5169d6893df7c9e17e23d39d9b0f75ee6feb12b0f4cb75d837c0e6b47643"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk109.lean",
+          "sha256": "0e8fbc2240ddc9fbdc7566c2ac0d274a4f631fb72853153680d5707ad8f2a83d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk11.lean",
+          "sha256": "503383b7f8743d1a2187bba135259abbeec8bdc3c4d25b48aa9a25e2645dda1a"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk110.lean",
+          "sha256": "bb52cb1ca7d214e92f3f2ff38006fc5ad17da56d96d59a18cf4451459a7b0b5f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk111.lean",
+          "sha256": "f944c450f07c1857d2b3c87c5a14869fa135a86551cea60161fb5b961d498b16"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk112.lean",
+          "sha256": "4bbf994e6e829af342c64233859cef88524add2039816cc7af4a5c7b931221f3"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk113.lean",
+          "sha256": "935256c4a1b534d13281c8b8916742a9d624bc20210a1b4c9d07305ec5d7131b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk114.lean",
+          "sha256": "e3d5396613e7c9575ef73137857824d0cba838f895286d27520694bbdb91a487"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk115.lean",
+          "sha256": "8435a557a5e1c16dd17970db65f70eb8790f5093e451ce6fe6b88413b51dd7fb"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk116.lean",
+          "sha256": "118e87b70869fd1c2e9eb6925d9a6fe80657aefe428cf539b4039c90e4b0f80a"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk117.lean",
+          "sha256": "1afbdf7812dd9022afbd82a2a3a103d50a32b73c20e94702f7d8eb57820d035f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk118.lean",
+          "sha256": "15ab9dc236d509ae515050fd94975b691f4d55be5ff28ab4bf18793de848405b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk119.lean",
+          "sha256": "0087520fdaabd4821a6c7f8cb42a17024a42fe6b21916edd538f05097d33b39e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk12.lean",
+          "sha256": "2c09a8f46bbfef29110ab1098f68b02df8927b608fe77cdf3d50e82ac2ccbfcd"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk13.lean",
+          "sha256": "1f2e7b823043d7863fb01b578525a6c97dca9ad03e93788ff198177181474aa7"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk14.lean",
+          "sha256": "494092cadd28703319aae8fece3c277efe5e11c697b05981fd90e14635638211"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk15.lean",
+          "sha256": "918b0cb88db5295c2d55e00068f689b675730d7105db81baa00ba2b7b0090c47"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk16.lean",
+          "sha256": "965d67d0dfec188f893555d183c5b47312fb3c2a194e21495145aa9f0e7a3d38"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk17.lean",
+          "sha256": "fb080ad68fa6894efd9b648d9098a706ac8258576021c89fa31c7a456c5da009"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk18.lean",
+          "sha256": "4fecab2a47cd09f483875a695e1eec84fd49a781db005ada7c46b55fc4e8390c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk19.lean",
+          "sha256": "d816dfdf89c709747cd01abe706197e39d277a3f30069587324e9fab874d682b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk20.lean",
+          "sha256": "87f98b8d01d1403b255e1dce576442eca645bee23579fcdeeddd9114b44e3ec4"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk21.lean",
+          "sha256": "8111199c8da139e178d99d65dc73867b7b4d6f3f0c4550bdd7d36f2f5d8a9bb0"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk22.lean",
+          "sha256": "cd0715ef61211fcddc18782b5ff355db91dff7221629dbb85543e73e0c119371"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk23.lean",
+          "sha256": "4d9636b0253c8c02369d0beb301fa55ef2cc9e07278293660d1cf92dc606f918"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk24.lean",
+          "sha256": "d091e59b12140332523e123b5f950bfc47bf6cf1929abfb14d6347c9d2ea47bc"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk25.lean",
+          "sha256": "966918639ed70e65571f4252b473eca901a429da35eb807a73a9e0513b0113de"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk26.lean",
+          "sha256": "aad2de7713565558ed81dcc6387e65e13103010ba72c0cc43874f41f56265db0"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk27.lean",
+          "sha256": "6b85be15ee8e39a8300f0ca1ecf529150c91378f96f3c91a03e162479ee941ba"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk28.lean",
+          "sha256": "f5740edca4250d5c8e7e63442b1bf87fdd2eda9865ead8a1abf4170077b12b87"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk29.lean",
+          "sha256": "c9eebf6e30eb7aa0236a451d8dac487049714a1eaec4362639c7776a25ae9edb"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk30.lean",
+          "sha256": "4ee64676502d6954e43cf17f41f43c8e84329aadf95f02a6a0d73b535c98b50b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk31.lean",
+          "sha256": "205d4bee263448541e354a471d76b687e1e9904f087c3c8c9af49b8208632936"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk32.lean",
+          "sha256": "f79b3138ab37e1e3833790e445bfa54b924d086d47a6231678a6850796cad694"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk33.lean",
+          "sha256": "5bd926f83ed7db470a8cea18f295a2e455154c196aafdb5dacf3a8c967cf25b2"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk34.lean",
+          "sha256": "a2d75c448b38fcb071eabe7f5a8fa3953b65c72341575f7fa753961924451606"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk35.lean",
+          "sha256": "eacfcb8f54dc385c0ca8a14aa1514d7d0eec88a7297ecab7ebfc28d4b2d2e843"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk36.lean",
+          "sha256": "7edffd686dbb6cd45a5e2e012a0847a2b87eb837de681e3ce1c224ab340de2ed"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk37.lean",
+          "sha256": "d3b2f0981f478916bb43a9ba98b523bbb55adc24ca3445b7f88197abda02b5d8"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk38.lean",
+          "sha256": "c0d4442e428143635f34128c3bbc334f6b568b7a85b683e47d0060505e922327"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk39.lean",
+          "sha256": "50c0f6fd9c13f6e6221e13613fd28441dcfd9fb5d1f19b6bb3de00aa957f582c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk40.lean",
+          "sha256": "db1cf113e1f5e3ebb48b446e7f08e455c646666d002145a58338dc0989742242"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk41.lean",
+          "sha256": "90f2d25fe9a427443e8d217935ba4aa6547eaa5821709746191e84562a8af0e4"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk42.lean",
+          "sha256": "9ef75412ec5ea4f640a17935beedff8163971eff185421b79938ff6de380ad5c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk43.lean",
+          "sha256": "3d1823b4a43662185ecd146885e719d2a477e27f0705a97c0297bd24231ba98f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk44.lean",
+          "sha256": "28dbf4f0d26e9562a56a496a918d718aef482530645367592ab396942a0510ac"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk45.lean",
+          "sha256": "381e7c383a860be75f606e82c50a5028fae312174c1c8ea685f0c732f9aba05d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk46.lean",
+          "sha256": "3756b23c242898b07ae0a3e88e1cd6b2b1ec393de51a9c0578bf4ed9643465b5"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk47.lean",
+          "sha256": "dcd4b001dd1b572fc282c1c629d57e83b84aa7db1e277da6387e63ef388aa7a6"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk48.lean",
+          "sha256": "8649f5606be00d5df51f16288da60609232d785bc71dfe84a7b63838fa5104fe"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk49.lean",
+          "sha256": "982d8876e2a86658d815b62566b4836e72f3554f059d4325e0b31830a08a1806"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk50.lean",
+          "sha256": "e3c4da2d3d26f935ecda6d76d8c2bf2051b6215d2effa3c2ebc1ccac25fd6171"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk51.lean",
+          "sha256": "20b47928a7b15ca63f8a198052355c9f848509ae107e99c3207ce2ff35ec5d7a"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk52.lean",
+          "sha256": "e9b4c7bbe408c30c5fb72ab68da8bee0dd930e1169643c53ccc04779effd5471"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk53.lean",
+          "sha256": "f84b56f9030ca84bbd38b5895034c78b79d9c12b8fa03e3a6a8966040916e3d2"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk54.lean",
+          "sha256": "7a58aad2bfb9756e05b067985e78823be565f4e32cae76832f213efa3d0430da"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk55.lean",
+          "sha256": "4b88833d6874aed47374e580fb336dfbd66f050bb04013bc57e6d02cf4e137bd"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk56.lean",
+          "sha256": "0e4d3ad5150be91254f3918ebed3f0ce154e67ed5d7ece3dee583a592cef133b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk57.lean",
+          "sha256": "c2cd970e145fdd01a84e5b09b0f39e3d85dd63f74b652cd29cad32cb47cd4879"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk58.lean",
+          "sha256": "c2af3696d8d32e1574dd8ec1f2db83c8a33a1a7e7e46b140066339926c58df1f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk59.lean",
+          "sha256": "eb3017ad00925a4455192c11b9f1eda5ccccd3e72786dbc3c6f1b604ebab8f77"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk60.lean",
+          "sha256": "c0d301860161f0a775469376e3564e185d20fbf8b9daa598fd11c0fbbb7c23fb"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk61.lean",
+          "sha256": "683fe00ccf16855acb6f3fed66fa37c46589c5da9c5facdc8d848c0658687726"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk62.lean",
+          "sha256": "bc74da4b1cbacc03cdb6b0a556e48fe2f7d18d009733f5e2944cf5b8dd1f6143"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk63.lean",
+          "sha256": "7bae0c4c96eae16cf453e635f63105d914edc1852379b69afdb4883adaee643c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk64.lean",
+          "sha256": "1558d40083451f66dd505cfc9ed8e9294b9fdf4efd165d499ac705cd32fbe291"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk65.lean",
+          "sha256": "342673023dc993aae94fcd09492c24fdf58deeca1362dcd70cd40d41db7d2150"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk66.lean",
+          "sha256": "8c37ffd20740c27ef6055104efcc209f9c4e51447fb9dc18ca8e0f20f70af7e1"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk67.lean",
+          "sha256": "a8c156a7185febc32fd7f33d5e7ca4862c46b06059bbcb6f2d6c0f766d15df50"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk68.lean",
+          "sha256": "7105c023d53b4e4de5f8b42a10586ba83499bf2ca88754baf915240e9d0176a3"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk69.lean",
+          "sha256": "de5004dcc188058df9c012b887fd1d0757388e44d5cf36cd8716d189df16e326"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk70.lean",
+          "sha256": "0399bec464ea9ba493d118081bbc48444a0eeb582aebbcdd793ecbc37567acff"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk71.lean",
+          "sha256": "817ee8e9c50bc5f3659ddb61452b5bb7650a3c20231db61c8491e4bbd9acb146"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk72.lean",
+          "sha256": "cfa374ff0ab6d876d68150f8f367186f27a457f380541a0b078d5c4ff1a6f09d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk73.lean",
+          "sha256": "609693a6a1cb4180b83470f549f3fdcb66689ab96b4c97f56c62bb014ba8c6b1"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk74.lean",
+          "sha256": "4133b30ddefd2697c2e925fb4920669082d4129750948dbfda4c2683d5ddcdd9"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk75.lean",
+          "sha256": "75f8fc766995fcd3fb597b59baa1270e87db918996a82158a697012557dbf40d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk76.lean",
+          "sha256": "f9bd330609eaa7e432c5c0dfd737b85663665bea99307883c37811c71c2ff05d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk77.lean",
+          "sha256": "9008b226e7fc82805ed6dca42a6e86e5822aae91b0b9f1d0e51b0df002dedeed"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk78.lean",
+          "sha256": "f8ee7a2c2ae0434e6c2a522d0580a795c369fdeca70877a25916b2b641c9f023"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk79.lean",
+          "sha256": "deca66d8eaacd04cf0325ec0f2b59ebda021aaeea8a29426dc60576cc23eb3a7"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk80.lean",
+          "sha256": "ef584eaaa7e4107c10b398f7f640f8e16be95773d02cdb8501d26881a0ac65d4"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk81.lean",
+          "sha256": "95de9fec64db0fa3fab870e248664fc7fe81f2722c0f2299910a14566a63b104"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk82.lean",
+          "sha256": "f397ba17609d7b33a0b223dda940871234f09af50f969eb2c35705a8ee65836e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk83.lean",
+          "sha256": "d4a4315be1497ef0c110392434cab762e13fa405bf2f41657587e0d2086ba775"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk84.lean",
+          "sha256": "be436ac04a14a921401d3b48f376cc52cbfa6f72c0b6a4ddd28682e207e0fa54"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk85.lean",
+          "sha256": "466c69b3abd49550f6aeba868379a4b5bf259a4d6eb9574e5d0a0b9d86824808"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk86.lean",
+          "sha256": "0d513cf8df1f688cd30ca5db0b4db6392675e3acf5f69d50c44787966532d7d3"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk87.lean",
+          "sha256": "7a38ce08eee1677931d61e28ba3bb20bd0cd8459277a8a46e5903e6900626e7f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk88.lean",
+          "sha256": "a90de05bc63ac6b8bccecb6fe8b1ba6de9781e7d45eadba14b268597e0962b1f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk89.lean",
+          "sha256": "4c3cc60ec43626bbb46852956a45ed49a73de48da1c969de0cf8125e12995e73"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk90.lean",
+          "sha256": "22178cd0006340738296611028e0cd7937c4f70940dc6f3934c38a8edf01c40d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk91.lean",
+          "sha256": "b9d6624e04d37c5d20f9ea0e9689b55659d550a3e9675589f348d75e0641e900"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk92.lean",
+          "sha256": "25259506a8e4e8cc5b06c4af70603be27a62ce3990eadf18e21da62477031d12"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk93.lean",
+          "sha256": "8c58fdaf11f75e1409abde5e1e053e096e2475e443a649f5fbc0a420cc5fd466"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk94.lean",
+          "sha256": "0d8280fa92c9aefb55b1ed84e7b928367f4f2ea7864dc15e590a095bcd458b3b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk95.lean",
+          "sha256": "18976d5e2abefc06853ac027dd6fcdf1aaaf402efc21c05da827be32bc8e2421"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk96.lean",
+          "sha256": "b63e98cf5ce06922a9d31f6fd3229b774f5e98b71583c26829641233b3cf7d71"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk97.lean",
+          "sha256": "b5d8ebcc2e6e3eac46073fbdd61bdfa26a5353877b2126768ae98362e34e759e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk98.lean",
+          "sha256": "0db5b0d9dc0a89cc078648689238dd5b4ad349ada03e2fa9acd800f9eb2c491f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryChunk99.lean",
+          "sha256": "a62b14458c367a28650ab7f54baaf8f99f0f0bd1e0a7b22e772abc306c28bde4"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup01.lean",
+          "sha256": "f7b53f0140938bc4653badd6eabacbd53617b84bebff14f4712a958a5871dce8"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup02.lean",
+          "sha256": "880933be83312f7b398557f2c9f7a16c99b7d766bf4a32420cd0a0fcac9c59f5"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup03.lean",
+          "sha256": "96ff3f268252757b1f77132d8701f2177e2b01beebb5d2d45957580bc5789804"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup04.lean",
+          "sha256": "8ec5f5f3e0e32703711db2828dd56d6a1eec3f0bb30feeafc92aa29067705f78"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup05.lean",
+          "sha256": "de7ac54ac47781d8ffdbfcb9c33e81b33a1ca59104c8dcc174b084b5c9cd861d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup06.lean",
+          "sha256": "7486a885460ddb07840f1c773dae13bde2546582ca6101cf387f3c864a25f598"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup07.lean",
+          "sha256": "37abafe0401535822567bdf7bd13a93a9f0a86b77d4ccd9bdb723f056b9827de"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup08.lean",
+          "sha256": "149f796d68bfcdd8aeee04f06c2519a3e65907614183402058595830fa8ac986"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup09.lean",
+          "sha256": "de632c17c6eaf00e79a3ac92fb80744c7c041337156edd79bda3b93a838fe6e0"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup10.lean",
+          "sha256": "b2361f5d4d5fe1cacd8c9833bcc37be1d43fea491f64bfb557a27167c6cff475"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup11.lean",
+          "sha256": "0d733680d3c39ddaea5ddd086adfe9b72a2fa1c5cace7704e25957498f15910d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup12.lean",
+          "sha256": "f7b2ab190744dbb87b5bbbb45fb0807739bfe4a9604e63336f92071f33d8289c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup13.lean",
+          "sha256": "7a2e207e9c9b0ed4b9e53cd0505bc89f04f95b0eaee5dc1ccceeb45029adee5d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup14.lean",
+          "sha256": "2c005a3b5d07d56bcbe5961db2f91d478b0ea3b1c72b4f9f511548ee0f308b07"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryGroup15.lean",
+          "sha256": "76cd2869f260e637532f6ccfd5109741e02d4012f8073b12afd7d87cd61b48e7"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoveryPrefixAudit.lean",
+          "sha256": "3fc9c1c0d6949c537427159ee65df65edd36e6689e293d76df29700e1bf21eb6"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RecoverySummary.lean",
+          "sha256": "87cde1a08ab99a602510b0f1037bf0927a4bdae1ec4c291aacfcc22c8e07fb81"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/Refined0.lean",
+          "sha256": "e3ae0f2ccdf97f2bdb127198d66aff356a0d0d7b0f720e87a48ca141baa2776e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/Fixed032281/RefinedCertificate.lean",
+          "sha256": "0fdea0fda508e44585e440f3fbd61bdd8b05e98b4a5ecb25b7946a7b68ab0177"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/HighAlphaHeight.lean",
+          "sha256": "7ec36693e8d5a6a053a12651a3f8fb94c150b87d9443067066aed920a704861c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/HighAlphaInner.lean",
+          "sha256": "a57f7037e7553b90de378ce530cc025a9120d3287cd77575ff5641a302e60d8d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/ActualCount.lean",
+          "sha256": "d1958a3fef77b9922469c302545b94ff819250d577b6cc84b29196d47880ce53"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/ActualHeight.lean",
+          "sha256": "897f76925c8dcb8ce8ae11802faa5d1e210eec04fc0e65b48c4d75736e70df2c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/Assembly.lean",
+          "sha256": "34f95b76a79aef04c58d95b30f5d8b1f238295c6bf2b1d99cb6046f3491a1b6a"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/Audit.lean",
+          "sha256": "9d0edce8c5e89cf0250db2f20a86d46271b3f4da464cd3cf04f3712546b9df8f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/Count23Principal.lean",
+          "sha256": "481b436777aa020b630a13ea90cc47801177dd091b82c15f8696d210e2797889"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/Count24Nonprincipal.lean",
+          "sha256": "875cb6939aad99a45a36fc80386b5d1122cc227e95fc2dd7037cde5bd2bbb49b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/ExpTangent.lean",
+          "sha256": "ca5b37675712816f882354f8cdcab5a08d3b659858e944986b34f2ac63ea424d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/GateGeometry.lean",
+          "sha256": "ce69013e3a559fb630ee57b3ae822bc384b892ca1e398c3f63e9f8f32a46661e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/HeightChange.lean",
+          "sha256": "aaa95101f5a8f43707b29565cb33896fffdb141ea3b045d4fdee8a8dd0b474e3"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/LogScalar.lean",
+          "sha256": "a7e887a957f57e1de837ba92a615f3ce4372a18ea8eac89f342591c94992c659"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/LowHeight/OriginalScalar.lean",
+          "sha256": "180ef8f6b2aa909c433042b41e348d059d552fdc0b1e29b0c0b63bf74bcf6fa1"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/OriginalV1/SparseBands.lean",
+          "sha256": "995c11d757f157369345ab3334424b8c1b0852df2c6fc303558b30ba4ec597d5"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/Packet.lean",
+          "sha256": "f6b8723f94f290bec7dd138bfd71c1d67ce3d5dfb8373565948811232cf6ba3d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/PhaseScaling.lean",
+          "sha256": "8f40e8a5297aa8eb73622dc0bc4e2de616125406473735e5585e51ba3b7c2157"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/ScalarGeometry.lean",
+          "sha256": "771c7312077c4cf5c2288974215ad25573706fb73e786a64ae713186ae5a0eb1"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/Restart/ScalarReduction.lean",
+          "sha256": "8596d519b45ce6668e98ec10994251b1ca80191c2471a981ce5fe14f9910003f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/ScalarDomain.lean",
+          "sha256": "5aeffa9240eb27ff673b262841021daacb45cce9ce78b7e06cb6752761bfb732"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/ScalarPayment.lean",
+          "sha256": "71034284fb030ed24592be3e912e53fe38323a02b3b252e4aa87141a73e05277"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/CountPayment/UniformCount.lean",
+          "sha256": "b63e43d53b1a96056805658d0ad9acfdfdc3d63852de13bce8cbc168283f99a5"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/Payment.lean",
+          "sha256": "9d169a2cc2cd7644e9d86ce972f3f8865c6f7f757095303437d3edd954462f87"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/PrimeCorrection.lean",
+          "sha256": "e57cdc7a47c07a51b1725db6c79bb897a73aabd1b224daa0f67213a352559091"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/StrongPacket.lean",
+          "sha256": "43728a12e2b77fe63b7aba3722f87f4f2e555452639a95f53f0c808739e01882"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ArithmeticPayment/TotientRatio.lean",
+          "sha256": "9562f92afe4e865f4e1096b8cc5c0eb0a2f581557848522d46dcf70d793f2974"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/AxiomCheck.lean",
+          "sha256": "cb14150c7b965c371c6183a24de5f8b397c21eaf6dacfb504d648aad33adec18"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/GaussianPayment.lean",
+          "sha256": "ddd40fddb2f7b73c3a412ea3ee5a2607fd95d4ced99b2f71b01e98279963027e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/LowAlphaPayment.lean",
+          "sha256": "bd2471e9c217c53d49c3fe238df2aa7f8ea9b5595b8161c011453d488f75f60e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/MovingStrip.lean",
+          "sha256": "249a3cbea7cd4c3c2103340e01249d02a21bb40e47ffc478f0de1d453499c5c6"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/OriginalPayment.lean",
+          "sha256": "dc062ea7b0a1cd31c26ed0754e08d00eeaa0e4e0f036847864732b550d1e871e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/Continuation/ScalarDomain.lean",
+          "sha256": "d8babb0113aafebc5b81197244e0490203fb947e884608aa01691b4d58f6e768"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/DensityIntegral.lean",
+          "sha256": "cc72a7b8160f6c0d7e1da025b50758ad583b7fc6d75911d7a5245bcd47686024"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/DensityRectangle.lean",
+          "sha256": "eef0b6c1463c04413eafe57bcb2a6fb9c7c2f9768cc0f56c4620b88ec3170bdc"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/FiniteAbel.lean",
+          "sha256": "c327ccdceaf0599b803265482ace41c30d08dd7ea4e31dc7fa1435ee51a3b74f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/HeightAbel.lean",
+          "sha256": "bb1038987295f1f4de3d69c0af2f78580c98ff6be5bc726caba25f998e18640f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/HeightKernel.lean",
+          "sha256": "280b2f18a29e118273aca9c2ac570429674208b07a8f1041ce9c28416824adce"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/LogHeight.lean",
+          "sha256": "c653d0562322bdac408bcff132f563a9a9db7da3cdcbaf92fcd91694262ec90f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/MiddlePacket.lean",
+          "sha256": "62536156a547c2bf6d412548d8b8e97ae92f128d85049df6cc2b9013b1ca9f79"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/OriginalIntegrals.lean",
+          "sha256": "eda1271604a323f452a0193ab01c5b75529fdac542f58c916586125c1e958c24"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/SourceDomain.lean",
+          "sha256": "084195629500386216280505bdfa21d18fe2d71dcd4cb9672da72233308dde0b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/SecondArc/SourceSevenIntegral.lean",
+          "sha256": "a602746d9d86968ee2d5b20169f8dbec228c41ed408c28769f3be5e799318b6d"
+        }
+      ]
+    },
+    {
+      "scope": "ThirdArc",
+      "file_count": 74,
+      "inspection": "全目录词法/声明与引用覆盖；恢复证书按 RecoveryBudget/RecoveryActual 生产链核实，不冒称逐块独立重算或内核重放。",
+      "source_files": [
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/AxiomCheck.lean",
+          "sha256": "e8d25b25822c834c5941d58d0cab387678d097476312344828a2db6d9c4528a1"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/BetaIntegrals.lean",
+          "sha256": "3e45925e57fa3bc29ee57c119766c22df898301f167a9b808c821f4b69e0db0b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/BoundaryChecks.lean",
+          "sha256": "b2c296bf95d703233715ff074252ddfaad1890928b1ff6bc8cf80e08744cdaa2"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/AxiomCheck.lean",
+          "sha256": "74228d60a4e01470465432d75aacde392a24c6e46bebcb6492098419b6c9a5c8"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/CountFubini.lean",
+          "sha256": "0361da316be92a5e097d0b74e99d0bffd566561a66b32a9c7abc305f2aa0711d"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/HeightPayments.lean",
+          "sha256": "2a6a75e4cf6b35a0e4c4779bdaf0b53479c431ae070d22496625bf3d62da5ce3"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/LogSubstitution.lean",
+          "sha256": "70b1c1af98ad16284298d7c542cc82bddc97328780fa099f65391c6ed821d6a7"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/Principal.lean",
+          "sha256": "17b1fcdb027e414705369c802c1ea49807352090026a00a3336671465be134e4"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/AxiomCheck.lean",
+          "sha256": "338c2c51d87aeac737a649007c3f12c27126ccd0b94bd3b0deeae548a800fc31"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/LowAssembly.lean",
+          "sha256": "d05062ab37d16da8c056629e7d163236aa6fec00474e3ffa5f99cfa2dcd1bc20"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/LowBeta.lean",
+          "sha256": "ae479cc0602a239c7fffee6fff261b5304717824a7d28f55d3ebeb7fc8b494ea"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/LowBetaScalar.lean",
+          "sha256": "7761ef34dfd354fb4f6c3147208886d46f083b047e0c8dfb82f8e6942ae9b15f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/LowCount.lean",
+          "sha256": "32596b5ecbf41963f331eacb999567224036e0ae22aca8843e754bf5544813bf"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/LowStrip.lean",
+          "sha256": "ea470d63fb717739eda03effda0e4a5c3a91891d9090d3772dce42dd52f937da"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/AxiomCheck.lean",
+          "sha256": "8463db6668df87cd944c6f977457b256f5a17e4728fc69a7e16eef4a59dbb5e2"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/DensityBeta.lean",
+          "sha256": "198c7f594ac4810d01ddb846ebb8c35de4c66a58bd74ef5e54a8b9d5e8cd92f5"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/DensityIntegral.lean",
+          "sha256": "e0b1fce447c85172fd547f918f1c086d0bafa1072b2b11dea125773d5f65abc6"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/DensityLogs.lean",
+          "sha256": "f7263c0c3facbd21fa01863618aad66766a328cea180e7bc5c82969c1e208a02"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/DensityScalar.lean",
+          "sha256": "3c2a8f76f8103ed7ef8d3cfc4e26141b960897565abfe33f0703ae1a45ed1952"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/HighEndpoint.lean",
+          "sha256": "4149c663b37637e399bac468b768fc74c59ebb81905c27d46512f2c1c2cc4e05"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/HighEndpointDensity.lean",
+          "sha256": "e0004620c329b8e41c00f3e6334bfabbbc54baabec10ac54cc3e3a087dde2a01"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/HighEndpointScalar.lean",
+          "sha256": "96bc9b6f71038e20f4ea9ad3efa8a4aa046ea6822babb2c49f5ee4b228917072"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/LowDensity.lean",
+          "sha256": "ff0643f6e018ad9013b31dabf80410765e8599e50cc6e0b98f4a8f95da5fefb2"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/LowerBeta.lean",
+          "sha256": "4214160fb9d0775f1560c71252310337407f0c418b35dd3db9698cf88cdd13b9"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OrdinaryBands.lean",
+          "sha256": "3a0fd602e93023dcc21c368242e1579cf70da2dfa530f47d7effa55e95a719e8"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OrdinaryHeight.lean",
+          "sha256": "d74e097059c10585471a1db0c3e65692d0c5f26cb36058f469eec657f518c554"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OrdinaryPayment.lean",
+          "sha256": "c0e1d9eb5faa691111346ece1ef31f2170b0c77de631aff026f558db8ec422ac"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/AxiomCheck.lean",
+          "sha256": "865f7e0cd6f1fd23f5305243dd1e95baffbe617dc983c70fcf7baa8b6bf3ca5e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/DensityDomainCheck.lean",
+          "sha256": "57886285c32366fd6289a596c17b5bcc2deab1cf8426698f5198ccb1464a97f8"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/M6Certificate/AxiomCheck.lean",
+          "sha256": "cedf5cd05474a9d5ce4b3e6a0a67b7ae0727ada1c52fde5ff8f0e56e7e9b7a1e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/M6Certificate/Constants.lean",
+          "sha256": "374569c656224a62611aa82d587980b15010b90a4c67e28259fe2df7817d6199"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/M6Certificate/FiniteIntegral.lean",
+          "sha256": "c6b68e98f129def6061983454ca3bf1d203211fd6f9f3f47b7302f442c789365"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/M6Certificate/Payment.lean",
+          "sha256": "c5ed91469b3b5a1d4033d7864a2d6969f8ece92da6d5a7592f850b10cb6f8dbd"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/M6Reduction.lean",
+          "sha256": "2b96355d562c68c297baba1679835b678aa6fcf93487ddda238a5ba3a7b0164e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/MovingDomains.lean",
+          "sha256": "fb3cd5c66403d64df1d1614dc6ad0c6b7aa4502360a0fd80a0b292e89feb12b4"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/RealTail.lean",
+          "sha256": "99e604241ff9c3169c22c454139bf321d1f63c3a7005a0f274f72b63ad18ba58"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/Assembly.lean",
+          "sha256": "5e40ec2973d15a45a1daa0e9c5e4b98e0859e6a486fbb07a0b3f2b8fa3f9d479"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/AxiomCheck.lean",
+          "sha256": "172d4a3e583837b5075d70b177412e302decb3bc9b09e97341d64171d0fd5478"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/BaseConsumer.lean",
+          "sha256": "d5f1e538556aaa8c5d36cc67d773dc9cb56f4bb5dda27e59ee817a4f629ce0d2"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/BaseScalar.lean",
+          "sha256": "24e6a3ac221974d8b5f6ed3b03c5a75bc305300c046ac28d39d1e7e39cbadd09"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/LocalSplit.lean",
+          "sha256": "6b42f84716e039018a39ffafa85a4b9cef1a466d8ada21b27f51b87c7a111691"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/OriginalCount.lean",
+          "sha256": "ce4a30c89f13e3f401a26021032ba71fe26e068b88649e16b5e9350e43eb3c0a"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/PrimedIntegral.lean",
+          "sha256": "c7ba1f1db4617653969a81677b40501c312527ea4175f614e7491a954d1e1e66"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source521523/SingleScale.lean",
+          "sha256": "70a001bf63fe4b1acbc838dde70d7091c5b124d0baaebb45c8803fa00a2a9b15"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/AxiomCheck.lean",
+          "sha256": "1fa7dbc1e62de2fdf7ab7ff5caa8135c92eb8bd05fd58c4f6a79ae5e03be331c"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/Coefficients.lean",
+          "sha256": "ec77554e724897db191a5f29ae184c818e4b588e7480b24b9450aa603a9f638e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/Consumer.lean",
+          "sha256": "058075b4623569d5ce208893ec7e7ff3853ca51ddfb30fd0ad4bb64fc7a36c73"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/Endpoint.lean",
+          "sha256": "14917d3401f345fa5259cd3afcceb9581b5e7e20a456f87827574594d663a716"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/EulerBound.lean",
+          "sha256": "068179f5b11805b0f1c0fe11812d216b57ba4a7b45a78dfc4885d44bc4266fce"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/Expression.lean",
+          "sha256": "d050c780216a1cd5973d3bf24240754e2de4a7e04bdd8240cff41f85dc84cbba"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/FirstMonotone.lean",
+          "sha256": "344e04987f491e4b784e8ef3d4311216d7a1fbdd15dc961319e8493778b5a773"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/FrozenDensity.lean",
+          "sha256": "b3c98b6974ca19c046a12117a9f7b7a55d0d5a4fbb68a644a467221e11ab73c0"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/LocalTaylor.lean",
+          "sha256": "e6274dc0bd69fa80f250c2aaf6c8967afd1abac43ac08e4aec4b0bf23f1129f2"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/Payment.lean",
+          "sha256": "83afad9aa4b975d1eb9c8c3fbb6586b83a9a6f75bbd09b7b5f394ffeaf56c9c2"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/Reduction.lean",
+          "sha256": "0605c201c21ce8a8ee2ea11e4f2b3bb318e88465cf282b3d93a43e4703b5bf26"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source524/Scale.lean",
+          "sha256": "94d900e14bdd2ac432575166fc072f0c5f1fb7030a4e1016bcae3de80522d39f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source525526/AxiomCheck.lean",
+          "sha256": "340b64a8ca0f589d9bee030083b6f704cc273160c35b7d1abf2b1b97cd311aca"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source525526/Consumer.lean",
+          "sha256": "71686268d06c28a3f69b4f1b5b7839fd9e0d6b27df0795a0d900a6c3666dad5f"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source525526/Count.lean",
+          "sha256": "03ac6f2b9da680db84ffd606a2bb23baeb0ff5b0e021232a4428460044f009b4"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source525526/Modulus.lean",
+          "sha256": "24705a3640badd425448d1d93592863dc5f71cc50f968a6d1cf21e36e5d4b910"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source525526/RealRemainder.lean",
+          "sha256": "f2cc0363b449f694f506772321c8f0cfde78ed121da3e1bd0f7317ac17c80472"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/Restart/OriginalV1/Source525526/Scalar.lean",
+          "sha256": "3dd906d1574f201da3cd8b8dba53aff308b5290437765974f1c09f0933b56a89"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/ScalarPayment/StripScalar.lean",
+          "sha256": "3b41dc42e5828850364419a6b53d20cab6862ac0bad8b0c516b96dbb7074c618"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/SourceWindows.lean",
+          "sha256": "f7b735ea73231086ad3d2e72758fa5e9721c1b6fcbe942777338e2daf8054a3e"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/TableDomain.lean",
+          "sha256": "a8872130efcacb18e6c86a5e55fcdb277be8a200af36e3035a8828a128d72091"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/TableIntegrals.lean",
+          "sha256": "72fe05288d4d4f9797ddd5f4f10a0b52afd3e5fa8b3b045472ee3f2e4c794cab"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/TablePayments.lean",
+          "sha256": "d7af889c2fc7b8e3bdfea8796845ac48e72e59697065e4921e589af0abf98a54"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Continuation/Totient.lean",
+          "sha256": "0b72112edb57a006e5b0d9367fa753672a13046cf94065d5f84c4a77b4885ddf"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/DensityIntegrals.lean",
+          "sha256": "5ccc85788eb737541d70a9298b6fb10c1f28956ec4518e5efc80fd870288f961"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/ErrorBudget.lean",
+          "sha256": "6fa1244ce2a2e1e5e703520cd71c44305f304067839f57b32ded45a0a4527f78"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/Heights.lean",
+          "sha256": "a23bb41e567830b893a23c1fa4eccd133890114da98f143e578b368cf0f0c037"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/LowWeight.lean",
+          "sha256": "0bf2293dc2df1e084e5be2d5b4b81f0428c57a718ba0691eaae83630f3ad661b"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/PartialSummation.lean",
+          "sha256": "5b1cd929b668fd7e0151d94a68fbb1e4b57d955920f080b4021bb7f4e10ff489"
+        },
+        {
+          "path": "LiuWang/Proof/SourceRoute/ThirdArc/PrimeBridge.lean",
+          "sha256": "1cae61f30dcd8af2140107ab7347e58284603c736877554c8322eb59573a2933"
+        }
+      ]
+    },
+    {
+      "scope": "latest_consumers",
+      "rows": [
+        {
+          "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.LowHeight.actual_M1_le_original_low_scalar",
+          "remaining": [
+            "MINOR-T7",
+            "MINOR-NU-TOTIENT",
+            "M2-ORIGINAL-LOW-SCALAR"
+          ]
+        },
+        {
+          "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.actual_two_strips_log_bound",
+          "remaining": [
+            "M2-T2-ADAPTER",
+            "M2-LAST-STRIP-SCALAR"
+          ]
+        },
+        {
+          "consumer": "LiuWang.Proof.SourceRoute.SecondArc.Continuation.ArithmeticPayment.CountPayment.Restart.OriginalV1.truncated_endpoint_bound",
+          "remaining": [
+            "MINOR-T7",
+            "M2-ENDPOINT-SCALAR",
+            "M2-C1-TAIL-SOURCE"
+          ]
+        },
+        {
+          "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.Source521523.equation_5_27_original_conditional",
+          "remaining": [
+            "MINOR-T7",
+            "MINOR-NU-TOTIENT",
+            "M3-LOCAL-C1"
+          ]
+        },
+        {
+          "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.equation_5_31_actual_count",
+          "remaining": [
+            "M3-MIDDLE-ENDPOINT",
+            "M3-MIDDLE-HEIGHT",
+            "M3-DENSITY-DOMAIN-SOURCE"
+          ]
+        },
+        {
+          "consumer": "LiuWang.Proof.SourceRoute.ThirdArc.Continuation.ScalarPayment.Restart.OriginalV1.sigma6_original_reduction_with_real_tail",
+          "remaining": [
+            "MINOR-T7",
+            "MINOR-NU-TOTIENT",
+            "M3-HIGH-M5",
+            "M3-HIGH-LOCAL-REGION",
+            "M3-HIGH-REAL-TAIL-SOURCE",
+            "M3-NU-MONOTONE-ADAPTER"
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "out_of_scope",
+      "description": "根闭合、基础深层生产者、第四弧归父级；不把其每个受阻下游再算新缺口。仅审严格 Liu–Wang N≥exp3100，未改常数、未新造路线。"
+    }
+  ]
+}
