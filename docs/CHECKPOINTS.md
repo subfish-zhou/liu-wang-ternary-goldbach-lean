@@ -103,6 +103,10 @@ M06.K02已核收。`Parent.WeightedPsiAudit.actual_lemma8`对全部x>1保留原�
 
 M04-W03已核收。`Parent.LehmanKernelAudit`验证原37/25配对核、同一反射重数索引的真实无限和及实际ξ积分下界。父级同时核验此前已交付的`UncompensatedXi`和`ZetaLehmanIdentity`，使`ZeroSeries.horizontalLogMass_lehman_lower`完成编译及官方重放；不再把这条接线列作阻塞。Gamma、极点与右侧ζ积分仍原样显式保留，完整Turing数值总预算及零点数据未由本项核销。来源为原常数的独立证明与已核转述，不冒称逐页复现Lehman原文。
 
+## 本次追加：中央Jn锐预算与实际实ζ消费者
+
+M04-V04已核收。原小弧、连接段及完整局部积分均已证明，J1/J7分别在原eta²>125/eta²>2000域取得731/(1000·eta)与51/(50·eta³)，包括整数eta的可积性。父级`JnCentralAudit.actual_zeta_Jn_and_both_tails_paid`把七项中央预算接入已有实ζ总预算，实际消去未控制的`sourceJnNormalized`，不只是导入局部工具。非整数ζ表示域仍保留；完整实相位数值合成、严格R0/R2及整数处最终预算仍未由本项核销。此前交付中“中央仅有粗常数”的历史描述已被本批锐预算取代。
+
 ## 断联后的恢复原则
 
 以本仓库主根、最新验证摘要和明确的任务分解文档恢复，不以聊天中的计划或CLI退出消息认定闭合。保留一个main主工作树；活跃工作者只写独占新模块，父级核收后冻结、构建并发布。未验草稿、运行日志、扫描文献、凭据和私有会话不在公开包内。
