@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-09-15T20:34:04.193171+00:00",
-  "previous_head": "f40d635eda3b15896d05679b54735a15ea960350",
+  "created_utc": "2026-09-15T20:36:22.615562+00:00",
+  "previous_head": "e921b5016eb973ad6bb029fde0141963bd9d2d3e",
   "entrypoint": "LiuWang.Proof.Campaign20260915.Accepted",
   "main_root": "LiuWang.Proof.Campaign20260915.Parent.SmallConductorPaidRoot.threeOddPrimes_of_two_shared_inputs",
   "remaining_mainline_inputs": [
@@ -10,14 +10,14 @@
   "main_theorem_proved": false,
   "scope": "Odd natural N >= exp(3100); below-threshold interval not proved.",
   "validation": {
-    "request": "b570442832dd4b6999802cd75d371d3e",
-    "planned": 4934,
-    "passed": 4934,
+    "request": "a7ef6c4a43c040d8827cb90e0e811a17",
+    "planned": 4943,
+    "passed": 4943,
     "built": 2,
-    "cached": 4932,
+    "cached": 4941,
     "check_modes": {
       "legacy-checked-cache": 883,
-      "official-core-exact-replayFromImports": 4051
+      "official-core-exact-replayFromImports": 4060
     },
     "clean_rebuild_claimed": false
   },
@@ -4955,7 +4955,16 @@
     "LiuWang/Proof/Campaign20260915/Totient/RSCountAudit.lean": "291d1e4d63bb4823242a668f8f7104cc1964e0815b1e4c37575d2911f27f41c6",
     "LiuWang/Proof/Campaign20260915/RSSection8ZeroKernel/PositiveKernel.lean": "b7b0b151cdbc9b6182091c1ca8a94bfa9538637072b14c2cec5c13e563c5cede",
     "LiuWang/Proof/Campaign20260915/Parent/CountAbelAudit.lean": "1aebb6c861fe69ea91a9a4f144bc4accf9f815531448e49137bd816305ea9731",
-    "LiuWang/Proof/Campaign20260915/Accepted.lean": "4af9bca4816c16b6912d53efb0c314c9890a00aefeeea70d4466f00462e8e7c1"
+    "LiuWang/Proof/Campaign20260915/RSSection8Scalar/LogTail.lean": "da6e47157cb1fa11e72374383a147f265109f4cb3633a6412d734e5bee613217",
+    "LiuWang/Proof/Campaign20260915/RSSection8Scalar/PrimePowerIntegral.lean": "83f7c43d9cb1198cd89164fcca53868bf4fbb9575f3171e1180c48ce4234c659",
+    "LiuWang/Proof/Campaign20260915/RSSection8Scalar/EndpointM.lean": "171d0ae881c8069741c2bab44ecf01c876169bf83c5b11b0a2ed08b4fc433a26",
+    "LiuWang/Proof/Campaign20260915/RSSection8Scalar/EndpointL.lean": "5645f18a8cb86df72776e3c9b3f0c6364b28ca38b56975584e079fae7d67cd33",
+    "LiuWang/Proof/Campaign20260915/RSSection8Scalar/EndpointBounds.lean": "c0653920ea1e80ace874227044ac821049ad496a2256ecead82978c8bae05549",
+    "LiuWang/Proof/Campaign20260915/RSSection8Scalar/ScalarAudit.lean": "26df611eaf733f7f235080d5c696c5906c9af177aa5aef69766fc0f3e757a9bb",
+    "LiuWang/Proof/Campaign20260915/RSSection8Scalar/OriginalL.lean": "72e6deb18a6f3dd7dbb6aa770f923f8e1f784661d61f8ab1b78e0d296473808b",
+    "LiuWang/Proof/Campaign20260915/RSSection8Scalar/Section8Tools.lean": "678d4cd06671884669363e285ad24c864301bca972244d3c6515557ff721ad3a",
+    "LiuWang/Proof/Campaign20260915/Parent/Section8ScalarAudit.lean": "7e8078755d815773113ee48afaf7b920bf309406672e4015ef6c2c51d76efec8",
+    "LiuWang/Proof/Campaign20260915/Accepted.lean": "4333a0d9cadbbe13286369063be5b36facd8ed63097fbe84fe3f2338632d3a42"
   },
   "publishing_rule": "Parent semantic acceptance and actual consumer integration precede each checkpoint; no automatic acceptance from CLI exit."
 }

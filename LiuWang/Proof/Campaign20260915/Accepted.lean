@@ -86,6 +86,7 @@ import LiuWang.Proof.Campaign20260915.Parent.GramWindowAudit
 import LiuWang.Proof.Campaign20260915.Parent.TableScalarAudit
 import LiuWang.Proof.Campaign20260915.Parent.RealNormalizationAudit
 import LiuWang.Proof.Campaign20260915.Parent.CountAbelAudit
+import LiuWang.Proof.Campaign20260915.Parent.Section8ScalarAudit
 /-!
 Checked component entry point. This does not prove LiuWang.TheoremStatement.
 See docs/gaps/ACCEPTED-20260915.md for retained mathematical inputs.
