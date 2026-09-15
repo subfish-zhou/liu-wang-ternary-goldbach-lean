@@ -75,6 +75,7 @@ import LiuWang.Proof.Campaign20260915.Parent.PolynomialExteriorAudit
 import LiuWang.Proof.Campaign20260915.Parent.CrossLaneHandoff
 import LiuWang.Proof.Campaign20260915.Parent.RightC2TailAudit
 import LiuWang.Proof.Campaign20260915.Parent.CentralC2Audit
+import LiuWang.Proof.Campaign20260915.Parent.Section8KernelAudit
 /-!
 Checked component entry point. This does not prove LiuWang.TheoremStatement.
 See docs/gaps/ACCEPTED-20260915.md for retained mathematical inputs.
