@@ -20,7 +20,7 @@ Lean 4 解析数论与 Liu–Wang 原论文路线的公开源码快照。
 - 原论文的部分印式仍标为 `SOURCE_CHECK`；从其他已证等式推得的结果不表示该印式已被核实或修订。
 - 源码没有因本次公开而改写数学定义或证明；内部工作树历史、运行日志、私有路径和中止稿不在此公开历史中。
 
-最新组件验收见 [`docs/gaps/ACCEPTED-20260915.md`](docs/gaps/ACCEPTED-20260915.md)：18 个核心工作包中 3 个完整闭合，另 3 个独立预算障碍已在保持原最终强度下消去，剩余 12 个独立主线工作包（字面中间式与来源核查另列）；已验收组件合并入口为 `LiuWang.Proof.Campaign20260915.Accepted`，不等于主定理入口已闭合。
+最新实际主根见 [`docs/gaps/ROOT-INPUTS-20260915.md`](docs/gaps/ROOT-INPUTS-20260915.md)：主弧及第二、第三、第四弧已接入大数范围的条件性三素数出口，只保留 **4 项共享数学输入**（零密度、有限高度 ζ 验证、全域 totient、小导子排除）。这不是无条件主定理。早期分批验收保留在 [`docs/gaps/ACCEPTED-20260915.md`](docs/gaps/ACCEPTED-20260915.md)；共同入口为 `LiuWang.Proof.Campaign20260915.Accepted`。
 
 详细边界见 [`docs/STATUS.md`](docs/STATUS.md)，源码入口见 [`docs/SOURCE_MAP.md`](docs/SOURCE_MAP.md)。
 [`verification/status.json`](verification/status.json) 记录导出时的**部分本地检查进度**；不是全库验收证书或 GitHub CI 成功记录。

@@ -1,0 +1,153 @@
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Cover
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign0
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign1
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign2
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign3
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign4
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign5
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign6
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign7
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign8
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign9
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign10
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign11
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign12
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign13
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign14
+import LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120.Sign15
+
+set_option autoImplicit false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 4000000
+noncomputable section
+
+open LiuWang.Proof.SmallConductorExpansion.Continuation
+
+open LiuWang.Proof.SmallConductorExpansion
+
+namespace LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120
+
+theorem original_region (chi : DirichletCharacter ℂ 120)
+    (hc : chi ≠ 1) (hsq : chi ^ 2 = 1) {x beta : ℝ} (hx : 120 ≤ x)
+    (hb : 1 - 1 / (9.645908801 * Real.log x) ≤ beta) :
+    chi.LFunction (beta : ℂ) ≠ 0 := by
+  obtain ⟨signs, hs⟩ := square_word_signs chi hsq generators units
+  have ht := square_word_table chi hsq generators words cover signs hs
+  have hall : ∀ signs : Fin 4 → Bool,
+    signs = ![false, false, false, false] ∨
+    signs = ![true, false, false, false] ∨
+    signs = ![false, true, false, false] ∨
+    signs = ![true, true, false, false] ∨
+    signs = ![false, false, true, false] ∨
+    signs = ![true, false, true, false] ∨
+    signs = ![false, true, true, false] ∨
+    signs = ![true, true, true, false] ∨
+    signs = ![false, false, false, true] ∨
+    signs = ![true, false, false, true] ∨
+    signs = ![false, true, false, true] ∨
+    signs = ![true, true, false, true] ∨
+    signs = ![false, false, true, true] ∨
+    signs = ![true, false, true, true] ∨
+    signs = ![false, true, true, true] ∨
+    signs = ![true, true, true, true] := by
+    decide +kernel
+  rcases hall signs with rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl
+  · have hz := DirichletLWeakStripDerivative.sum_one_period_eq_zero chi hc
+    simp only [tableValue_character chi _ ht, ← Int.cast_sum] at hz
+    exact False.elim (certificate0 (by
+      rw [VerifiedScan.periodSum_eq]
+      exact_mod_cast hz))
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate1)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate2)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate3)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate4)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate5)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate6)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate7)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate8)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate9)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate10)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate11)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate12)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate13)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate14)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+  · exact rationalWeighted_original_region chi hc _ ht
+      (m := 120) (by decide) (by decide) (n := 40) (by decide)
+      ((VerifiedScan.weighted_iff _ _ _ _ _).mp certificate15)
+      (by norm_num) (by norm_num)
+      (VerifiedScan.log_scale_dyadic (j := 6) (by norm_num; linarith)
+        (by norm_num)) hb
+
+#print axioms original_region
+
+end LiuWang.Proof.Campaign20260915.SmallConductors.Fast.Q120

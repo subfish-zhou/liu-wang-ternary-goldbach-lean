@@ -1,0 +1,61 @@
+import LiuWang.Proof.Campaign20260915.ZetaValidation.CompleteSixteen
+import LiuWang.Proof.Campaign20260915.ZetaValidation.OriginalPhaseCenter
+import LiuWang.Proof.Campaign20260915.ZetaValidation.HorizontalCandidates
+import LiuWang.Proof.Campaign20260915.ZetaValidation.HighOrderCheck
+
+namespace LiuWang.Proof.Campaign20260915.ZetaValidation
+
+#check zeta_ne_zero_height_sixteen
+#check xi_upper_integral_primitive
+#check xi_upper_integral_sixteen_lt
+#check zetaClosedCount_sixteen
+#check zetaClosedValues_sixteen_pair
+#check zeta_sixteen_all_simple_on_line
+#check unitPhaseAt_error
+#check unitPhaseAt_original_scale
+#check originalHeightGammaPhaseCenter_error
+
+#print axioms horizontal_coeff0
+#print axioms horizontal_coeff1
+#print axioms horizontal_coeff2
+#print axioms horizontal_coeff3
+#print axioms horizontal_coeff4
+#print axioms horizontal_coeff5
+#print axioms horizontal_coeff6
+#print axioms horizontal_coeff7
+#print axioms horizontal_tail_phase_rational
+#print axioms horizontal_coefficient_real
+#print axioms horizontal_prefix_rational
+#print axioms horizontal_prefix_real
+#print axioms horizontal_tail_phase
+#print axioms weighted_prefix_lower
+#print axioms horizontal_cpow
+#print axioms horizontal_partial_sum_lower
+#print axioms horizontal_abel_correction_nonneg
+#print axioms horizontal_second_order_error
+#print axioms horizontal_zeta_re_pos
+#print axioms zeta_ne_zero_horizontal_right
+#print axioms zeta_ne_zero_height_sixteen
+#print axioms xiCountingPrimitive_hasDerivAt
+#print axioms xi_upper_horizontal_primitive
+#print axioms xi_right_vertical_primitive
+#print axioms xi_upper_integral_primitive
+#print axioms xiCountingPrimitive_two_im
+#print axioms critical_polynomial_argument
+#print axioms xiCountingPrimitive_sixteen_im
+#print axioms xi_upper_integral_sixteen_lt
+#print axioms zetaClosedCount_sixteen
+#print axioms zetaClosedValues_sixteen_pair
+#print axioms zeta_sixteen_all_simple_on_line
+#print axioms unitTaylorAt_correct
+#print axioms unitTaylorAt_error
+#print axioms roundRationalAt_error
+#print axioms roundQComplexAt_error
+#print axioms unitPhaseAt_error
+#print axioms unitPhaseAt_original_scale
+#print axioms originalHeightGammaArgumentCenter_abs
+#print axioms originalHeightRoundedArgument_error
+#print axioms originalHeightRoundedArgument_reduced
+#print axioms originalHeightGammaPhaseCenter_error
+
+end LiuWang.Proof.Campaign20260915.ZetaValidation

@@ -53,6 +53,11 @@ import LiuWang.Proof.Campaign20260915.ZetaValidation.RationalEvaluation
 import LiuWang.Proof.Campaign20260915.ZetaValidation.RealAxis
 import LiuWang.Proof.Campaign20260915.ZetaValidation.SecondOrderEndpoints
 import LiuWang.Proof.Campaign20260915.ZetaValidation.SecondOrderEvaluation
+import LiuWang.Proof.Campaign20260915.Parent.AllArcsPaid
+import LiuWang.Proof.Campaign20260915.Parent.SmallConductorAudit
+import LiuWang.Proof.Campaign20260915.Parent.TotientThetaAudit
+import LiuWang.Proof.Campaign20260915.Parent.ZetaHighOrderAudit
+import LiuWang.Proof.Campaign20260915.Parent.ZetaCompleteAudit
 /-!
 Checked component entry point. This does not prove LiuWang.TheoremStatement.
 See docs/gaps/ACCEPTED-20260915.md for retained mathematical inputs.

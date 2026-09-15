@@ -1,0 +1,170 @@
+import LiuWang.Proof.Campaign20260915.OriginalRegion.LecturePolynomial
+import LiuWang.Proof.Campaign20260915.OriginalRegion.FourthOrderLow
+import LiuWang.Proof.Campaign20260915.OriginalRegion.SmallOrderClassification
+import LiuWang.Proof.Campaign20260915.OriginalRegion.BranchSelections
+import LiuWang.Proof.Campaign20260915.OriginalRegion.PowerEulerSupport
+import LiuWang.Proof.Campaign20260915.OriginalRegion.HigherOrderBudget
+import LiuWang.Proof.Campaign20260915.OriginalRegion.LectureScalar
+import LiuWang.Proof.Campaign20260915.OriginalRegion.HigherOrderRegion
+import LiuWang.Proof.Campaign20260915.OriginalRegion.MovingBudget
+import LiuWang.Proof.Campaign20260915.OriginalRegion.HighRegion
+import LiuWang.Proof.Campaign20260915.OriginalRegion.PrincipalRegion
+import LiuWang.Proof.Campaign20260915.OriginalRegion.SelectedMovingCost
+import LiuWang.Proof.Campaign20260915.OriginalRegion.SimultaneousSelection
+import LiuWang.Proof.Campaign20260915.OriginalRegion.SourceFreeRegion
+import LiuWang.Proof.Campaign20260915.OriginalRegion.SourceFreeConsumers
+import LiuWang.Proof.Campaign20260915.OriginalRegion.RemainingRegion
+
+namespace LiuWang.Proof.Campaign20260915.OriginalRegion
+
+#check @lectureCoefficients_exact
+#check @square_polynomial_identity
+#check @square_polynomial_nonneg
+#check @lectureCoefficients_pos
+#check @phase_nat_power
+#check @lecture_phase_nonneg
+#check @lecture_selected_bound
+#check @lecture_selected_envelope_strict
+#check @fourth_root_phase_nonneg
+#check @fourth_order_damped_nonneg
+#check @fourth_order_real_axis_budget
+#check @fourth_order_low_no_zero
+#check @ordinary_fourth_order_low_original
+#check @small_order_low_classification
+#check @small_order_low_zeros_equal
+#check @smallOrderLowZeros_subsingleton
+#check @reflectedKernel_conjugate_at_zero
+#check @quadratic_conjugate_mass
+#check @real_axis_signed_selection
+#check @quadratic_pair_signed_budget
+#check @cubic_lecture_selected
+#check @fourth_lecture_selected
+#check @consecutive_power_corrections_disjoint
+#check @lecture_badPrimeCost_joint
+#check @conductor_euler_support_share
+#check @lecture_conductor_euler_joint
+#check @lecture_principal_euler_reserve
+#check @lecture_damped_nonneg
+#check @higher_order_lecture_budget
+#check @lecture_original_scalar
+#check @lectureShift_properties
+#check @primitive_higher_order_original
+#check @ordinary_higher_order_original
+#check @principal_badPrimeCost
+#check @harmonic_support_upper
+#check @lecture_moving_pole_budget
+#check @lecture_high_pole_free_budget
+#check @lecture_scaled_budget_contradiction
+#check @primitive_high_original
+#check @ordinary_high_original
+#check @zeta_lecture_budget
+#check @zeta_original_no_zero
+#check @principal_original_no_zero
+#check @primitive_badPrimeCost
+#check @signedCost_le_harmonicBound
+#check @signed_real_principal_strong
+#check @lecture_signed_moving_envelope
+#check @lecture_center_selected
+#check @cubic_lecture_poles_paid
+#check @fourth_lecture_poles_paid
+#check @quadratic_lecture_poles_paid
+#check @all_nonprincipal_lecture_poles_paid
+#check @originalGap_le_lectureShift
+#check @primitive_source_free_original_closed
+#check @ordinary_source_free_original_closed
+#check @source_free_original_classification
+#check @source_free_original_classification_closed
+#check @zeta_original_no_zero_closed
+#check @principal_original_no_zero_closed
+#check @source_free_original_zeros_equal_closed
+#check @originalClosedZeros_subsingleton
+#check @source_free_original_option
+#check @sourceP_original_scale
+#check @moving_original_real
+#check @original_high_local_source_free
+#check @equation_5_42_source_free
+#check @original_middle_local_source_free
+#check @source_free_nonreal_seed_cap
+#check @low_sum_of_short_absence_source_free
+#check @low_weight_of_short_absence_source_free
+#check @original_short_classification_closed
+#check @source_free_low_original_classification
+#check @original_nonreal_residual
+#check @quarter_height_pole_obstruction
+
+#print axioms lectureCoefficients_exact
+#print axioms square_polynomial_identity
+#print axioms square_polynomial_nonneg
+#print axioms lectureCoefficients_pos
+#print axioms phase_nat_power
+#print axioms lecture_phase_nonneg
+#print axioms lecture_selected_bound
+#print axioms lecture_selected_envelope_strict
+#print axioms fourth_root_phase_nonneg
+#print axioms fourth_order_damped_nonneg
+#print axioms fourth_order_real_axis_budget
+#print axioms fourth_order_low_no_zero
+#print axioms ordinary_fourth_order_low_original
+#print axioms small_order_low_classification
+#print axioms small_order_low_zeros_equal
+#print axioms smallOrderLowZeros_subsingleton
+#print axioms reflectedKernel_conjugate_at_zero
+#print axioms quadratic_conjugate_mass
+#print axioms real_axis_signed_selection
+#print axioms quadratic_pair_signed_budget
+#print axioms cubic_lecture_selected
+#print axioms fourth_lecture_selected
+#print axioms consecutive_power_corrections_disjoint
+#print axioms lecture_badPrimeCost_joint
+#print axioms conductor_euler_support_share
+#print axioms lecture_conductor_euler_joint
+#print axioms lecture_principal_euler_reserve
+#print axioms lecture_damped_nonneg
+#print axioms higher_order_lecture_budget
+#print axioms lecture_original_scalar
+#print axioms lectureShift_properties
+#print axioms primitive_higher_order_original
+#print axioms ordinary_higher_order_original
+#print axioms principal_badPrimeCost
+#print axioms harmonic_support_upper
+#print axioms lecture_moving_pole_budget
+#print axioms lecture_high_pole_free_budget
+#print axioms lecture_scaled_budget_contradiction
+#print axioms primitive_high_original
+#print axioms ordinary_high_original
+#print axioms zeta_lecture_budget
+#print axioms zeta_original_no_zero
+#print axioms principal_original_no_zero
+#print axioms primitive_badPrimeCost
+#print axioms signedCost_le_harmonicBound
+#print axioms signed_real_principal_strong
+#print axioms lecture_signed_moving_envelope
+#print axioms lecture_center_selected
+#print axioms cubic_lecture_poles_paid
+#print axioms fourth_lecture_poles_paid
+#print axioms quadratic_lecture_poles_paid
+#print axioms all_nonprincipal_lecture_poles_paid
+#print axioms originalGap_le_lectureShift
+#print axioms primitive_source_free_original_closed
+#print axioms ordinary_source_free_original_closed
+#print axioms source_free_original_classification
+#print axioms source_free_original_classification_closed
+#print axioms zeta_original_no_zero_closed
+#print axioms principal_original_no_zero_closed
+#print axioms source_free_original_zeros_equal_closed
+#print axioms originalClosedZeros_subsingleton
+#print axioms source_free_original_option
+#print axioms sourceP_original_scale
+#print axioms moving_original_real
+#print axioms original_high_local_source_free
+#print axioms equation_5_42_source_free
+#print axioms original_middle_local_source_free
+#print axioms source_free_nonreal_seed_cap
+#print axioms low_sum_of_short_absence_source_free
+#print axioms low_weight_of_short_absence_source_free
+#print axioms original_short_classification_closed
+#print axioms source_free_low_original_classification
+#print axioms original_nonreal_residual
+#print axioms quarter_height_pole_obstruction
+
+end LiuWang.Proof.Campaign20260915.OriginalRegion
