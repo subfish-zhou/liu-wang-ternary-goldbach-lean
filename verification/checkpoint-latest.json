@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-09-15T20:46:31.359010+00:00",
-  "previous_head": "e23b911bdd62bac11e4a0dac869908edd25d81ca",
+  "created_utc": "2026-09-15T20:49:23.823594+00:00",
+  "previous_head": "11f7425bb22133e2999ec549a271c2af6e958c56",
   "entrypoint": "LiuWang.Proof.Campaign20260915.Accepted",
   "main_root": "LiuWang.Proof.Campaign20260915.Parent.SmallConductorPaidRoot.threeOddPrimes_of_two_shared_inputs",
   "remaining_mainline_inputs": [
@@ -10,14 +10,14 @@
   "main_theorem_proved": false,
   "scope": "Odd natural N >= exp(3100); below-threshold interval not proved.",
   "validation": {
-    "request": "7c4d557cdf254bc3a66e5c7adcc1cab9",
-    "planned": 4978,
-    "passed": 4978,
-    "built": 2,
-    "cached": 4976,
+    "request": "4e9e8826277c495d844fda97d758e4c0",
+    "planned": 4987,
+    "passed": 4987,
+    "built": 3,
+    "cached": 4984,
     "check_modes": {
       "legacy-checked-cache": 883,
-      "official-core-exact-replayFromImports": 4095
+      "official-core-exact-replayFromImports": 4104
     },
     "clean_rebuild_claimed": false
   },
@@ -4999,7 +4999,16 @@
     "LiuWang/Proof/Campaign20260915/RSWeightedPsiIntegral/OriginalZeroIntegral.lean": "5afc627c6b32c2f26f7dce3f9aded8e6cbe50b6af73f26759461aaba58ac95ea",
     "LiuWang/Proof/Campaign20260915/RSWeightedPsiIntegral/Lemma13Source.lean": "a921e3862c6f65c86636cb9f28dd379d09e8e598fedbd4626b2e37bd6745486e",
     "LiuWang/Proof/Campaign20260915/Parent/WeightedPsiAudit.lean": "bc546a523f4e469d97a5818e9ea46f64c8e0f0ab4ecb9b39e78139de71f2c28f",
-    "LiuWang/Proof/Campaign20260915/Accepted.lean": "d289d29bbd27460069ff6b4503e026feccb866c0989df6416ac5b96262cd308a"
+    "LiuWang/Proof/Campaign20260915/ZetaLehmanKernel/ScalarLift.lean": "23f7dbe5a4beafd744982cca6c79e9a633ef08e61e6cda6a8638965e1a630856",
+    "LiuWang/Proof/Campaign20260915/ZetaLehmanKernel/RealAxis.lean": "43d999e3fd6faafd24a51a00b3626b3edcaff48dc055e87a20379181f9c14967",
+    "LiuWang/Proof/Campaign20260915/ZetaLehmanKernel/PairedKernel.lean": "a358969d7d4f4247afe8553e55c78db065e54a22d07835b9dff62fba7420327b",
+    "LiuWang/Proof/Campaign20260915/ZetaLehmanKernel/ZeroPair.lean": "a136312d85b8199a5d4f01dc0624969870e219d2883a64e7e42b3d6133782e32",
+    "LiuWang/Proof/Campaign20260915/ZetaLehmanKernel/SummedKernel.lean": "8ae40dee6ba51d74c1e85f3280ee9117c4e08e407ebc547ce1f0d862f16306f6",
+    "LiuWang/Proof/Campaign20260915/ZetaWinding/UncompensatedXi.lean": "d66b5bff41ae33102a2346e5e4c3fffc83734adcb6e8131a3bf90b5608a89a1a",
+    "LiuWang/Proof/Campaign20260915/ZetaWinding/ZetaLehmanIdentity.lean": "1432d38b7169d02eabbf585c39e99656c8625b2d0731f3e871f89e33cfb1f670",
+    "LiuWang/Proof/Campaign20260915/ZetaLehmanKernel/ZeroSeries.lean": "9250225f2331be939c1d60bcf41b1f2e88e83bbee463a47af11243d13bfbc84e",
+    "LiuWang/Proof/Campaign20260915/Parent/LehmanKernelAudit.lean": "a6a9669bdc75569b0871d48072eefb1137a5db9e18449003016c662ad491b858",
+    "LiuWang/Proof/Campaign20260915/Accepted.lean": "dd278d486657c766d9eeea526baf480cb53906e1b09de5ae3eac5775a43cd52c"
   },
   "publishing_rule": "Parent semantic acceptance and actual consumer integration precede each checkpoint; no automatic acceptance from CLI exit."
 }

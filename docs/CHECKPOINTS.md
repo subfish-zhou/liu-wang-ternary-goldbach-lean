@@ -99,6 +99,10 @@ M06.K03已核收。`Parent.Section8ScalarAudit`实际消费原带重数核L的�
 
 M06.K02已核收。`Parent.WeightedPsiAudit.actual_lemma8`对全部x>1保留原严格号、1.84/0.31及完整带重数K；真正证明权后无穷交换而非从紧区间自动推出。父级进一步把同一核改写为共享`originalK`，将乘log x后的实际积分贡献接入原L。没有假设K数值上界或RH；完整Lemma13及K04/K05仍另列未闭。
 
+## 本次追加：原Lehman 1.48核及实际水平ζ积分
+
+M04-W03已核收。`Parent.LehmanKernelAudit`验证原37/25配对核、同一反射重数索引的真实无限和及实际ξ积分下界。父级同时核验此前已交付的`UncompensatedXi`和`ZetaLehmanIdentity`，使`ZeroSeries.horizontalLogMass_lehman_lower`完成编译及官方重放；不再把这条接线列作阻塞。Gamma、极点与右侧ζ积分仍原样显式保留，完整Turing数值总预算及零点数据未由本项核销。来源为原常数的独立证明与已核转述，不冒称逐页复现Lehman原文。
+
 ## 断联后的恢复原则
 
 以本仓库主根、最新验证摘要和明确的任务分解文档恢复，不以聊天中的计划或CLI退出消息认定闭合。保留一个main主工作树；活跃工作者只写独占新模块，父级核收后冻结、构建并发布。未验草稿、运行日志、扫描文献、凭据和私有会话不在公开包内。
