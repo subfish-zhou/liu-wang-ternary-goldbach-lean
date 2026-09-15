@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-09-15T19:55:21.822686+00:00",
-  "previous_head": "bd90e855eb9c75fbd182dd56b74550365f895533",
+  "created_utc": "2026-09-15T20:01:16.878991+00:00",
+  "previous_head": "26a1e1fd06a62be3ecb273a24e76f8947be04ad6",
   "entrypoint": "LiuWang.Proof.Campaign20260915.Accepted",
   "main_root": "LiuWang.Proof.Campaign20260915.Parent.DensityPaidRoot.threeOddPrimes_of_three_shared_inputs",
   "remaining_mainline_inputs": [
@@ -11,14 +11,14 @@
   "main_theorem_proved": false,
   "scope": "Odd natural N >= exp(3100); below-threshold interval not proved.",
   "validation": {
-    "request": "3f489e8699ef4358ae90d87b3765930b",
-    "planned": 2980,
-    "passed": 2980,
+    "request": "292af1aea1e04a5c86a29d6ce2a6bb40",
+    "planned": 2985,
+    "passed": 2985,
     "built": 2,
-    "cached": 2978,
+    "cached": 2983,
     "check_modes": {
       "legacy-checked-cache": 883,
-      "official-core-exact-replayFromImports": 2097
+      "official-core-exact-replayFromImports": 2102
     },
     "clean_rebuild_claimed": false
   },
@@ -3002,7 +3002,12 @@
     "LiuWang/Proof/Campaign20260915/ZetaGramBlocks/GramPoints.lean": "64802f12cbe1288916ee645993f5b4e6d039f3e929f43dc66a6398f546e53d22",
     "LiuWang/Proof/Campaign20260915/ZetaMomentTransport/Multiplicity.lean": "9c3289cb753b2367b36e42c38eeba45efe69d1d6d402c9a9eec85616500418fb",
     "LiuWang/Proof/Campaign20260915/Parent/CrossLaneHandoff.lean": "22c62eb919bce507d7120394c104591fa7670f0d006382a7989c81ab098456db",
-    "LiuWang/Proof/Campaign20260915/Accepted.lean": "d5c81eaa9b7c9d0959c0834d25f0e891b6521b278a252903babd7e4870dc9f6f"
+    "LiuWang/Proof/Campaign20260915/ZetaC2RightTail/Pointwise.lean": "064fc7182cc4d3a140965d2a57f2789ff50231cbe9e6fee1d737f619a696e88d",
+    "LiuWang/Proof/Campaign20260915/ZetaC2RightTail/TailIntegral.lean": "e6c690dd494f0bf8fc82f5d4d5b4eda969a86e3f6d6f19266822257ff43728b1",
+    "LiuWang/Proof/Campaign20260915/ZetaC2RightTail/Prefactor.lean": "cd3a93ba9a45887f4fb8545f5d651d67499262272127a754c924331bb7d9978d",
+    "LiuWang/Proof/Campaign20260915/ZetaC2RightTail/SourceError.lean": "f7adc797dc30863ccfc0d61b4739f31a435da7cd6430d6b3a0bf6874c416e7df",
+    "LiuWang/Proof/Campaign20260915/Parent/RightC2TailAudit.lean": "a131d206bd9a1a603a4a5e53b337b17c5345e5f221c57fc1b848c351df064a16",
+    "LiuWang/Proof/Campaign20260915/Accepted.lean": "9a17f00a4cbff721e19b0f0ea682fdb325189c7578d35296ae5bf4ee09655488"
   },
   "publishing_rule": "Parent semantic acceptance and actual consumer integration precede each checkpoint; no automatic acceptance from CLI exit."
 }
