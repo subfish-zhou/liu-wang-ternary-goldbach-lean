@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-09-15T20:09:36.377316+00:00",
-  "previous_head": "9ef9c90c135dc1e4f59982354eb30914c033c152",
+  "created_utc": "2026-09-15T20:12:05.582200+00:00",
+  "previous_head": "d4bf57c0f3b44d594d122c0d687343add2769397",
   "entrypoint": "LiuWang.Proof.Campaign20260915.Accepted",
   "main_root": "LiuWang.Proof.Campaign20260915.Parent.DensityPaidRoot.threeOddPrimes_of_three_shared_inputs",
   "remaining_mainline_inputs": [
@@ -11,14 +11,14 @@
   "main_theorem_proved": false,
   "scope": "Odd natural N >= exp(3100); below-threshold interval not proved.",
   "validation": {
-    "request": "a7f284e2c2344ccaa9ba984917d7a252",
-    "planned": 3018,
-    "passed": 3018,
-    "built": 2,
-    "cached": 3016,
+    "request": "577de0c7dcfc499890dce890fa15e349",
+    "planned": 3026,
+    "passed": 3026,
+    "built": 6,
+    "cached": 3020,
     "check_modes": {
       "legacy-checked-cache": 883,
-      "official-core-exact-replayFromImports": 2135
+      "official-core-exact-replayFromImports": 2143
     },
     "clean_rebuild_claimed": false
   },
@@ -3040,7 +3040,15 @@
     "LiuWang/Proof/Campaign20260915/LowZeroMoment/AllZerosFourteen.lean": "2a382ebb72f948e07242d4939eb27988d9692fd939c1188b0b92220815134003",
     "LiuWang/Proof/Campaign20260915/LowZeroMoment/FourteenMomentBound.lean": "d6c87f38a7fd5eeeaf82d78579c1d70e1ed563986ea15a239367e722390b8c76",
     "LiuWang/Proof/Campaign20260915/Parent/FourteenMomentAudit.lean": "e41353154808b33a2282cb366666270d02ab9390d50d0336b6e1a468062a51ea",
-    "LiuWang/Proof/Campaign20260915/Accepted.lean": "962a84d560eeeb881da20d31000b327b020e0ecb4721b25a71fb452af1938f38"
+    "LiuWang/Proof/Campaign20260915/ZetaC2LeftTail/GeometryBounds.lean": "2704ad3e9a81ec328bacabaec84034d56a9bc93f2ce0fba3d7ea6d33ac69a8c2",
+    "LiuWang/Proof/Campaign20260915/ZetaC2LeftTail/DenominatorBound.lean": "1c1047ff6e1c3f5d2aa13548410748e0145c4cbf6000cf857edb0e240d316bdc",
+    "LiuWang/Proof/Campaign20260915/ZetaC2LeftTail/IntegralBudget.lean": "41b4091a52cd54b05f7ed07f5fb8401f16a419493e0af75fa4c055a5a427ced6",
+    "LiuWang/Proof/Campaign20260915/ZetaC2LeftTail/HankelPrefactor.lean": "d49429000cfd1f5b755c503b2da3eabc9dd15d3bafe624a741c87611a110abc2",
+    "LiuWang/Proof/Campaign20260915/ZetaC2LeftTail/OriginalScale.lean": "631eeb1ec33cb73f6f8ad1ef4f89a674bde525284a6602d2bbe66c3f73d1e6dc",
+    "LiuWang/Proof/Campaign20260915/ZetaC2LeftTail/SourceBudget.lean": "162b9285d53930f51a2763e2ad6f24ebe6f6880e4563dda77719893415211809",
+    "LiuWang/Proof/Campaign20260915/ZetaC2LeftTail/Check.lean": "005d6aa670064367fbd0fc77f52fd57c27dc09ae9ce936a3191e560bf5a97a28",
+    "LiuWang/Proof/Campaign20260915/Parent/LeftC2TailAudit.lean": "dc79a84b6a73523b4dd55e3350f7eefcaeaf68727ab4d994493589066606250e",
+    "LiuWang/Proof/Campaign20260915/Accepted.lean": "0922097c0c8366aa9d03d71ca0064e0fada935fc77ea230ad174d7e6296a9643"
   },
   "publishing_rule": "Parent semantic acceptance and actual consumer integration precede each checkpoint; no automatic acceptance from CLI exit."
 }
