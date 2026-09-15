@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-09-15T20:05:39.480329+00:00",
-  "previous_head": "5a24dbd83af736fd816982436c327b4e7bf511f2",
+  "created_utc": "2026-09-15T20:07:36.672601+00:00",
+  "previous_head": "784250a03d86e46bcbb28a4a1c67ca16e44b0897",
   "entrypoint": "LiuWang.Proof.Campaign20260915.Accepted",
   "main_root": "LiuWang.Proof.Campaign20260915.Parent.DensityPaidRoot.threeOddPrimes_of_three_shared_inputs",
   "remaining_mainline_inputs": [
@@ -11,14 +11,14 @@
   "main_theorem_proved": false,
   "scope": "Odd natural N >= exp(3100); below-threshold interval not proved.",
   "validation": {
-    "request": "e743e48382d34bb1864f7f385e10b2c7",
-    "planned": 2999,
-    "passed": 2999,
+    "request": "9c1b2de436ec4a40aa52013b0dbbbf38",
+    "planned": 3003,
+    "passed": 3003,
     "built": 2,
-    "cached": 2997,
+    "cached": 3001,
     "check_modes": {
       "legacy-checked-cache": 883,
-      "official-core-exact-replayFromImports": 2116
+      "official-core-exact-replayFromImports": 2120
     },
     "clean_rebuild_claimed": false
   },
@@ -3021,7 +3021,11 @@
     "LiuWang/Proof/Campaign20260915/RSSection8ZeroKernel/UnweightedIntegral.lean": "ff251b3b5c65733a58b15f627a93b4cd4622fd3bc75db3bbc167d954b561bd7c",
     "LiuWang/Proof/Campaign20260915/RSSection8ZeroKernel/CutoffBudget.lean": "4fef3afb7b165807dc04ea0d6510cbd71a767dd89819bfe502c6778ba2d02028",
     "LiuWang/Proof/Campaign20260915/Parent/Section8KernelAudit.lean": "6a187c1abdc92e1bb785167229c9a5722494e9a1be21cc761c00bb43b5fbddde",
-    "LiuWang/Proof/Campaign20260915/Accepted.lean": "b3a4b4f12d7845fac98f5716c11fe3ce4563b61a25c9e003ed77f942c9115a06"
+    "LiuWang/Proof/Campaign20260915/ZetaMomentTransport/Windows.lean": "1ac59bf21c8f7d45fd1b5a09f67892900bffde105c0bff9b650c067dac258d5a",
+    "LiuWang/Proof/Campaign20260915/ZetaMomentTransport/RSConsumers.lean": "cc44b995942add89c5d5244211d77a3c0f2892f08f1556ce5bdabfbc88bd55a1",
+    "LiuWang/Proof/Campaign20260915/ZetaMomentTransport/EndpointConsumers.lean": "90bbe1704bd70b30993bc6c45d1940fd0a80a4dbba491850f93c8d63105e620f",
+    "LiuWang/Proof/Campaign20260915/Parent/MomentTransportAudit.lean": "523f4d0ada692b73f9230eb7cc79ac671f057a7ae6467d247aca2f895229dee3",
+    "LiuWang/Proof/Campaign20260915/Accepted.lean": "a4ec5fe1180202b4a2fab086bd1cbab0ee3aa605b01acbe105fb77700ac02962"
   },
   "publishing_rule": "Parent semantic acceptance and actual consumer integration precede each checkpoint; no automatic acceptance from CLI exit."
 }
