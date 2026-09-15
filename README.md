@@ -16,11 +16,11 @@ Lean 4 解析数论与 Liu–Wang 原论文路线的公开源码快照。
 ## 当前状态与阅读入口
 
 - 已包含字符与零点计数、解析重数运输、筛法与显式公式、弧积分归约及若干严格有理证书。
-- 条件性结果中的 Gamma、零点来源、密度估计和未付积分预算须继续逐项核对。
+- 按实际主根区分已付输入与剩余共享前提；历史条件接口不等于当前仍缺同一证明。
 - 原论文的部分印式仍标为 `SOURCE_CHECK`；从其他已证等式推得的结果不表示该印式已被核实或修订。
 - 源码没有因本次公开而改写数学定义或证明；内部工作树历史、运行日志、私有路径和中止稿不在此公开历史中。
 
-最新实际主根见 [`docs/gaps/ROOT-INPUTS-20260915.md`](docs/gaps/ROOT-INPUTS-20260915.md)：主弧及第二、第三、第四弧已接入大数范围的条件性三素数出口，只保留 **4 项共享数学输入**（零密度、有限高度 ζ 验证、全域 totient、小导子排除）。这不是无条件主定理。早期分批验收保留在 [`docs/gaps/ACCEPTED-20260915.md`](docs/gaps/ACCEPTED-20260915.md)；共同入口为 `LiuWang.Proof.Campaign20260915.Accepted`。
+最新实际主根见 [`docs/gaps/ROOT-INPUTS-20260915.md`](docs/gaps/ROOT-INPUTS-20260915.md)：主弧及第二、第三、第四弧已接入大数范围的条件性三素数出口，完整零密度已经证明并接入，只保留 **3 项共享数学输入**（有限高度 ζ 验证、全域 totient、小导子排除）。这不是无条件主定理。早期分批验收保留在 [`docs/gaps/ACCEPTED-20260915.md`](docs/gaps/ACCEPTED-20260915.md)；共同入口为 `LiuWang.Proof.Campaign20260915.Accepted`。
 
 详细边界见 [`docs/STATUS.md`](docs/STATUS.md)，源码入口见 [`docs/SOURCE_MAP.md`](docs/SOURCE_MAP.md)。
 [`verification/status.json`](verification/status.json) 记录导出时的**部分本地检查进度**；不是全库验收证书或 GitHub CI 成功记录。
@@ -52,7 +52,7 @@ python3 scripts/check_source_inventory.py
 ## 逻辑基础与数学前提
 
 Lean 的 `propext`、`Classical.choice`、`Quot.sound` 是标准逻辑基础，不能和未证明的数论输入混称为“假设主定理成立”。
-另一方面，定理参数中的 Gamma 界、零密度估计等数学前提，即使不属于新声明的 `axiom`，也必须真正证明并接入，才可得到无条件结果。
+另一方面，当前主根中有限高度 ζ 验证、全域 totient 和小导子排除三项数学参数，即使不属于新声明的 `axiom`，也必须真正证明并接入，才可得到无条件结果。发布检查点约定见 [`docs/CHECKPOINTS.md`](docs/CHECKPOINTS.md)。
 
 ## 原文与来源归属
 

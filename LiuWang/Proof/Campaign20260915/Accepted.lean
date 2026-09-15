@@ -58,6 +58,17 @@ import LiuWang.Proof.Campaign20260915.Parent.SmallConductorAudit
 import LiuWang.Proof.Campaign20260915.Parent.TotientThetaAudit
 import LiuWang.Proof.Campaign20260915.Parent.ZetaHighOrderAudit
 import LiuWang.Proof.Campaign20260915.Parent.ZetaCompleteAudit
+import LiuWang.Proof.Campaign20260915.Parent.DensityPaidRoot
+import LiuWang.Proof.Campaign20260915.Parent.FixedHankelAudit
+import LiuWang.Proof.Campaign20260915.Parent.LittlewoodAudit
+import LiuWang.Proof.Campaign20260915.Parent.MordellPhiAudit
+import LiuWang.Proof.Campaign20260915.Parent.SourceGaussianAudit
+import LiuWang.Proof.Campaign20260915.Parent.TotientMiddleAudit
+import LiuWang.Proof.Campaign20260915.Parent.TotientRSAnalyticAudit
+import LiuWang.Proof.Campaign20260915.Parent.TotientSmoothingAudit
+import LiuWang.Proof.Campaign20260915.Parent.ZetaHankelAudit
+import LiuWang.Proof.Campaign20260915.Parent.ZetaTuringIntegralAudit
+import LiuWang.Proof.Campaign20260915.Parent.ZetaWindingAudit
 /-!
 Checked component entry point. This does not prove LiuWang.TheoremStatement.
 See docs/gaps/ACCEPTED-20260915.md for retained mathematical inputs.

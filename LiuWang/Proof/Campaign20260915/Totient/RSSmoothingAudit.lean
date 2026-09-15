@@ -1,0 +1,49 @@
+import LiuWang.Proof.Campaign20260915.Totient.RSMainDifference
+import LiuWang.Proof.Campaign20260915.Totient.RSIntegratedAll
+import LiuWang.Proof.Campaign20260915.Totient.RSZeroIntegration
+import LiuWang.Proof.Campaign20260915.Totient.RSZeroBackward
+
+set_option autoImplicit false
+set_option Elab.async false
+
+namespace LiuWang.Proof.Campaign20260915.Totient
+
+#print axioms rsPsiBox_monotone
+#print axioms rsPsiBox_bounds
+#print axioms rsPsiBox_desmoothing
+#print axioms rsPsiBox_original_domain
+#print axioms rsPsiBox_original_desmoothing
+#print axioms rsPsiPrimitive_integrable
+#print axioms rsPsiPrimitive_difference
+#print axioms rs_difference_integral
+#print axioms rsPsiPrimitive_finite_difference
+#print axioms rsPsiPrimitive_original_desmoothing
+#print axioms rsZeroPrimitive_deriv
+#print axioms rs_zero_denominator_lower
+#print axioms rsZeroPrimitive_shift_bound
+#print axioms rsZeroPrimitive_difference_bound
+#print axioms rsZeroMoment_summable
+#print axioms rsZeroPrimitive_summable
+#print axioms rsZeroPrimitive_iter_summable
+#print axioms rsZeroPrimitive_difference_tsum
+#print axioms rsZeroPrimitive_sum_difference_bound
+#print axioms rsZeroPrimitive_normalized_difference_bound
+#print axioms rsMainPrimitive_deriv
+#print axioms rsMainPrimitive_difference
+#print axioms rsMainPrimitive_finite_difference
+#print axioms rsMainPrimitive_normalized_difference
+#print axioms rsMainPrimitive_original_two_sided
+#print axioms rsPsiPrimitive_one_eq_integrated
+#print axioms rsZeroPrimitive_one
+#print axioms rs_integrated_formula_all
+#print axioms rsPsiPrimitive_one_spectral
+#print axioms rsZeroPrimitive_continuousOn
+#print axioms rsZeroPrimitive_compact_bound
+#print axioms rsZeroSum_continuousOn_Icc
+#print axioms rsZeroSum_integral
+#print axioms rsZeroPrimitive_norm_mono
+#print axioms rsZeroPrimitive_backward_bound
+#print axioms rsZeroPrimitive_sum_backward_bound
+#print axioms rsZeroPrimitive_original_backward
+
+end LiuWang.Proof.Campaign20260915.Totient

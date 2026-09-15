@@ -1,6 +1,14 @@
 # 证明与验证边界
 
-## 当前大数范围主根
+## 本地最新主根：三项输入（本次检查点）
+
+`Parent.DensityPaidRoot.threeOddPrimes_of_three_shared_inputs` 已真实消费完整零密度生产者 `Density.source_T7`，不再保留 `hdensity`。父验请求 `744234d8f72047689a904dcff2eeb856` 的2419模块闭包通过，1个新编译/官方重放，2418个绑定缓存；完整签名和公理锥已核。
+
+当前剩余共享数学输入为 **M04、M06、M07**；M01已闭合并接入总根。原Chen印式的S01仍为来源核查，不是这个根的新数学假设。目标仍限奇自然数 `N≥exp(3100)`，有限衔接另计。三个未证明输入仍显式存在，不能将标准逻辑公理列表误当成无条件性证明。
+
+详细边界见 [gaps/ROOT-INPUTS-20260915.md](gaps/ROOT-INPUTS-20260915.md)。以下内容保留上一公开快照的状态，并非本地最新进度。
+
+## 上一公开快照的大数范围主根
 
 `Parent.AllArcsPaid.threeOddPrimes_of_four_shared_inputs` 已消费全部弧预算，目标保持每个奇自然数 `N ≥ exp(3100)` 为三个奇素数之和。它仍带四项未证明的数学输入：
 
