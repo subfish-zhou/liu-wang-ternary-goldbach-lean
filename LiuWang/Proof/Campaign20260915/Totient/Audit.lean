@@ -1,0 +1,66 @@
+import LiuWang.Proof.Campaign20260915.Totient.M6
+import LiuWang.Proof.Campaign20260915.Totient.Cutoff
+import LiuWang.Proof.Campaign20260915.Totient.PrimePowers
+import LiuWang.Proof.Campaign20260915.Totient.PrimeSupport
+import LiuWang.Proof.Campaign20260915.Totient.SmallSupport
+import LiuWang.Proof.Campaign20260915.Totient.PrimorialReduction
+import LiuWang.Proof.Campaign20260915.Totient.PrimeProductTail
+
+set_option autoImplicit false
+
+namespace LiuWang.Proof.Campaign20260915.Totient
+
+#check @third_sourceNu_le_sixth
+#check @equation_5_44_with_monotonicity_paid
+#check @totient_ratio_le_nu_of_three_le_lt_27
+#check @totient_ratio_le_nu_prime_power
+#check @second_arc_totient_input_of_RS
+#check @second_arc_small_totient_input
+#check @totient_ratio_le_nu_of_small_support
+#check @equation_5_44_of_small_support
+#check @original_RS_iff_first_primes
+#check @first_primes_Euler_product_tail
+
+#print axioms three_le_nu
+#print axioms totient_ratio_le_three_of_lt_27
+#print axioms totient_ratio_le_nu_of_three_le_lt_27
+#print axioms small_totient_ratio_le_nu
+#print axioms nu_zero_at_one
+#print axioms not_totient_ratio_le_nu_one
+#print axioms nu_neg_at_two
+#print axioms not_totient_ratio_le_nu_two
+#print axioms third_sourceNu_eq_nu
+#print axioms third_sourceNu_monotoneOn
+#print axioms third_sourceNu_le_sixth
+#print axioms equation_5_44_with_monotonicity_paid
+#print axioms second_sourceNu_eq_nu
+#print axioms totient_ratio_le_nu_cutoff_of_RS
+#print axioms second_arc_totient_input_of_RS
+#print axioms second_arc_small_totient_input
+#print axioms totient_prime_pow_ratio
+#print axioms totient_ratio_le_nu_prime_power
+#print axioms four_le_nu
+#print axioms totient_ratio_le_fifteen_fourths_of_small_support
+#print axioms totient_ratio_le_nu_of_small_support
+#print axioms second_arc_totient_input_of_small_support
+#print axioms equation_5_44_of_small_support
+#print axioms first_primes_product_monotone
+#print axioms first_primes_product_ge_210
+#print axioms totient_ratio_first_primes
+#print axioms original_RS_iff_first_primes
+#print axioms xiZeroWeight_sum_le_cutoff
+#print axioms xiZeroWeight_sum_le_log_sixth
+#print axioms integratedZeroSum_norm_le_log_sixth
+#print axioms integratedPsi_difference_le
+#print axioms log_large_of_tail
+#print axioms psi_error_le_log_cube
+#print axioms prime_power_error_le_log_cube
+#print axioms theta_error_le_log_cube
+#print axioms theta_error_integral_le_log_cube
+#print axioms reciprocal_prime_error_le_log_cube
+#print axioms log_primeProduct_error_le_log_cube
+#print axioms reciprocal_primeProduct_le_exp_gamma
+#print axioms reciprocal_primeProduct_le_nu_primorial
+#print axioms first_primes_Euler_product_tail
+
+end LiuWang.Proof.Campaign20260915.Totient

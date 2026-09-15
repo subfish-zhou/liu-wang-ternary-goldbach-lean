@@ -1,0 +1,22 @@
+import LiuWang.Proof.Campaign20260915.Density.Chen24Consumer
+import LiuWang.Proof.Campaign20260915.Density.PrincipalSeven
+import LiuWang.Proof.Campaign20260915.Density.RightMeanObstruction
+
+namespace LiuWang.Proof.Campaign20260915.Density
+
+#print chen24_mollifier_mean
+#print axioms chen24_mollifier_mean
+#print axioms off_diagonal_squarefree
+#print principal_source_input
+#print axioms principal_source_input
+#print axioms lemma_3_4_with_chen24_paid
+#print axioms equation_3_44_with_chen24_paid
+#print lemma_3_5_at_source_shift_with_chen24_paid
+#print axioms lemma_3_5_at_source_shift_with_chen24_paid
+#print family_sourceSeven_with_principal_paid
+#print axioms family_sourceSeven_with_principal_paid
+#print axioms complete_family_sourceSeven_with_principal_paid
+#print axioms right_mean_witness_in_source_domain
+#print axioms moving_sharp_majorant_exceeds_chen14_at_legal_window
+
+end LiuWang.Proof.Campaign20260915.Density

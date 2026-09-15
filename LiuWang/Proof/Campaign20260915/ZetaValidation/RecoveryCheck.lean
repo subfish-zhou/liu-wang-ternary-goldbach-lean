@@ -1,0 +1,12 @@
+import LiuWang.Proof.Campaign20260915.ZetaValidation.ScalarDirection
+import LiuWang.Proof.Campaign20260915.ZetaValidation.SignBlocks
+
+namespace LiuWang.Proof.Campaign20260915.ZetaValidation
+
+#print axioms max_lower_bound_of_reciprocal_sum
+#print axioms scalar_printed_direction_counterexample
+#print axioms optimal_choice_scalar_counterexample
+#print axioms exists_critical_zero_of_sign_change
+#print axioms exists_injective_critical_zeros
+
+end LiuWang.Proof.Campaign20260915.ZetaValidation

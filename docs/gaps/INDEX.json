@@ -19,7 +19,8 @@
         "DE-DENS-CHEN",
         "ZS-T7",
         "MINOR-T7"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M02",
@@ -28,7 +29,8 @@
       "raw_ids": [
         "DE-EX-GAMMA-LOW",
         "ZS-GAMMA-LOW"
-      ]
+      ],
+      "acceptance_status": "CLOSED_IN_ORIGINAL_CONSUMERS"
     },
     {
       "id": "M03",
@@ -37,7 +39,8 @@
       "raw_ids": [
         "DE-EX-GAMMA-HIGH",
         "ZS-GAMMA-HIGH"
-      ]
+      ],
+      "acceptance_status": "CLOSED_IN_ORIGINAL_CONSUMERS"
     },
     {
       "id": "M04",
@@ -45,7 +48,8 @@
       "description": "临界带内 |Imρ|<1894438 的零点须在临界线上；不是整数 totient 比值界。",
       "raw_ids": [
         "ZS-RS"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M05",
@@ -59,7 +63,8 @@
         "M3-LOCAL-C1",
         "M3-HIGH-LOCAL-REGION",
         "M2-C1-TAIL-SOURCE"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M06",
@@ -68,7 +73,8 @@
       "raw_ids": [
         "MA-RS",
         "MINOR-NU-TOTIENT"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M07",
@@ -77,7 +83,8 @@
       "raw_ids": [
         "MA-SMALL",
         "M3-LOCAL-C1"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M08",
@@ -86,7 +93,8 @@
       "raw_ids": [
         "ZS-HIGH-SHORT",
         "MA-HIGH"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M09",
@@ -95,7 +103,8 @@
       "raw_ids": [
         "ZS-HIGH-ZEROTAIL",
         "MA-HIGH"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M10",
@@ -103,7 +112,8 @@
       "description": "originalLowScalar(3100) 固定证书及全部实 L≥3100 的统一上界；旧实际低段强界不是此原积分界。",
       "raw_ids": [
         "M2-ORIGINAL-LOW-SCALAR"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M11",
@@ -111,7 +121,8 @@
       "description": "保持两指数的有号差及原对数积分，不能拿 (5.16) 的不同衰减率代付。",
       "raw_ids": [
         "M2-LAST-STRIP-SCALAR"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M12",
@@ -119,7 +130,8 @@
       "description": "含 endpointDensityBound 和 14000 的完整右端尚未得到原预算终端。",
       "raw_ids": [
         "M2-ENDPOINT-SCALAR"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M13",
@@ -127,7 +139,8 @@
       "description": "sigma5 在 U=10πL⁷/q 的 countIntegral 端点，不是已付 T=L¹⁵ 端点。",
       "raw_ids": [
         "M3-MIDDLE-ENDPOINT"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M14",
@@ -135,7 +148,8 @@
       "description": "sigma5 原 [10000π,U] 积分的密度项、近一表价及边界处理。",
       "raw_ids": [
         "M3-MIDDLE-HEIGHT"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M15",
@@ -143,7 +157,8 @@
       "description": "保留原 q、权和区间 [U,T]；sourceM6 的 6e−9 不能代付 bulk。",
       "raw_ids": [
         "M3-HIGH-M5"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M16",
@@ -151,7 +166,8 @@
       "description": "已有原整数域 U<10000 log q 的见证；须按原文核清欠缺区间的合法分段/输入，不能缩域。",
       "raw_ids": [
         "M3-DENSITY-DOMAIN-SOURCE"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M17",
@@ -160,7 +176,8 @@
       "raw_ids": [
         "M2-C1-TAIL-SOURCE",
         "M3-HIGH-REAL-TAIL-SOURCE"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     },
     {
       "id": "M18",
@@ -168,7 +185,8 @@
       "description": "当前 hordinary 的 −9e−8 N² 是现有合装的充分预算，不冒称原文必须满足这一加强值。",
       "raw_ids": [
         "MA-ORDREM"
-      ]
+      ],
+      "acceptance_status": "OPEN_OR_PARTIAL"
     }
   ],
   "literal_source_intermediates": [
@@ -811,5 +829,20 @@
     }
   },
   "verification_scope": "Parent verified 695 reported source hashes and 43 principal source anchors. Key frontier semantics reviewed; no claim that every proof body or original paper page was independently verified.",
-  "head_at_parent_reconciliation": "f1476f0b217a3b10bf02e82af67d2dc5740841d3"
+  "head_at_parent_reconciliation": "f1476f0b217a3b10bf02e82af67d2dc5740841d3",
+  "acceptance_snapshot": {
+    "date": "2026-09-15",
+    "closed_core_ids": [
+      "M02",
+      "M03"
+    ],
+    "open_core_count": 16,
+    "accepted_consumer_subitems": [
+      "P01",
+      "W01",
+      "W03"
+    ],
+    "details": "ACCEPTED-20260915.md",
+    "main_theorem_proved": false
+  }
 }

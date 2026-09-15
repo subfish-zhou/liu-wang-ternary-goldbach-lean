@@ -1,0 +1,20 @@
+import LiuWang.Proof.Campaign20260915.ZetaValidation.RationalEvaluation
+import LiuWang.Proof.Campaign20260915.ZetaValidation.SecondOrderEndpoints
+import LiuWang.Proof.Campaign20260915.ZetaValidation.InitialSegment
+import LiuWang.Proof.Campaign20260915.ZetaValidation.RealAxis
+import LiuWang.Proof.Campaign20260915.ZetaValidation.RecoveryCheck
+
+namespace LiuWang.Proof.Campaign20260915.ZetaValidation
+
+#print axioms zeta_sub_abelApprox
+#print axioms normalized_abel_error
+#print axioms halfZeta_rational_enclosure
+#print axioms endpoint_zero_refined_enclosure
+#print axioms endpoint_quarter_strict_sign
+#print axioms original_height_first_order_cost
+#print axioms zeta_sub_abelApprox_second
+#print axioms halfZeta_second_rational_enclosure
+#print axioms endpoint_zero_second_enclosure
+#print axioms zeta_ne_zero_of_real_axis_strip
+
+end LiuWang.Proof.Campaign20260915.ZetaValidation
