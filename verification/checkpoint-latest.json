@@ -1,6 +1,6 @@
 {
-  "created_utc": "2026-09-15T20:24:14.387821+00:00",
-  "previous_head": "52cbf754705e57b69b1757a2153b81e24d7cf0d8",
+  "created_utc": "2026-09-15T20:27:49.818071+00:00",
+  "previous_head": "6b1f666030715a049f282606e8e5a0654b116bde",
   "entrypoint": "LiuWang.Proof.Campaign20260915.Accepted",
   "main_root": "LiuWang.Proof.Campaign20260915.Parent.SmallConductorPaidRoot.threeOddPrimes_of_two_shared_inputs",
   "remaining_mainline_inputs": [
@@ -10,14 +10,14 @@
   "main_theorem_proved": false,
   "scope": "Odd natural N >= exp(3100); below-threshold interval not proved.",
   "validation": {
-    "request": "729ac50d7f5d45ddab9d1da66e5957a7",
-    "planned": 4914,
-    "passed": 4914,
+    "request": "396382a70c244a9b82ab8ad9f8f98023",
+    "planned": 4924,
+    "passed": 4924,
     "built": 2,
-    "cached": 4912,
+    "cached": 4922,
     "check_modes": {
       "legacy-checked-cache": 883,
-      "official-core-exact-replayFromImports": 4031
+      "official-core-exact-replayFromImports": 4041
     },
     "clean_rebuild_claimed": false
   },
@@ -4935,7 +4935,17 @@
     "LiuWang/Proof/Campaign20260915/RSTableCertificates/UpperRows.lean": "93764a5242a61fea2f315a1363d965e9a654dd806f3371a78d711de080378c5d",
     "LiuWang/Proof/Campaign20260915/RSTableCertificates/Coverage.lean": "0cf5758b3ba518f274324c90d63ba358357af79cedb03af3d9daa5aa271ee020",
     "LiuWang/Proof/Campaign20260915/Parent/TableScalarAudit.lean": "3ef2de4dad196a7292e099317e178a743c6366d80e87281b42af7793521f6cc1",
-    "LiuWang/Proof/Campaign20260915/Accepted.lean": "29aa397089afc2fc8999e7b844a741a7acf39a7499c0ceb0690eb861a9e03104"
+    "LiuWang/Proof/Campaign20260915/ZetaRealNormalization/SourceSums.lean": "badc410535eec253b7803b0f484394de7857bc787476301084d1c1c0275f65fa",
+    "LiuWang/Proof/Campaign20260915/ZetaRealNormalization/SourcePrefactor.lean": "4b314fc8ab23b7d493c9a11246a03ba005a1fc1a6103a08fb06dac941bd127c6",
+    "LiuWang/Proof/Campaign20260915/ZetaRealNormalization/SourceSeven.lean": "876d4f6528d706fcccdaf4763c4492a84a1210e1b0789170a88c156e18ecb8d6",
+    "LiuWang/Proof/Campaign20260915/ZetaRealNormalization/MomentBudget.lean": "70117326f6514411f6435f27995675ce31a328426c852b0bd5f70be4903186e5",
+    "LiuWang/Proof/Campaign20260915/ZetaRealNormalization/SourceConsumer.lean": "db34276862d255525448addbd85b9f551f01e9a4702795f2a7655650e20a2b5d",
+    "LiuWang/Proof/Campaign20260915/ZetaRealNormalization/RealPhaseBudget.lean": "c19470335eb90a8aebb19465e309765b45fb9267b7e115d2e6a9e198343baf6b",
+    "LiuWang/Proof/Campaign20260915/ZetaRealNormalization/HeightInterface.lean": "2124a16c896286c235e3547604a372ddc854c512e3ef0ca7068f832a1a41a1d8",
+    "LiuWang/Proof/Campaign20260915/ZetaRealNormalization/UniformPhaseBudget.lean": "a2e5f9d679dd2b09b49bea6ba1309a65b5f07ba978b27d0a359aa828978fc801",
+    "LiuWang/Proof/Campaign20260915/ZetaRealNormalization/ActualC2Normalization.lean": "b1d49d68245a15938d979bae54f49e84eb8597b3b1dc94cc5e4d54da3ec66900",
+    "LiuWang/Proof/Campaign20260915/Parent/RealNormalizationAudit.lean": "3e33fb1c1f4cc0fc287098db8baafb2564c6fec00bae9c49edf97967112a49f2",
+    "LiuWang/Proof/Campaign20260915/Accepted.lean": "6e40f9cb5e11b906e3847491afd57671b9ab9fb0cffa1283af361a444d1fbbb2"
   },
   "publishing_rule": "Parent semantic acceptance and actual consumer integration precede each checkpoint; no automatic acceptance from CLI exit."
 }
