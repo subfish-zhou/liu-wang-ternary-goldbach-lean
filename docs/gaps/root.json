@@ -1,0 +1,62 @@
+{
+  "gaps": [
+    {
+      "id": "ROOT-ANALYTIC-ASSEMBLY",
+      "description": "原文主弧下界、第二/第三弧界全部供给后，接入同一完整能量、扣除素数幂并得到主命题；目前无无条件 TheoremStatement 证明。",
+      "source": "LiuWang/Target.lean:20",
+      "consumer": "LiuWang.TheoremStatement",
+      "assumptions": [
+        "按原文域的主弧零点相互作用/主弧下界",
+        "原第二弧与第三弧上界"
+      ],
+      "kind": "root_assembly_not_independent_analytic_input"
+    },
+    {
+      "id": "ROOT-RESIDUAL",
+      "description": "现有可调用存在性出口仍含真实相互作用积分与M2/M3积分的合计余项前提；它是分析缺口的总接口，不另算一个独立分析难题。",
+      "source": "LiuWang/Proof/FiniteTernaryClosure/Analytic.lean:29",
+      "consumer": "LiuWang.Proof.FiniteTernaryClosure.threeOddPrimes_of_circle_residual",
+      "assumptions": [
+        "hresidual"
+      ],
+      "kind": "aggregate_interface_not_atomic_gap"
+    },
+    {
+      "id": "OUTSIDE-SMALL-RANGE",
+      "description": "如果目标扩大到全部≥9的奇数，还缺1000<N<exp3100的覆盖；这不属于当前原论文大数定理的缺口。",
+      "source": "LiuWang/Proof/FiniteTernaryClosure/Analytic.lean:43",
+      "consumer": "LiuWang.Proof.FiniteTernaryClosure.threeOddPrimes_on_certified_union",
+      "assumptions": [
+        "hdomain"
+      ],
+      "kind": "outside_original_target"
+    }
+  ],
+  "closed_examples": [
+    {
+      "source": "LiuWang/Proof/PrimePowerRemoval/Main.lean",
+      "description": "已有Lambda权到仅素数权的扣除及正计数到三个奇素数的实际出口；不是待发明的缺口。此处仅审当前源码，不冒称恢复后已全重编。"
+    },
+    {
+      "source": "LiuWang/Proof/MinorArcEnergy/Ledger.lean:52",
+      "description": "三片次弧的真实共享能量合账已具备，不能再付三次整圆能量。"
+    },
+    {
+      "source": "LiuWang/Proof/MinorArcEnergy/Fourth.lean:104",
+      "description": "已有只以N≥exp3100为域前提的实际第四弧积分界；这并不等同逐式复刻原§6。"
+    },
+    {
+      "source": "LiuWang/Proof/FiniteTernaryClosure/Consumer.lean:35",
+      "description": "9至1000的奇数已有有限证书消费者，不覆盖中间大区间。"
+    }
+  ],
+  "coverage": [
+    "Target",
+    "CircleLowerBound",
+    "FiniteTernaryClosure",
+    "PrimePowerRemoval",
+    "MinorArcEnergy",
+    "VaughanRecovery"
+  ],
+  "scope": "Source-level root/frontier audit; not fresh whole-library validation."
+}
