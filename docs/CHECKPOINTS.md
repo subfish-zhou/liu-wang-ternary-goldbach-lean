@@ -75,6 +75,10 @@ M07已整体父验并由`Parent.SmallConductorPaidRoot.threeOddPrimes_of_two_sha
 
 M04-V06已核收。完整有限高度前因子、全部N=7实投影及虚修正的实贡献均保留，原C2残差已识别为实际Jn、外段及左右尾。父级`RealNormalizationAudit.actual_zeta_both_tails_paid`进一步把已付左右无限尾代入实际ζ总预算，不再留下待控制的两尾绝对值。中央Jn、Phi导数具体包围、整数参数完整延拓及原最终常数仍单列未闭。
 
+## 本次追加：真实正零点Abel链与全符号接线
+
+`Parent.CountAbelAudit` 核收实际正零点有限/无穷Abel式、两份端点误差及严格Q积分比较，并借已付SH02将同一正索引尾运输到实际全符号高零点和。此前隔离的`RSSection8ZeroKernel.PositiveKernel`已由父级修复为复用已验端点运输，完成编译及官方重放，原K可变截点现实际消费C02对象。尖锐计数C01仍未付，`RSOriginalCountConsumer`继续隔离，C02/K01不整体核销。
+
 ## 断联后的恢复原则
 
 以本仓库主根、最新验证摘要和明确的任务分解文档恢复，不以聊天中的计划或CLI退出消息认定闭合。保留一个main主工作树；活跃工作者只写独占新模块，父级核收后冻结、构建并发布。未验草稿、运行日志、扫描文献、凭据和私有会话不在公开包内。
