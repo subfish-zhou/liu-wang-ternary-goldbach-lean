@@ -1,0 +1,179 @@
+import LiuWang.Proof.Campaign20260915.Density.Chen14Consumer
+import LiuWang.Proof.Campaign20260915.Density.FamilyRightConsumer
+import LiuWang.Proof.Campaign20260915.Density.FamilyWeightedCritical
+import LiuWang.Proof.Campaign20260915.Density.SharpRecovery
+import LiuWang.Proof.Campaign20260915.Density.Audit
+import LiuWang.Proof.Campaign20260915.Density.CompleteChen24Consumer
+import LiuWang.Proof.Campaign20260915.Density.PrimitivePrefix
+import LiuWang.Proof.Campaign20260915.Density.ChenInterpolation
+import LiuWang.Proof.Campaign20260915.Density.MovingVertical
+import LiuWang.Proof.Campaign20260915.Density.MaximumPayment
+import LiuWang.Proof.Campaign20260915.Density.FamilyPaid
+
+set_option autoImplicit false
+
+namespace LiuWang.Proof.Campaign20260915.Density
+
+#check coefficient_eq_large_divisor_tail
+#check divisor_square_power
+#check detector_right_diagonal
+#check twisted_detector_right_diagonal
+#check weighted_off_diagonal
+#check actual_right_mean
+#check chen14_right_mean
+#check lemma_3_5_at_source_shift_with_chen_inputs_paid
+#check residue_power_tail
+#check actual_family_right_mean
+#check source_full_nonprincipal_chen14
+#check source_familyMean_right_paid
+#check source_Fmean_right_paid
+#check source_family_critical_log_four
+#check source_family_equation_31
+#check source_cosineMean_critical_log_four
+#check source_cosineMean_right_paid
+#check source_character_interpolation
+#check source_family_interpolation
+#check source_cosine_equation_33
+#check Fmean_le_cosineMean_sharp
+#check source_family_window_interpolation
+#check source_congruence_gap_row
+#check source_residue_critical_mass_square
+#check complete_Q_mean_prebudget
+#check complete_family_chen24
+#check nonprincipal_Q_mean_chen24
+#check source_Qmean_chen24
+#check source_familyMean_critical_chen24
+#check primitive_prefix_log
+#check divisorMobiusMass_totient_compensation
+#check nonprincipal_prefix_totient
+#check ordinary_critical_L_sq
+#check family_critical_sharp_Q
+#check source_family_critical_sharp_window
+#check source_sharp_critical_kernel
+#check source_family_equation_30
+#check source_cosineMean_critical_paid
+#check source_family_chen_endpoints
+#check source_familyMean_chen_endpoints
+#check chen_exp_eight_thirds
+#check source_family_equation_32
+#check source_familyMean_equation_32
+#check source_vertical_density_paid
+#check source_product_vertical_integrals_paid
+#check source_residue_critical_mass_sieved
+#check complete_Q_point_critical
+#check source_family_point_critical
+#check residue_power_tail_sharp
+#check complete_mu_tail_point_energy
+#check complete_f_point_right
+#check source_complete_f_point_right
+#check source_family_point_right
+#check source_family_point_interpolation
+#check source_family_point_equation_18
+#check source_cosine_equation_19
+#check source_family_lemma_11
+#check source_familyWindow_paid
+#check source_familyMaximum_paid
+
+#print axioms coefficient_eq_large_divisor_tail
+#print axioms divisor_square_power
+#print axioms detector_right_diagonal
+#print axioms twisted_detector_right_diagonal
+#print axioms weighted_off_diagonal
+#print axioms actual_right_mean
+#print axioms chen14_right_mean
+#print axioms equation_3_45_with_chen14_paid
+#print axioms equation_3_46_with_chen_inputs_paid
+#print axioms lemma_3_5_at_source_shift_with_chen_inputs_paid
+#print axioms residue_power_tail
+#print axioms actual_family_right_mean
+#print axioms source_full_nonprincipal_chen14
+#print axioms source_familyMean_right_paid
+#print axioms source_Fmean_right_paid
+#print axioms source_family_critical_log_four
+#print axioms source_family_equation_31
+#print axioms source_cosineMean_critical_log_four
+#print axioms source_cosineMean_right_paid
+#print axioms source_character_interpolation
+#print axioms source_family_interpolation
+#print axioms source_cosine_equation_33
+#print axioms Fmean_le_cosineMean_sharp
+#print axioms source_family_window_interpolation
+#print axioms source_congruence_gap_row
+#print axioms source_residue_critical_mass_square
+#print axioms complete_Q_mean_prebudget
+#print axioms complete_family_chen24
+#print axioms nonprincipal_Q_mean_chen24
+#print axioms source_Qmean_chen24
+#print axioms source_familyMean_critical_chen24
+#print axioms primitive_prefix_log
+#print axioms divisorMobiusMass_totient_compensation
+#print axioms nonprincipal_prefix_totient
+#print axioms ordinary_critical_L_sq
+#print axioms family_critical_sharp_Q
+#print axioms source_family_critical_sharp_window
+#print axioms source_sharp_critical_kernel
+#print axioms source_family_equation_30
+#print axioms source_cosineMean_critical_paid
+#print axioms source_family_chen_endpoints
+#print axioms source_familyMean_chen_endpoints
+#print axioms chen_exp_eight_thirds
+#print axioms source_family_equation_32
+#print axioms source_familyMean_equation_32
+#print axioms source_vertical_density_paid
+#print axioms source_product_vertical_integrals_paid
+#print axioms source_residue_critical_mass_sieved
+#print axioms complete_Q_point_critical
+#print axioms source_family_point_critical
+#print axioms residue_power_tail_sharp
+#print axioms complete_mu_tail_point_energy
+#print axioms complete_f_point_right
+#print axioms source_complete_f_point_right
+#print axioms source_family_point_right
+#print axioms source_family_point_interpolation
+#print axioms source_family_point_equation_18
+#print axioms source_cosine_equation_19
+#print axioms source_family_lemma_11
+#print axioms source_familyWindow_paid
+#print axioms source_familyMaximum_paid
+
+#check source_vertical_main_scalar
+#check product_horizontal_argument_moving
+#check product_moving_radii_count
+#check source_density_log_bounds
+#check source_familyMean_enlarged
+#check source_vertical_enlarged
+#check source_familyMaximum_envelope
+#check source_horizontalEnvelope_integral
+#check source_product_horizontal_paid
+#check strict_nonprincipal_le_closed
+#check closed_nonprincipal_chen_low
+#check source_count_at_regular_boundary
+#check closed_nonprincipal_chen_high
+#check closed_nonprincipal_chen
+#check strict_nonprincipal_chen
+#check strict_nonprincipal_chen_all
+#check family_sourceSeven_paid
+#check source_T7
+#check complete_family_sourceSeven_paid
+
+#print axioms source_vertical_main_scalar
+#print axioms product_horizontal_argument_moving
+#print axioms product_moving_radii_count
+#print axioms source_density_log_bounds
+#print axioms source_familyMean_enlarged
+#print axioms source_vertical_enlarged
+#print axioms source_familyMaximum_envelope
+#print axioms source_horizontalEnvelope_integral
+#print axioms source_product_horizontal_paid
+#print axioms strict_nonprincipal_le_closed
+#print axioms closed_nonprincipal_chen_low
+#print axioms source_count_at_regular_boundary
+#print axioms closed_nonprincipal_chen_high
+#print axioms closed_nonprincipal_chen
+#print axioms strict_nonprincipal_chen
+#print axioms strict_nonprincipal_chen_all
+#print axioms family_sourceSeven_paid
+#print axioms source_T7
+#print axioms complete_family_sourceSeven_paid
+
+end LiuWang.Proof.Campaign20260915.Density

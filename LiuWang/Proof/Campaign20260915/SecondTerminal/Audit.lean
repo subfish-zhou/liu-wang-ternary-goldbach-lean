@@ -1,0 +1,52 @@
+import LiuWang.Proof.Campaign20260915.SecondTerminal.OriginalLedger
+import LiuWang.Proof.Campaign20260915.SecondTerminal.LastScaling
+import LiuWang.Proof.Campaign20260915.SecondTerminal.PacketDensityRemaining
+import LiuWang.Proof.Campaign20260915.SecondTerminal.CreditLedger
+import LiuWang.Proof.Campaign20260915.SecondTerminal.EndpointFirstPayment
+import LiuWang.Proof.Campaign20260915.SecondTerminal.Terminal
+import LiuWang.Proof.Campaign20260915.SecondTerminal.ArcAssembly
+import LiuWang.Proof.Campaign20260915.SecondTerminal.ArcPayments
+import LiuWang.Proof.Campaign20260915.SecondTerminal.HighArc
+import LiuWang.Proof.Campaign20260915.SecondTerminal.RegionPaid
+import LiuWang.Proof.Campaign20260915.SecondTerminal.ArcTerminal
+
+set_option autoImplicit false
+
+namespace LiuWang.Proof.Campaign20260915.SecondTerminal
+
+#print axioms theorem_two_input
+#print axioms actual_two_strips_log_bound_T2
+#print axioms endpoint_14000_original_payment
+#print axioms truncated_endpoint_density_remaining
+#print axioms actual_last_strip_partition_bound
+#print axioms originalLastScalar_le_base
+#print axioms actual_last_strip_le_fixed_scalar
+#print axioms original_packet_reduction
+#print axioms endpoint_16541_original_payment
+#print axioms original_packet_density_remaining
+#print axioms original_c1_packet_remaining
+#print axioms endpointFirstScalar_payment
+#print axioms truncated_endpoint_original_payment_of_totient
+#print axioms original_c1_packet_endpoint_paid_of_totient
+#print axioms originalLastScalar_payment
+#print axioms actual_last_strip_original_payment
+#print axioms endpoint_totient_bound
+#print axioms truncated_endpoint_original_payment
+#print axioms original_c1_packet_paid
+#print axioms zeroPacket_eq_original_three_packets
+#print axioms S_le_original_outer_packets
+#print axioms S_le_original_low_high
+#print axioms original_high_packet_le_highSum
+#print axioms original_high_T1_input
+#print axioms original_high_packet_payment
+#print axioms S_le_original_low_remaining
+#print axioms original_c1_packet_region_paid
+#print axioms original_high_packet_region_paid
+#print axioms S_le_original_low_remaining_region_paid
+#print axioms original_low_packet_cases
+#print axioms original_outer_payment
+#print axioms S_original_4012
+#print axioms M2_original_4012
+#print axioms M2_integral_original_4012
+
+end LiuWang.Proof.Campaign20260915.SecondTerminal

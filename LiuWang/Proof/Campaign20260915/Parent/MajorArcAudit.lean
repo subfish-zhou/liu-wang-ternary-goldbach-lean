@@ -1,0 +1,22 @@
+import LiuWang.Proof.Campaign20260915.MajorArc.Audit
+
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.I13_with_third_head_paid
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.interactionIntegral_paper_source_split
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.lambdaTripleCount_lower_of_original_arcs
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.majorIntegral_paper_source_lower
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.minor_integrals_le_original_budget
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.ordinary_major_lower_with_third_head_paid
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.paper_caseII_of_original_ordinary
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.paper_major_lower_with_ordinary
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.paper_mixed_integrals_paid
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.paper_pure_integrals_paid
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.paper_source_gap
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.same_source_six_arcs_all_moduli
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.sixth_root_tangent
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.theoremStatement_of_original_arcs
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.third_finite_head
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.threeOddPrimes_of_low_high_and_minor
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.threeOddPrimes_of_original_arcs
+#print axioms LiuWang.Proof.Campaign20260915.MajorArc.threeOddPrimes_of_paper_source
+
+#check @LiuWang.Proof.Campaign20260915.MajorArc.threeOddPrimes_of_paper_source
